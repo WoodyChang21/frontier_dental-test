@@ -201,8 +201,21 @@ A live sample of 20 scraped products (10 per category) is included in the `outpu
 | `output/safco_products.db` | SQLite database — queryable with standard SQL tools |
 
 These were generated with `python main.py --max-products 10` against both categories:
-- **Dental Exam Gloves** — 10 products, avg confidence 0.78
-- **Sutures & Surgical Products** — 10 products, avg confidence 0.59
+
+| Category | Products | Avg Confidence | With Description |
+|---|---|---|---|
+| Dental Exam Gloves | 10 | 0.78 | 5 |
+| Sutures & Surgical Products | 10 | 0.59 | 1 |
+
+**Run timing** (run `db5c0691`, 2026-04-24):
+
+| Phase | Duration |
+|---|---|
+| Algolia key extraction + URL collection (both categories, parallel) | ~53s |
+| Product extraction — httpx/Playwright + CSS parsing (20 URLs, parallel) | ~69s |
+| **Total** | **122.9s (~2 min)** |
+
+The Algolia key extraction is a fixed one-time cost per category regardless of product count. At this rate, 100 products would take roughly ~12 minutes; the extraction phase scales with concurrency (`max_concurrent_products` in `config.yaml`).
 
 To reproduce or extend the sample, see the [Run](#run) section below.
 
