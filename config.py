@@ -18,7 +18,6 @@ class ScraperConfig:
     tavily_batch_size: int = 5
     llm_model: str = "claude-sonnet-4-6"
     max_tokens: int = 2048
-    extraction_fallback_threshold: float = 0.65
     temperature: float = 0.0
     output_dir: str = "output"
     db_filename: str = "safco_products.db"
@@ -42,7 +41,6 @@ class ScraperConfig:
                     "delay_between_requests_ms": "delay_between_requests_ms",
                     "level": "log_level",
                     "model": "llm_model",
-                    "extraction_fallback_threshold": "extraction_fallback_threshold",
                 }
                 attr = key_map.get(k, k)
                 if hasattr(cfg, attr):
@@ -62,7 +60,6 @@ class ScraperConfig:
             "delay_ms": self.delay_between_requests_ms,
             "max_concurrent": self.max_concurrent_products,
             "llm_model": self.llm_model,
-            "extraction_threshold": self.extraction_fallback_threshold,
             "checkpoint_db": self.checkpoint_db,
             "db_filename": self.db_filename,
             "csv_filename": self.csv_filename,

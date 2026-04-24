@@ -106,7 +106,7 @@ async def _extract_supplementary_llm(
     category: str,
     model: str,
     algolia: dict,
-) -> tuple[dict, float]:
+) -> dict:
     """
     Extract description/specs/unit_pack_size/alternatives from clean Tavily markdown.
     When Algolia already has name/sku/price/brand, this focused prompt uses ~700
@@ -153,8 +153,7 @@ Return ONLY valid JSON with these fields (null if not found):
     except Exception:
         fields = {}
 
-    score = 0.5 if fields.get("description") else 0.2
-    return fields, score
+    return fields
 
 
 async def extract_structured(state: ProductState) -> dict:
@@ -171,9 +170,8 @@ async def extract_structured(state: ProductState) -> dict:
     algolia = state.get("algolia_data") or {}
 
     llm_fields: dict = {}
-    llm_score = 0.0
     if state.get("raw_html"):
-        llm_fields, llm_score = await _extract_supplementary_llm(
+        llm_fields = await _extract_supplementary_llm(
             content=state["raw_html"],
             url=state["product_url"],
             category=state["category_name"],
@@ -201,8 +199,6 @@ async def extract_structured(state: ProductState) -> dict:
         "alternative_products": llm_fields.get("alternative_products", []),
     }
 
-    algolia_boost = 0.35 if algolia.get("name") else 0.0
-    final_score = min(1.0, llm_score + algolia_boost)
     method = "algolia+tavily_llm" if algolia else "tavily_llm"
 
     record = build_product_record(
@@ -212,12 +208,10 @@ async def extract_structured(state: ProductState) -> dict:
         category_hierarchy=state["category_hierarchy"],
         run_id=cfg["run_id"],
         extraction_method=method,
-        confidence_score=final_score,
     )
     log.info(
         "extracted",
         url=state["product_url"],
-        score=final_score,
         method=method,
         name=record.name,
     )
@@ -230,12 +224,7 @@ async def llm_extract_fallback(state: ProductState) -> dict:
     Passes whatever content is available (HTML or markdown) to the full LLM extractor.
     """
     cfg = state["run_config"]
-    current = state.get("product")
-    log.info(
-        "llm_fallback_triggered",
-        url=state["product_url"],
-        score=current.confidence_score if current else 0,
-    )
+    log.info("llm_fallback_triggered", url=state["product_url"])
     try:
         from agents.extractor import llm_extract
 
@@ -260,7 +249,6 @@ async def llm_extract_fallback(state: ProductState) -> dict:
             category_hierarchy=state["category_hierarchy"],
             run_id=cfg["run_id"],
             extraction_method="llm_fallback",
-            confidence_score=0.80,
         )
         log.info("llm_extracted", url=state["product_url"], name=record.name)
         return {"product": record}
@@ -284,13 +272,9 @@ def should_use_llm_fallback(state: ProductState) -> str:
     product = state.get("product")
     if product is None:
         return "validate"
-    # LLM now runs inside extract_structured whenever content is present.
-    # Only enter the separate fallback node if content was completely absent
-    # AND Algolia also missed this product.
+    # Enter the fallback node only if Tavily returned nothing AND Algolia had no data.
     if state.get("raw_html") is None and not state.get("algolia_data"):
-        threshold = state["run_config"].get("extraction_threshold", 0.65)
-        if product.confidence_score < threshold:
-            return "llm_fallback"
+        return "llm_fallback"
     return "validate"
 
 

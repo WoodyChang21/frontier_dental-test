@@ -24,7 +24,6 @@ class ProductRecord(BaseModel):
     image_urls: list[str] = Field(default_factory=list)
     alternative_products: list[str] = Field(default_factory=list)
     extraction_method: str = "css"
-    confidence_score: float = 0.0
     scraped_at: datetime = Field(default_factory=datetime.utcnow)
 
     @classmethod
@@ -47,7 +46,6 @@ class RunConfig(TypedDict):
     delay_ms: int
     max_concurrent: int
     llm_model: str
-    extraction_threshold: float
     checkpoint_db: str
     db_filename: str
     csv_filename: str

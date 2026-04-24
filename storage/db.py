@@ -28,7 +28,6 @@ CREATE TABLE IF NOT EXISTS products (
     image_urls           TEXT,
     alternative_products TEXT,
     extraction_method    TEXT,
-    confidence_score     REAL,
     scraped_at           TEXT
 );
 
@@ -65,7 +64,7 @@ def upsert_product(conn: sqlite3.Connection, record: ProductRecord) -> None:
             :url_hash, :url, :run_id, :category, :category_hierarchy,
             :name, :brand, :sku, :price, :unit_pack_size, :availability,
             :description, :specifications, :image_urls, :alternative_products,
-            :extraction_method, :confidence_score, :scraped_at
+            :extraction_method, :scraped_at
         )
         """,
         {
@@ -85,7 +84,6 @@ def upsert_product(conn: sqlite3.Connection, record: ProductRecord) -> None:
             "image_urls": json.dumps(record.image_urls),
             "alternative_products": json.dumps(record.alternative_products),
             "extraction_method": record.extraction_method,
-            "confidence_score": record.confidence_score,
             "scraped_at": record.scraped_at.isoformat(),
         },
     )

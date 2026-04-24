@@ -1,629 +1,637 @@
 [
   {
-    "url_hash": "111ad196eeabb2d82ee780dc791b6211394e3ff678533b8b8d18949d4aae3c45",
-    "url": "https://www.safcodental.com/product/aurelia-reg-amazing-reg#4871111",
-    "run_id": "d3bf5753",
+    "url_hash": "d8ded666ceae245dd3012d052a882713351329697673c51271802a4a9785011d",
+    "url": "https://www.safcodental.com/product/true-comfort-reg-blu#4680073",
+    "run_id": "8310ed19",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
       "Dental Exam Gloves",
-      "Nitrile gloves"
+      "Chloroprene gloves"
     ],
-    "name": "Aurelia Amazing gloves large 300/box",
-    "brand": "Supermax",
-    "sku": "4871111",
-    "price": "$20.99",
-    "unit_pack_size": "300/box",
+    "name": "Dash True Comfort Blu large 100/box",
+    "brand": "Dash",
+    "sku": "4680073",
+    "price": "$19.49",
+    "unit_pack_size": "100/box",
     "availability": "In stock",
-    "description": "Powder-free nitrile exam gloves. Thinner and more flexible than standard nitrile. Textured fingertip finish, Beaded cuff, Chlorinated, Ambidextrous, Purple color, Thickness: at palm 2.0 mils; at fingertips 3.0 mils, 300 gloves per box (270 for x-large).",
+    "description": "Powder-free, latex-free, chloroprene examination gloves.",
     "specifications": {
-      "Material": "Nitrile",
+      "Brand": "Dash",
+      "Color": "Blu",
+      "Material": "Chloroprene",
+      "Type": "Examination Gloves",
       "Powder-free": "Yes",
-      "Color": "Purple",
-      "Thickness at palm": "2.0 mils",
-      "Thickness at fingertips": "3.0 mils",
-      "Cuff": "Beaded",
-      "Ambidextrous": "Yes",
-      "Textured fingertip finish": "Yes",
-      "Chlorinated": "Yes"
+      "Latex-free": "Yes"
     },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/d/r/drcbm.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/d/r/drdaq.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
       "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
     ],
     "alternative_products": [],
     "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:39.054457"
+    "scraped_at": "2026-04-24T04:33:53.792682"
   },
   {
-    "url_hash": "449db7106967d1d5d6e4d19d0e7771b51f045e5030144b621e98d7f07302b197",
-    "url": "https://www.safcodental.com/product/aurelia-reg-amazing-reg#4871108",
-    "run_id": "d3bf5753",
+    "url_hash": "fdf0615bfed030e8cb68fee235e9d8f7334842f0d1b0d38a570851e9e2cc63c8",
+    "url": "https://www.safcodental.com/product/true-comfort-reg-blu#4680071",
+    "run_id": "8310ed19",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
       "Dental Exam Gloves",
-      "Nitrile gloves"
+      "Chloroprene gloves"
     ],
-    "name": "Aurelia Amazing gloves medium 300/box",
-    "brand": "Supermax",
-    "sku": "4871108",
-    "price": "$20.99",
-    "unit_pack_size": "300/box",
+    "name": "Dash True Comfort Blu medium 100/box",
+    "brand": "Dash",
+    "sku": "4680071",
+    "price": "$19.49",
+    "unit_pack_size": "100/box",
     "availability": "In stock",
-    "description": "Powder-free nitrile exam gloves. Thinner and more flexible than standard nitrile. Textured fingertip finish, Beaded cuff, Chlorinated, Ambidextrous, Purple color, Thickness: at palm 2.0 mils; at fingertips 3.0 mils, 300 gloves per box (270 for x-large).",
+    "description": "Powder-free, latex-free, chloroprene examination gloves.",
     "specifications": {
-      "Material": "Nitrile",
+      "Material": "Chloroprene",
       "Powder-free": "Yes",
-      "Texture": "Textured fingertip finish",
-      "Cuff": "Beaded",
-      "Features": "Chlorinated, Ambidextrous",
-      "Color": "Purple",
-      "Thickness at palm": "2.0 mils",
-      "Thickness at fingertips": "3.0 mils"
+      "Latex-free": "Yes"
     },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/d/r/drcbm.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/d/r/drdaq.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
       "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
     ],
     "alternative_products": [],
     "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:38.618771"
+    "scraped_at": "2026-04-24T04:33:53.868894"
   },
   {
-    "url_hash": "35c645f615354af0140d282eed0247d1dd8a90c640ad11285e9414986d409134",
-    "url": "https://www.safcodental.com/product/aurelia-reg-amazing-reg#4871105",
-    "run_id": "d3bf5753",
+    "url_hash": "a292017ed277fe9be2264830e2872008938402877b78a74fac1e49f3a2c0fa92",
+    "url": "https://www.safcodental.com/product/true-comfort-reg-blu#4680069",
+    "run_id": "8310ed19",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
       "Dental Exam Gloves",
-      "Nitrile gloves"
+      "Chloroprene gloves"
     ],
-    "name": "Aurelia Amazing gloves small 300/box",
-    "brand": "Supermax",
-    "sku": "4871105",
-    "price": "$20.99",
-    "unit_pack_size": "300/box",
+    "name": "Dash True Comfort Blu small 100/box",
+    "brand": "Dash",
+    "sku": "4680069",
+    "price": "$19.49",
+    "unit_pack_size": "100/box",
     "availability": "In stock",
-    "description": "Powder-free nitrile exam gloves. Thinner and more flexible than standard nitrile. Textured fingertip finish Beaded cuff Chlorinated Ambidextrous Purple color Thickness: at palm 2.0 mils; at fingertips 3.0 mils 300 gloves per box (270 for x-large) Order 10 boxes to purchase a case.",
+    "description": "Powder-free, latex-free, chloroprene examination gloves.",
     "specifications": {
-      "Material": "Nitrile",
-      "Powder Free": "Yes",
-      "Color": "Purple",
-      "Texture": "Textured fingertip finish",
-      "Cuff": "Beaded",
-      "Ambidextrous": "Yes",
-      "Thickness at Palm": "2.0 mils",
-      "Thickness at Fingertips": "3.0 mils"
+      "Brand": "Dash",
+      "SKU": "4680069",
+      "Product Type": "Dental Exam Gloves"
     },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/d/r/drcbm.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/d/r/drdaq.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
       "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
     ],
     "alternative_products": [],
     "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:38.935295"
+    "scraped_at": "2026-04-24T04:33:53.705637"
   },
   {
-    "url_hash": "562f025a1bc71d22956e0849bb8b587c70424330704ecb508e3388064ee930ec",
-    "url": "https://www.safcodental.com/product/aurelia-reg-amazing-reg#4871114",
-    "run_id": "d3bf5753",
+    "url_hash": "98fdb4d3cbe74223686a844fe5c9d6e12766644ea183ee9deee4b6de5455e36f",
+    "url": "https://www.safcodental.com/product/true-comfort-reg-blu#4680075",
+    "run_id": "8310ed19",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
       "Dental Exam Gloves",
-      "Nitrile gloves"
+      "Chloroprene gloves"
     ],
-    "name": "Aurelia Amazing gloves x-large 270/box",
-    "brand": "Supermax",
-    "sku": "4871114",
-    "price": "$20.99",
-    "unit_pack_size": "270/box",
+    "name": "Dash True Comfort Blu x-large 100/box",
+    "brand": "Dash",
+    "sku": "4680075",
+    "price": "$19.49",
+    "unit_pack_size": "100/box",
     "availability": "In stock",
-    "description": "Powder-free nitrile exam gloves. Thinner and more flexible than standard nitrile. Textured fingertip finish Beaded cuff Chlorinated Ambidextrous Purple color Thickness: at palm 2.0 mils; at fingertips 3.0 mils 300 gloves per box (270 for x-large) Order 10 boxes to purchase a case",
+    "description": "Powder-free, latex-free, chloroprene examination gloves.",
     "specifications": {
-      "Material": "Nitrile",
-      "Powder-free": "Yes",
-      "Color": "Purple",
-      "Textured fingertip finish": "Yes",
-      "Beaded cuff": "Yes",
-      "Ambidextrous": "Yes",
-      "Thickness at palm": "2.0 mils",
-      "Thickness at fingertips": "3.0 mils"
+      "Brand": "Dash",
+      "SKU": "4680075",
+      "Category": "Dental Exam Gloves"
     },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/d/r/drcbm.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/d/r/drdaq.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
       "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [],
-    "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:39.383093"
-  },
-  {
-    "url_hash": "9a187b1325a1ea6054757184c0229859562c6a6adb824984c64149eee53af3bb",
-    "url": "https://www.safcodental.com/product/aurelia-reg-amazing-reg#4871102",
-    "run_id": "d3bf5753",
-    "category": "Dental Exam Gloves",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Dental Exam Gloves",
-      "Nitrile gloves"
-    ],
-    "name": "Aurelia Amazing gloves x-small 300/box",
-    "brand": "Supermax",
-    "sku": "4871102",
-    "price": "$20.99",
-    "unit_pack_size": "300/box",
-    "availability": "In stock",
-    "description": "Powder-free nitrile exam gloves. Thinner and more flexible than standard nitrile. Textured fingertip finish, Beaded cuff, Chlorinated, Ambidextrous, Purple color, Thickness: at palm 2.0 mils; at fingertips 3.0 mils.",
-    "specifications": {
-      "Color": "Purple",
-      "Thickness at palm": "2.0 mils",
-      "Thickness at fingertips": "3.0 mils",
-      "Quantity per box": "300 gloves"
-    },
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/d/r/drcbm.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [],
-    "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:38.260382"
-  },
-  {
-    "url_hash": "b57956cebb22796a601ebb7f4cc7d57e396f2c58170222a11978f4d71db73d00",
-    "url": "https://www.safcodental.com/product/aurelia-reg-bold-reg",
-    "run_id": "d3bf5753",
-    "category": "Dental Exam Gloves",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Dental Exam Gloves",
-      "Nitrile gloves"
-    ],
-    "name": "Aurelia Bold",
-    "brand": "Supermax",
-    "sku": "DRCCN",
-    "price": "$7.49",
-    "unit_pack_size": "100 gloves per box",
-    "availability": "In stock",
-    "description": "Nitrile powder-free exam gloves. Maximum strength and durability.",
-    "specifications": {
-      "Material": "Nitrile",
-      "Powder-free": "Yes",
-      "Fully-textured finish": "Yes",
-      "Beaded cuff": "Yes",
-      "Chlorinated": "Yes",
-      "Ambidextrous": "Yes",
-      "Color": "Black",
-      "Thickness at palm": "5.0 mils",
-      "Thickness at fingertips": "6.0 mils"
-    },
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/d/r/drccn.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
-      "https://www.safcodental.com/media/catalog/product/d/r/drccn.jpg?width=75&height=75&canvas=75,75&optimize=medium&fit=bounds"
     ],
     "alternative_products": [
-      "https://www.safcodental.com/product/aurelia-reg-bold-reg"
+      "https://www.safcodental.com/product/true-comfort-reg-blu#4680067",
+      "https://www.safcodental.com/product/true-comfort-reg-blu#4680069",
+      "https://www.safcodental.com/product/true-comfort-reg-blu#4680071"
     ],
     "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:42.359489"
+    "scraped_at": "2026-04-24T04:33:57.271074"
   },
   {
-    "url_hash": "be83dcc7a489d44d73a415de17768b122786b571d2652cb15c414e884ee92360",
-    "url": "https://www.safcodental.com/product/aurelia-sup-reg-sup-sonic-sup-reg-sup#4871307",
-    "run_id": "d3bf5753",
+    "url_hash": "ab3c4ea3af56dc87d44bdfd417df5c995764fbd391741e4f10b3091f12cde37e",
+    "url": "https://www.safcodental.com/product/true-comfort-reg-blu#4680067",
+    "run_id": "8310ed19",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
       "Dental Exam Gloves",
-      "Nitrile gloves"
+      "Chloroprene gloves"
     ],
-    "name": "Aurelia Sonic nitrile gloves large 300/box",
-    "brand": "Supermax",
-    "sku": "4871307",
-    "price": "$24.49",
-    "unit_pack_size": "300/box",
+    "name": "Dash True Comfort Blu x-small 100/box",
+    "brand": "Dash",
+    "sku": "4680067",
+    "price": "$19.49",
+    "unit_pack_size": "100/box",
     "availability": "In stock",
-    "description": "Nitrile powder-free exam gloves.",
-    "specifications": {},
+    "description": "Powder-free, latex-free, chloroprene examination gloves.",
+    "specifications": {
+      "size": "X-small",
+      "brand": "Dash"
+    },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/d/r/drcbw.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/d/r/drdaq.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
       "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
     ],
-    "alternative_products": [],
+    "alternative_products": [
+      "https://www.safcodental.com/product/true-comfort-reg-blu#4680069",
+      "https://www.safcodental.com/product/true-comfort-reg-blu#4680071"
+    ],
     "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:37.021914"
+    "scraped_at": "2026-04-24T04:33:54.729257"
   },
   {
-    "url_hash": "570af78c74f25cdb033d8339f89b4840fe65ee6a7c16ba3c26cc053fd211f96b",
-    "url": "https://www.safcodental.com/product/aurelia-sup-reg-sup-sonic-sup-reg-sup#4871305",
-    "run_id": "d3bf5753",
+    "url_hash": "d6410b9afa5f0c6ad864b74ff3eb1192a1663e55eef5248c1f280e0ff28a4a42",
+    "url": "https://www.safcodental.com/product/pulse-trade-latex#5380054",
+    "run_id": "8310ed19",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
       "Dental Exam Gloves",
-      "Nitrile gloves"
+      "Latex gloves"
     ],
-    "name": "Aurelia Sonic nitrile gloves medium 300/box",
-    "brand": "Supermax",
-    "sku": "4871305",
-    "price": "$24.49",
-    "unit_pack_size": "300/box",
+    "name": "Pulse powder-free latex gloves large 100/box",
+    "brand": "Innovative Healthcare",
+    "sku": "5380054",
+    "price": "$11.49",
+    "unit_pack_size": "100/box",
     "availability": "In stock",
-    "description": "Nitrile powder-free exam gloves.",
-    "specifications": {},
+    "description": "Powder-free latex exam gloves. Finish provides superior gripping ability. Excellent donning properties and comfort. Textured whole hand finish Beaded cuff Chlorinated Ambidextrous 50μg or less of latex protein Natural color",
+    "specifications": {
+      "Finish": "Textured whole hand",
+      "Cuff": "Beaded",
+      "Material": "Latex",
+      "Glove Type": "Powder-free",
+      "Ambidextrous": "Yes",
+      "Latex Protein": "50μg or less",
+      "Color": "Natural"
+    },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/d/r/drcbw.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/d/r/drbav.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
       "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
     ],
     "alternative_products": [],
     "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:37.025279"
+    "scraped_at": "2026-04-24T04:33:55.013850"
   },
   {
-    "url_hash": "d1400a0b5a8d3adfd6dc1868eb8e755fe421c574db9e1757180e197802e5d75c",
-    "url": "https://www.safcodental.com/product/aurelia-sup-reg-sup-sonic-sup-reg-sup#4871303",
-    "run_id": "d3bf5753",
+    "url_hash": "30db30fe71f85f214b1e9ae7186f0eb809e094d6e6a96d5f83bfca936944c1b1",
+    "url": "https://www.safcodental.com/product/pulse-trade-latex#5380047",
+    "run_id": "8310ed19",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
       "Dental Exam Gloves",
-      "Nitrile gloves"
+      "Latex gloves"
     ],
-    "name": "Aurelia Sonic nitrile gloves small 300/box",
-    "brand": "Supermax",
-    "sku": "4871303",
-    "price": "$24.49",
-    "unit_pack_size": "300/box",
+    "name": "Pulse powder-free latex gloves medium 100/box",
+    "brand": "Innovative Healthcare",
+    "sku": "5380047",
+    "price": "$11.49",
+    "unit_pack_size": "100/box",
     "availability": "In stock",
-    "description": "Nitrile powder-free exam gloves.",
-    "specifications": {},
+    "description": "Powder-free latex exam gloves. Finish provides superior gripping ability. Excellent donning properties and comfort. Textured whole hand finish Beaded cuff Chlorinated Ambidextrous 50μg or less of latex protein Natural color.",
+    "specifications": {
+      "brand": "Innovative Healthcare",
+      "sku": "5380047",
+      "material": "latex",
+      "type": "powder-free",
+      "color": "natural",
+      "glove_size": "medium",
+      "protein_content": "50μg or less"
+    },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/d/r/drcbw.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/d/r/drbav.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
       "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
     ],
     "alternative_products": [],
     "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:36.848202"
+    "scraped_at": "2026-04-24T04:33:54.261229"
   },
   {
-    "url_hash": "4dedc2cd394e203161f6c25fcb9a2c069cfab1d0f06a5c972cea07984fcb007d",
-    "url": "https://www.safcodental.com/product/aurelia-sup-reg-sup-sonic-sup-reg-sup#4871309",
-    "run_id": "d3bf5753",
+    "url_hash": "afd8e934fc15f65c05a33858d03eb759b8bf1a0bfe6c5b4b54a149367ffddc4c",
+    "url": "https://www.safcodental.com/product/pulse-trade-latex#5380035",
+    "run_id": "8310ed19",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
       "Dental Exam Gloves",
-      "Nitrile gloves"
+      "Latex gloves"
     ],
-    "name": "Aurelia Sonic nitrile gloves x-large 270/box",
-    "brand": "Supermax",
-    "sku": "4871309",
-    "price": "$24.49",
-    "unit_pack_size": "270/box",
+    "name": "Pulse powder-free latex gloves small 100/box",
+    "brand": "Innovative Healthcare",
+    "sku": "5380035",
+    "price": "$11.49",
+    "unit_pack_size": "100/box",
     "availability": "In stock",
-    "description": "Nitrile powder-free exam gloves.",
-    "specifications": {},
+    "description": "Powder-free latex exam gloves. Finish provides superior gripping ability. Excellent donning properties and comfort. Textured whole hand finish Beaded cuff Chlorinated Ambidextrous 50μg or less of latex protein Natural color.",
+    "specifications": {
+      "Material": "Latex",
+      "Powder-free": "Yes",
+      "Textured": "Yes",
+      "Cuff type": "Beaded",
+      "Ambidextrous": "Yes",
+      "Latex protein": "50μg or less",
+      "Color": "Natural"
+    },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/d/r/drcbw.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/d/r/drbav.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
       "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
     ],
     "alternative_products": [],
     "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:36.837570"
+    "scraped_at": "2026-04-24T04:33:55.494515"
   },
   {
-    "url_hash": "1b01d10247d50959e5be1129490f1ba38a9d0b20ed3aca32a71cd40332448f5f",
-    "url": "https://www.safcodental.com/product/helitape-reg#3274305",
-    "run_id": "d3bf5753",
+    "url_hash": "0e624180d8e86aaf215c0b588e53e1574bf9c8de3944fda639471433d91502b3",
+    "url": "https://www.safcodental.com/product/pulse-trade-latex#5380063",
+    "run_id": "8310ed19",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Latex gloves"
+    ],
+    "name": "Pulse powder-free latex gloves x-large 100/box",
+    "brand": "Innovative Healthcare",
+    "sku": "5380063",
+    "price": "$9.99",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Powder-free latex exam gloves. Finish provides superior gripping ability. Excellent donning properties and comfort. Textured whole hand finish Beaded cuff Chlorinated Ambidextrous 50μg or less of latex protein Natural color.",
+    "specifications": {
+      "Finish": "Textured whole hand",
+      "Cuff": "Beaded",
+      "Latex Protein": "50μg or less",
+      "Color": "Natural",
+      "Ambidextrous": "Yes"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drbav.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:54.789476"
+  },
+  {
+    "url_hash": "f4d3b534c0f32282224802185eb915e3e5a263cfda4ab9dc6c822f8ee50d6e66",
+    "url": "https://www.safcodental.com/product/pulse-trade-latex#5380034",
+    "run_id": "8310ed19",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Latex gloves"
+    ],
+    "name": "Pulse powder-free latex gloves x-small 100/box",
+    "brand": "Innovative Healthcare",
+    "sku": "5380034",
+    "price": "$11.49",
+    "unit_pack_size": "100/box",
+    "availability": "Backorder",
+    "description": "Powder-free latex exam gloves. Finish provides superior gripping ability. Excellent donning properties and comfort. Textured whole hand finish Beaded cuff Chlorinated Ambidextrous 50μg or less of latex protein Natural color.",
+    "specifications": {
+      "latex_protein": "50μg or less",
+      "color": "Natural",
+      "finish": "Textured whole hand",
+      "cuff": "Beaded",
+      "type": "Ambidextrous"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drbav.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:54.048064"
+  },
+  {
+    "url_hash": "7cb998a2d54527a7f7254c16a386e3af71057548e2e28ebf0d4532594a59a0c7",
+    "url": "https://www.safcodental.com/product/orasoothe-reg-sockit-gel#5106359",
+    "run_id": "8310ed19",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
       "Sutures & surgical products",
       "Surgical medicaments and packing"
     ],
-    "name": "HeliTape 1\" x 3\", 10/box",
-    "brand": "Integra Miltex",
-    "sku": "3274305",
-    "price": "$228.99",
-    "unit_pack_size": "10/box",
+    "name": "OraSoothe Hygiene Rinse 3.4 oz bottle",
+    "brand": "Septodont",
+    "sku": "5106359",
+    "price": "$9.99",
+    "unit_pack_size": "3.4 oz bottle",
     "availability": "In stock",
-    "description": "Thin, soft, pliable collagen tape used for dressing minor wounds. Tape accelerates wound healing and is absorbed into the body after 10 to 14 days. Sterile and individually packaged.",
+    "description": "Hydrogel dressing treats intraoral wounds and lesions. Provides fast, continuous pain relief without numbing. Protects from chemical and microbial contamination and promotes optimal healing.Contains no drugs, and has no toxicity or contraindications. Safe if swallowed. Individual 10g syringes are ideal for both in-office and take-home use. FDA approved.",
     "specifications": {
-      "size": "1\" x 3\"",
-      "brand": "Integra Miltex",
-      "sku": "3274305"
+      "Brand": "Septodont",
+      "SKU": "5106359",
+      "FDA Approved": "Yes",
+      "Toxicity": "No toxicity or contraindications",
+      "Safe if swallowed": "Yes"
     },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/p/f/pfpfp.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/p/f/pfpgh.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
       "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
     ],
     "alternative_products": [],
     "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:38.180041"
+    "scraped_at": "2026-04-24T04:33:57.901345"
   },
   {
-    "url_hash": "4b9b85d6044eca4b01abc2ff9cb4f28ccf8663d9917e97302df8f3544f95a872",
-    "url": "https://www.safcodental.com/product/myco-medical-reli-reg-pro-sutures#4180087",
-    "run_id": "d3bf5753",
+    "url_hash": "d3f74f79a79a9f0eb60165a6b14180256c1dc1fffa6496bb9864587d98d84959",
+    "url": "https://www.safcodental.com/product/orasoothe-reg-sockit-gel#5690106",
+    "run_id": "8310ed19",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
       "Sutures & surgical products",
-      "Sutures"
+      "Surgical medicaments and packing"
     ],
-    "name": "Look suture polypropylene C-17,6-0, 10&quot; 12/box",
-    "brand": "Myco Medical",
-    "sku": "4180087",
-    "price": "$62.99",
-    "unit_pack_size": "12/box",
-    "availability": "In stock",
-    "description": "RELI® PRO sutures from MYCO Medical are premium sterile absorbable and non-absorbable surgical-grade sutures packaged in a new low-memory racetrack tray to improve suture performance.",
+    "name": "OraSoothe Sockit gel 25-pack",
+    "brand": "Septodont",
+    "sku": "5690106",
+    "price": "$309.49",
+    "unit_pack_size": "25-pack",
+    "availability": "Backorder",
+    "description": "Hydrogel dressing treats intraoral wounds and lesions. Provides fast, continuous pain relief without numbing. Protects from chemical and microbial contamination and promotes optimal healing.Contains no drugs, and has no toxicity or contraindications. Safe if swallowed. Individual 10g syringes are ideal for both in-office and take-home use. FDA approved.",
     "specifications": {
-      "needle_type": "C-17",
-      "material": "polypropylene",
-      "size": "6-0",
-      "length": "10\""
+      "Brand": "Septodont",
+      "SKU": "5690106",
+      "FDA Approved": "Yes",
+      "Contains": "10g syringes"
     },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/p/f/pfelv.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/p/f/pfpgh.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
       "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
     ],
     "alternative_products": [],
     "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:37.438426"
+    "scraped_at": "2026-04-24T04:33:56.779295"
   },
   {
-    "url_hash": "1e714ea45a105fb3d23c52f9f6370bc91728aa48d2ecbd70c28a573fda8511dd",
-    "url": "https://www.safcodental.com/product/myco-medical-reli-reg-pro-sutures#7570056",
-    "run_id": "d3bf5753",
+    "url_hash": "45735470cec69f6a60c8e8693a21eb92b821b711298aca8f2980cb4c419b091b",
+    "url": "https://www.safcodental.com/product/orasoothe-reg-sockit-gel#5690102",
+    "run_id": "8310ed19",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
       "Sutures & surgical products",
-      "Sutures"
+      "Surgical medicaments and packing"
     ],
-    "name": "RELI&reg; PRO sutures black silk 5-0,YP-3,18&quot;, 12/box",
-    "brand": "Myco Medical",
-    "sku": "7570056",
-    "price": "$71.99",
-    "unit_pack_size": "12/box",
+    "name": "OraSoothe&reg;  &quot;Sockit&quot;  gel 5-pack",
+    "brand": "Septodont",
+    "sku": "5690102",
+    "price": "$93.99",
+    "unit_pack_size": "5-pack",
+    "availability": "In stock",
+    "description": "Hydrogel dressing treats intraoral wounds and lesions. Provides fast, continuous pain relief without numbing. Protects from chemical and microbial contamination and promotes optimal healing. Contains no drugs, and has no toxicity or contraindications. Safe if swallowed. Individual 10g syringes are ideal for both in-office and take-home use. FDA approved.",
+    "specifications": {
+      "Contains": "5 individually packed 10g syringes with applicator tip."
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfpgh.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:58.027123"
+  },
+  {
+    "url_hash": "4e6858f5e0288fc1c509ec81c9d1e8604c458a0fe73512df08dd63bde5186129",
+    "url": "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257157",
+    "run_id": "8310ed19",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "VeraFuse&trade; demineralized bone matrix putty 0.7cc",
+    "brand": "DentalProX",
+    "sku": "3257157",
+    "price": "$137.99",
+    "unit_pack_size": "0.7cc",
     "availability": "Special order",
-    "description": "RELI® PRO sutures from MYCO Medical are premium sterile absorbable and non-absorbable surgical-grade sutures packaged in a new low-memory racetrack tray to improve suture performance",
+    "description": "Sterile ground dental powder is available in cortical, cancellous and a cortical/cancellous mix. Validated to a sterility assurance level (SAL) of 10(-6) in accordance with ISO 11137-2 Method 1.",
     "specifications": {
-      "needle_type": "C-17 needle (3/8 circle, reverse cutting)",
-      "suture_material": "black silk",
-      "suture_size": "5-0",
-      "length": "18\""
+      "Product Name": "VeraFuse™ demineralized bone matrix putty",
+      "SKU": "3257157",
+      "Brand": "DentalProX",
+      "Manufacturer Number": "VF25070"
     },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/p/f/pfelv.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/p/f/pfwvg.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
       "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
     ],
     "alternative_products": [],
     "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:37.768911"
+    "scraped_at": "2026-04-24T04:33:57.651194"
   },
   {
-    "url_hash": "5dbae3d6f0d1f1a9012a55e247b3672b2927b16078a49aefe52e4e5d78c4542a",
-    "url": "https://www.safcodental.com/product/myco-medical-reli-reg-pro-sutures#7570059",
-    "run_id": "d3bf5753",
+    "url_hash": "315775cf53c54aaa3e171c0d69608f729f5ce1efafd2e9d0f2fd72355ea5b18d",
+    "url": "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257158",
+    "run_id": "8310ed19",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
       "Sutures & surgical products",
-      "Sutures"
+      "Bone grafting tissue augmentation"
     ],
-    "name": "RELI&reg; PRO sutures nylon black 5-0,YPS-3,18&quot;, 12/box",
-    "brand": "Myco Medical",
-    "sku": "7570059",
-    "price": "$49.49",
-    "unit_pack_size": "12/box",
+    "name": "VeraFuse&trade; demineralized bone matrix putty 1.0cc",
+    "brand": "DentalProX",
+    "sku": "3257158",
+    "price": "$135.99",
+    "unit_pack_size": "1.0cc",
+    "availability": "In stock",
+    "description": "Safe alternative to an autograft with no need for a second surgical site Osteoconductive Used for volumetric enhancement, space maintenance, and faster remodeling Sterile ground dental powder is available in cortical, cancellous and a cortical/cancellous mix. Validated to a sterility assurance level (SAL) of 10(-6) in accordance with ISO 11137-2 Method 1.",
+    "specifications": {
+      "Mfr #": "VF25100",
+      "Stock Availability": "In stock",
+      "Price": "$137.99"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfwvg.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:57.266075"
+  },
+  {
+    "url_hash": "da6aab3fc5ca8aa70aa3e17b0440e09244a7aa51defe3ec8407ccc85e3c391e6",
+    "url": "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257159",
+    "run_id": "8310ed19",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "VeraFuse&trade; demineralized bone matrix putty 2.5cc",
+    "brand": "DentalProX",
+    "sku": "3257159",
+    "price": "$299.50",
+    "unit_pack_size": "2.5cc",
     "availability": "Special order",
-    "description": "RELI® PRO sutures from MYCO Medical are premium sterile absorbable and non-absorbable surgical-grade sutures packaged in a new low-memory racetrack tray to improve suture performance",
+    "description": "Safe alternative to an autograft with no need for a second surgical site. Osteoconductive. Used for volumetric enhancement, space maintenance, and faster remodeling. Sterile ground dental powder is available in cortical, cancellous and a cortical/cancellous mix. Validated to a sterility assurance level (SAL) of 10(-6) in accordance with ISO 11137-2 Method 1.",
     "specifications": {
-      "suture_material": "nylon",
-      "color": "black",
-      "size": "5-0",
-      "needle_type": "C-17",
-      "needle_shape": "3/8 circle, reverse cutting",
-      "length": "18\""
+      "Osteoconductive": "Yes",
+      "Sterility Assurance Level": "10(-6)",
+      "Available Forms": "Cortical, Cancellous, Cortical/Cancellous mix"
     },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/p/f/pfelv.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/p/f/pfwvg.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
       "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
     ],
-    "alternative_products": [],
+    "alternative_products": [
+      "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder"
+    ],
     "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:37.753912"
+    "scraped_at": "2026-04-24T04:33:58.732002"
   },
   {
-    "url_hash": "e78b72168b289b22a0f2346b6b9f63314228f435035f37c87da4d147931478ae",
-    "url": "https://www.safcodental.com/product/myco-medical-reli-reg-pro-sutures#7570058",
-    "run_id": "d3bf5753",
+    "url_hash": "c9d5a0ac2c4fe834d35e603d64c0813c65af387063d607b3b245b3cb86b6b860",
+    "url": "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257155",
+    "run_id": "8310ed19",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
       "Sutures & surgical products",
-      "Sutures"
+      "Bone grafting tissue augmentation"
     ],
-    "name": "RELI&reg; PRO sutures polypropylene 6-0,YFS-3,18&quot;, 12/box",
-    "brand": "Myco Medical",
-    "sku": "7570058",
-    "price": "$55.99",
-    "unit_pack_size": "12/box",
+    "name": "VeraGraft&trade; mineralized cortical bone .25-1.0mm 0.25cc jar",
+    "brand": "DentalProX",
+    "sku": "3257155",
+    "price": "$28.99",
+    "unit_pack_size": ".25cc jar",
+    "availability": "Backorder",
+    "description": "Safe alternative to an autograft with no need for a second surgical site Osteoconductive Used for volumetric enhancement, space maintenance, and faster remodeling Sterile ground dental powder is available in cortical, cancellous and a cortical/cancellous mix. Validated to a sterility assurance level (SAL) of 10(-6) in accordance with ISO 11137-2 Method 1.",
+    "specifications": {
+      "SKU": "3257155",
+      "Brand": "DentalProX",
+      "Type": "mineralized cortical bone",
+      "Particle Size": ".25-1.0mm"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfwvg.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:58.559277"
+  },
+  {
+    "url_hash": "63b91bddac3a3de20c2d9305139ebb419396c54226558c830e174b1b63844e32",
+    "url": "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257156",
+    "run_id": "8310ed19",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "VeraGraft&trade; mineralized cortical bone .25-1.0mm 0.5cc jar",
+    "brand": "DentalProX",
+    "sku": "3257156",
+    "price": "$49.99",
+    "unit_pack_size": "0.5cc jar",
+    "availability": "Backorder",
+    "description": "Safe alternative to an autograft with no need for a second surgical site. Osteoconductive. Used for volumetric enhancement, space maintenance, and faster remodeling. Sterile ground dental powder is available in cortical, cancellous and a cortical/cancellous mix. Validated to a sterility assurance level (SAL) of 10(-6) in accordance with ISO 11137-2 Method 1.",
+    "specifications": {
+      "SKU": "3257156",
+      "Brand": "DentalProX",
+      "Type": "Mineralized Cortical Bone",
+      "Particle Size": ".25-1.0mm"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfwvg.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:58.275782"
+  },
+  {
+    "url_hash": "152deb0ffd64e45ac04959a04a4166d7765d829a91954d598d1533907ff1184e",
+    "url": "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257153",
+    "run_id": "8310ed19",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "VeraGraft&trade; mineralized cortical bone .25-1.0mm 2.0cc jar",
+    "brand": "DentalProX",
+    "sku": "3257153",
+    "price": "$115.49",
+    "unit_pack_size": "2.0cc jar",
     "availability": "In stock",
-    "description": "RELI® PRO sutures from MYCO Medical are premium sterile absorbable and non-absorbable surgical-grade sutures packaged in a new low-memory racetrack tray to improve suture performance",
+    "description": "Safe alternative to an autograft with no need for a second surgical site Osteoconductive Used for volumetric enhancement, space maintenance, and faster remodeling Sterile ground dental powder is available in cortical, cancellous and a cortical/cancellous mix. Validated to a sterility assurance level (SAL) of 10(-6) in accordance with ISO 11137-2 Method 1.",
     "specifications": {
-      "material": "polypropylene",
-      "size": "6-0",
-      "needle_type": "C-17 needle (3/8 circle, reverse cutting)",
-      "length": "18\""
+      "Type": "Mineralized Cortical Bone",
+      "Particle Size": ".25-1.0mm",
+      "SKU": "3257153",
+      "Brand": "DentalProX"
     },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/p/f/pfelv.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/p/f/pfwvg.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
       "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
     ],
     "alternative_products": [],
     "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:37.761911"
+    "scraped_at": "2026-04-24T04:33:57.996789"
   },
   {
-    "url_hash": "c47b58abf71632a23d8c3ef650c9b80d8e0792edcd8619fd52551d61b1db6f4a",
-    "url": "https://www.safcodental.com/product/myco-medical-reli-reg-pro-sutures#7570060",
-    "run_id": "d3bf5753",
+    "url_hash": "f0cecc3641aef681f4d294a993a1413a6a2a2b1b788935d5f127e9a78a718e42",
+    "url": "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257154",
+    "run_id": "8310ed19",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
       "Sutures & surgical products",
-      "Sutures"
+      "Bone grafting tissue augmentation"
     ],
-    "name": "RELI&reg; PRO sutures undyed braided 3-0,YFS-2,30&quot;, 12/box",
-    "brand": "Myco Medical",
-    "sku": "7570060",
-    "price": "$55.49",
-    "unit_pack_size": "12/box",
-    "availability": "In stock",
-    "description": "RELI® PRO sutures from MYCO Medical are premium sterile absorbable and non-absorbable surgical-grade sutures packaged in a new low-memory racetrack tray to improve suture performance",
-    "specifications": {
-      "braid_type": "undyed braided",
-      "needle_type": "C-17 needle (3/8 circle, reverse cutting)",
-      "length": "30\"",
-      "size": "3-0"
-    },
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/p/f/pfelv.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [],
-    "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:37.341798"
-  },
-  {
-    "url_hash": "615cb45667dd63f86af1f40e591ba567cdbac759884f1c1888922b1eef64fa8f",
-    "url": "https://www.safcodental.com/product/myco-medical-reli-reg-pro-sutures#7570040",
-    "run_id": "d3bf5753",
-    "category": "Sutures & Surgical Products",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Sutures & surgical products",
-      "Sutures"
-    ],
-    "name": "RELI&reg; PRO sutures undyed braided 4-0,YFS-2,30&quot;, 12/box",
-    "brand": "Myco Medical",
-    "sku": "7570040",
-    "price": "$64.99",
-    "unit_pack_size": "12/box",
-    "availability": "In stock",
-    "description": "RELI® PRO sutures from MYCO Medical are premium sterile absorbable and non-absorbable surgical-grade sutures packaged in a new low-memory racetrack tray to improve suture performance.",
-    "specifications": {
-      "braided": "undyed",
-      "size": "4-0",
-      "length": "30\"",
-      "needle": "C-17, 3/8 circle, reverse cutting"
-    },
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/p/f/pfelv.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [],
-    "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:37.397941"
-  },
-  {
-    "url_hash": "bf6be2ca50c3f31c51fc5cf4b3ec88502276b97a4717446b633d4584c78ca2d1",
-    "url": "https://www.safcodental.com/product/myco-medical-reli-reg-pro-sutures#7570039",
-    "run_id": "d3bf5753",
-    "category": "Sutures & Surgical Products",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Sutures & surgical products",
-      "Sutures"
-    ],
-    "name": "RELI&reg; PRO sutures undyed braided 5-0,YFS-2,30&quot;, 12/box",
-    "brand": "Myco Medical",
-    "sku": "7570039",
-    "price": "$61.99",
-    "unit_pack_size": "12/box",
+    "name": "VeraGraft&trade; mineralized cortical bone .25-1.0mm 2.5cc jar",
+    "brand": "DentalProX",
+    "sku": "3257154",
+    "price": "$118.99",
+    "unit_pack_size": "2.5cc jar",
     "availability": "Special order",
-    "description": "RELI® PRO sutures from MYCO Medical are premium sterile absorbable and non-absorbable surgical-grade sutures packaged in a new low-memory racetrack tray to improve suture performance",
+    "description": "Safe alternative to an autograft with no need for a second surgical site Osteoconductive Used for volumetric enhancement, space maintenance, and faster remodeling Sterile ground dental powder is available in cortical, cancellous and a cortical/cancellous mix. Validated to a sterility assurance level (SAL) of 10(-6) in accordance with ISO 11137-2 Method 1.",
     "specifications": {
-      "braid": "undyed braided",
-      "size": "5-0",
-      "length": "30\"",
-      "needle": "C-17 needle (3/8 circle, reverse cutting)"
+      "skus": "3257154",
+      "brand": "DentalProX",
+      "category": "Sutures & Surgical Products"
     },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/p/f/pfelv.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/p/f/pfwvg.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
       "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
     ],
-    "alternative_products": [],
+    "alternative_products": [
+      "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257157",
+      "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257158"
+    ],
     "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:37.759911"
-  },
-  {
-    "url_hash": "25d28b9d7e2a7bb8fbb1e14e94103c05c50eccd73ec5ec0484da5711e3ce705b",
-    "url": "https://www.safcodental.com/product/myco-medical-reli-reg-pro-sutures#7570041",
-    "run_id": "d3bf5753",
-    "category": "Sutures & Surgical Products",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Sutures & surgical products",
-      "Sutures"
-    ],
-    "name": "RELI&reg; PRO sutures undyed braided 6-0,YP-3,18&quot;, 12/box",
-    "brand": "Myco Medical",
-    "sku": "7570041",
-    "price": "$71.49",
-    "unit_pack_size": "12/box",
-    "availability": "Special order",
-    "description": "RELI® PRO sutures from MYCO Medical are premium sterile absorbable and non-absorbable surgical-grade sutures packaged in a new low-memory racetrack tray to improve suture performance",
-    "specifications": {
-      "sku": "7570041",
-      "brand": "Myco Medical",
-      "size": "6-0",
-      "needle_type": "C-17 needle",
-      "needle_shape": "3/8 circle, reverse cutting",
-      "length": "18\""
-    },
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/p/f/pfelv.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [],
-    "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:37.880067"
-  },
-  {
-    "url_hash": "1f08115121259d785e49bd4676e2320741d8191729ec709bda448b2feb569b76",
-    "url": "https://www.safcodental.com/product/myco-medical-reli-reg-pro-sutures#7570061",
-    "run_id": "d3bf5753",
-    "category": "Sutures & Surgical Products",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Sutures & surgical products",
-      "Sutures"
-    ],
-    "name": "YFS-1  3-0  18\"  Redisilk Pro Black Organic Silk",
-    "brand": "Myco Medical",
-    "sku": "7570061",
-    "price": "$48.49",
-    "unit_pack_size": NaN,
-    "availability": "In stock",
-    "description": "RELI® PRO sutures from MYCO Medical are premium sterile absorbable and non-absorbable surgical-grade sutures packaged in a new low-memory racetrack tray to improve suture performance",
-    "specifications": {
-      "needle_type": "C-17 needle (3/8 circle, reverse cutting)",
-      "material": "Organic Silk",
-      "size": "3-0",
-      "length": "18\""
-    },
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/p/f/pfelv.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [],
-    "extraction_method": "algolia+tavily_llm",
-    "scraped_at": "2026-04-24T04:14:37.339793"
+    "scraped_at": "2026-04-24T04:33:58.996589"
   }
 ]

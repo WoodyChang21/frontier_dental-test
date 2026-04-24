@@ -36,7 +36,7 @@ def css_extract(
     category: str,
     category_hierarchy: list[str],
     run_id: str,
-) -> tuple[dict, float]:
+) -> dict:
     """
     Safco theme (Hyva/Alpine.js) CSS extraction.
     Focuses on fields NOT available from Algolia: description, specs, detail images.
@@ -114,13 +114,7 @@ def css_extract(
             alt_products.append(href)
     fields["alternative_products"] = alt_products[:10]  # cap
 
-    # Confidence score (Algolia supplies name/sku/price; CSS adds description)
-    # For the product graph's routing decision, measure only CSS-sourced fields
-    css_req_found = sum(1 for f in ["name", "price"] if fields.get(f))
-    css_opt_found = sum(1 for f in ["description", "image_urls", "specifications"]
-                        if fields.get(f) and fields[f] not in ({}, []))
-    score = (css_req_found / 2) * 0.6 + (css_opt_found / 3) * 0.4
-    return fields, round(score, 3)
+    return fields
 
 
 async def llm_extract(
@@ -192,7 +186,6 @@ def build_product_record(
     category_hierarchy: list[str],
     run_id: str,
     extraction_method: str,
-    confidence_score: float,
 ) -> ProductRecord:
     return ProductRecord(
         url=url,
@@ -211,5 +204,4 @@ def build_product_record(
         image_urls=fields.get("image_urls") or [],
         alternative_products=fields.get("alternative_products") or [],
         extraction_method=extraction_method,
-        confidence_score=confidence_score,
     )
