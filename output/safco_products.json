@@ -1,562 +1,637 @@
 [
   {
-    "url_hash": "8c792d52b7236650bc5847114f53e7b157b769c1f4fc2f2396189c6cce00e480",
-    "url": "https://www.safcodental.com/product/alasta-sup-reg-sup",
-    "run_id": "dd582b80",
+    "url_hash": "d8ded666ceae245dd3012d052a882713351329697673c51271802a4a9785011d",
+    "url": "https://www.safcodental.com/product/true-comfort-reg-blu#4680073",
+    "run_id": "8310ed19",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
       "Dental Exam Gloves",
-      "Nitrile gloves"
+      "Chloroprene gloves"
     ],
-    "name": "Alasta",
+    "name": "Dash True Comfort Blu large 100/box",
     "brand": "Dash",
-    "sku": "DRCAN",
-    "price": "$10.49",
-    "unit_pack_size": null,
+    "sku": "4680073",
+    "price": "$19.49",
+    "unit_pack_size": "100/box",
     "availability": "In stock",
-    "description": "Soft-Fit™ powder-free nitrile exam gloves.\n\nTextured whole hand finish\nBeaded cuff\nNon-chlorinated\nAmbidextrous\nBlue color\nThickness: at palm 3.1 mils; at fingertip 3.9 mils; ± 1.2\nOrder 10 boxes to purchase a case",
-    "specifications": {},
+    "description": "Powder-free, latex-free, chloroprene examination gloves.",
+    "specifications": {
+      "Brand": "Dash",
+      "Color": "Blu",
+      "Material": "Chloroprene",
+      "Type": "Examination Gloves",
+      "Powder-free": "Yes",
+      "Latex-free": "Yes"
+    },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/d/r/drcan.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
-      "https://www.safcodental.com/media/catalog/product/d/r/drcan.jpg?width=75&height=75&canvas=75,75&optimize=medium&fit=bounds"
+      "https://www.safcodental.com/media/catalog/product/d/r/drdaq.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
     ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:28:46.565523"
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:53.792682"
   },
   {
-    "url_hash": "445e7730838c956b79e0790174f4854cd25d1b67e329b67ba4eb4ee135663cbb",
-    "url": "https://www.safcodental.com/catalog/product/view/id/68665/s/alasta-gloves-x-large-200-box/",
-    "run_id": "dd582b80",
+    "url_hash": "fdf0615bfed030e8cb68fee235e9d8f7334842f0d1b0d38a570851e9e2cc63c8",
+    "url": "https://www.safcodental.com/product/true-comfort-reg-blu#4680071",
+    "run_id": "8310ed19",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
       "Dental Exam Gloves",
-      "Nitrile gloves"
+      "Chloroprene gloves"
     ],
-    "name": "Alasta gloves x-large 200/box",
+    "name": "Dash True Comfort Blu medium 100/box",
     "brand": "Dash",
-    "sku": "4681112",
-    "price": "$20.99",
-    "unit_pack_size": null,
+    "sku": "4680071",
+    "price": "$19.49",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Powder-free, latex-free, chloroprene examination gloves.",
+    "specifications": {
+      "Material": "Chloroprene",
+      "Powder-free": "Yes",
+      "Latex-free": "Yes"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drdaq.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:53.868894"
+  },
+  {
+    "url_hash": "a292017ed277fe9be2264830e2872008938402877b78a74fac1e49f3a2c0fa92",
+    "url": "https://www.safcodental.com/product/true-comfort-reg-blu#4680069",
+    "run_id": "8310ed19",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Chloroprene gloves"
+    ],
+    "name": "Dash True Comfort Blu small 100/box",
+    "brand": "Dash",
+    "sku": "4680069",
+    "price": "$19.49",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Powder-free, latex-free, chloroprene examination gloves.",
+    "specifications": {
+      "Brand": "Dash",
+      "SKU": "4680069",
+      "Product Type": "Dental Exam Gloves"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drdaq.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:53.705637"
+  },
+  {
+    "url_hash": "98fdb4d3cbe74223686a844fe5c9d6e12766644ea183ee9deee4b6de5455e36f",
+    "url": "https://www.safcodental.com/product/true-comfort-reg-blu#4680075",
+    "run_id": "8310ed19",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Chloroprene gloves"
+    ],
+    "name": "Dash True Comfort Blu x-large 100/box",
+    "brand": "Dash",
+    "sku": "4680075",
+    "price": "$19.49",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Powder-free, latex-free, chloroprene examination gloves.",
+    "specifications": {
+      "Brand": "Dash",
+      "SKU": "4680075",
+      "Category": "Dental Exam Gloves"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drdaq.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/true-comfort-reg-blu#4680067",
+      "https://www.safcodental.com/product/true-comfort-reg-blu#4680069",
+      "https://www.safcodental.com/product/true-comfort-reg-blu#4680071"
+    ],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:57.271074"
+  },
+  {
+    "url_hash": "ab3c4ea3af56dc87d44bdfd417df5c995764fbd391741e4f10b3091f12cde37e",
+    "url": "https://www.safcodental.com/product/true-comfort-reg-blu#4680067",
+    "run_id": "8310ed19",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Chloroprene gloves"
+    ],
+    "name": "Dash True Comfort Blu x-small 100/box",
+    "brand": "Dash",
+    "sku": "4680067",
+    "price": "$19.49",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Powder-free, latex-free, chloroprene examination gloves.",
+    "specifications": {
+      "size": "X-small",
+      "brand": "Dash"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drdaq.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/true-comfort-reg-blu#4680069",
+      "https://www.safcodental.com/product/true-comfort-reg-blu#4680071"
+    ],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:54.729257"
+  },
+  {
+    "url_hash": "d6410b9afa5f0c6ad864b74ff3eb1192a1663e55eef5248c1f280e0ff28a4a42",
+    "url": "https://www.safcodental.com/product/pulse-trade-latex#5380054",
+    "run_id": "8310ed19",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Latex gloves"
+    ],
+    "name": "Pulse powder-free latex gloves large 100/box",
+    "brand": "Innovative Healthcare",
+    "sku": "5380054",
+    "price": "$11.49",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Powder-free latex exam gloves. Finish provides superior gripping ability. Excellent donning properties and comfort. Textured whole hand finish Beaded cuff Chlorinated Ambidextrous 50μg or less of latex protein Natural color",
+    "specifications": {
+      "Finish": "Textured whole hand",
+      "Cuff": "Beaded",
+      "Material": "Latex",
+      "Glove Type": "Powder-free",
+      "Ambidextrous": "Yes",
+      "Latex Protein": "50μg or less",
+      "Color": "Natural"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drbav.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:55.013850"
+  },
+  {
+    "url_hash": "30db30fe71f85f214b1e9ae7186f0eb809e094d6e6a96d5f83bfca936944c1b1",
+    "url": "https://www.safcodental.com/product/pulse-trade-latex#5380047",
+    "run_id": "8310ed19",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Latex gloves"
+    ],
+    "name": "Pulse powder-free latex gloves medium 100/box",
+    "brand": "Innovative Healthcare",
+    "sku": "5380047",
+    "price": "$11.49",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Powder-free latex exam gloves. Finish provides superior gripping ability. Excellent donning properties and comfort. Textured whole hand finish Beaded cuff Chlorinated Ambidextrous 50μg or less of latex protein Natural color.",
+    "specifications": {
+      "brand": "Innovative Healthcare",
+      "sku": "5380047",
+      "material": "latex",
+      "type": "powder-free",
+      "color": "natural",
+      "glove_size": "medium",
+      "protein_content": "50μg or less"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drbav.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:54.261229"
+  },
+  {
+    "url_hash": "afd8e934fc15f65c05a33858d03eb759b8bf1a0bfe6c5b4b54a149367ffddc4c",
+    "url": "https://www.safcodental.com/product/pulse-trade-latex#5380035",
+    "run_id": "8310ed19",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Latex gloves"
+    ],
+    "name": "Pulse powder-free latex gloves small 100/box",
+    "brand": "Innovative Healthcare",
+    "sku": "5380035",
+    "price": "$11.49",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Powder-free latex exam gloves. Finish provides superior gripping ability. Excellent donning properties and comfort. Textured whole hand finish Beaded cuff Chlorinated Ambidextrous 50μg or less of latex protein Natural color.",
+    "specifications": {
+      "Material": "Latex",
+      "Powder-free": "Yes",
+      "Textured": "Yes",
+      "Cuff type": "Beaded",
+      "Ambidextrous": "Yes",
+      "Latex protein": "50μg or less",
+      "Color": "Natural"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drbav.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:55.494515"
+  },
+  {
+    "url_hash": "0e624180d8e86aaf215c0b588e53e1574bf9c8de3944fda639471433d91502b3",
+    "url": "https://www.safcodental.com/product/pulse-trade-latex#5380063",
+    "run_id": "8310ed19",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Latex gloves"
+    ],
+    "name": "Pulse powder-free latex gloves x-large 100/box",
+    "brand": "Innovative Healthcare",
+    "sku": "5380063",
+    "price": "$9.99",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Powder-free latex exam gloves. Finish provides superior gripping ability. Excellent donning properties and comfort. Textured whole hand finish Beaded cuff Chlorinated Ambidextrous 50μg or less of latex protein Natural color.",
+    "specifications": {
+      "Finish": "Textured whole hand",
+      "Cuff": "Beaded",
+      "Latex Protein": "50μg or less",
+      "Color": "Natural",
+      "Ambidextrous": "Yes"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drbav.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:54.789476"
+  },
+  {
+    "url_hash": "f4d3b534c0f32282224802185eb915e3e5a263cfda4ab9dc6c822f8ee50d6e66",
+    "url": "https://www.safcodental.com/product/pulse-trade-latex#5380034",
+    "run_id": "8310ed19",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Latex gloves"
+    ],
+    "name": "Pulse powder-free latex gloves x-small 100/box",
+    "brand": "Innovative Healthcare",
+    "sku": "5380034",
+    "price": "$11.49",
+    "unit_pack_size": "100/box",
     "availability": "Backorder",
-    "description": NaN,
-    "specifications": {},
+    "description": "Powder-free latex exam gloves. Finish provides superior gripping ability. Excellent donning properties and comfort. Textured whole hand finish Beaded cuff Chlorinated Ambidextrous 50μg or less of latex protein Natural color.",
+    "specifications": {
+      "latex_protein": "50μg or less",
+      "color": "Natural",
+      "finish": "Textured whole hand",
+      "cuff": "Beaded",
+      "type": "Ambidextrous"
+    },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
+      "https://www.safcodental.com/media/catalog/product/d/r/drbav.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
       "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
     ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:28:26.181830"
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:54.048064"
   },
   {
-    "url_hash": "1a9fa7e849916a467fdfcfa66b66797accffe1dfa0faf9a9e9cdbfa7490e937d",
-    "url": "https://www.safcodental.com/product/aquasoft",
-    "run_id": "dd582b80",
-    "category": "Dental Exam Gloves",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Dental Exam Gloves",
-      "Nitrile gloves"
-    ],
-    "name": "Aquasoft",
-    "brand": "Halyard",
-    "sku": "DRCBT",
-    "price": "$31.49",
-    "unit_pack_size": null,
-    "availability": "In stock",
-    "description": "Powder-free nitrile exam gloves.",
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/d/r/drcbt.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
-      "https://www.safcodental.com/media/catalog/product/d/r/drcbt.jpg?width=75&height=75&canvas=75,75&optimize=medium&fit=bounds"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:29:07.688412"
-  },
-  {
-    "url_hash": "044a68058ca938eea2bf0c33bc34d5c9cd594e9315182ac1e3effd049ff0e601",
-    "url": "https://www.safcodental.com/catalog/product/view/id/42349/s/aquasoft-gloves-large-300-box/",
-    "run_id": "dd582b80",
-    "category": "Dental Exam Gloves",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Dental Exam Gloves",
-      "Nitrile gloves"
-    ],
-    "name": "Aquasoft gloves large 300/box",
-    "brand": "Halyard",
-    "sku": "3021308",
-    "price": "$31.49",
-    "unit_pack_size": null,
-    "availability": "In stock",
-    "description": NaN,
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:28:15.898367"
-  },
-  {
-    "url_hash": "96d0185a65d2bdc8fafc39162f3bf06c2e05312559e4f661c2a020d605fde9a1",
-    "url": "https://www.safcodental.com/product/beesure-reg-superslim-trade-nitrile",
-    "run_id": "dd582b80",
-    "category": "Dental Exam Gloves",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Dental Exam Gloves",
-      "Nitrile gloves"
-    ],
-    "name": "BeeSure SuperSlim Nitrile",
-    "brand": "EcoBee",
-    "sku": "DRCBO",
-    "price": "$19.99",
-    "unit_pack_size": null,
-    "availability": "In stock",
-    "description": "Powder-free nitrile exam gloves.",
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/d/r/drcbo.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
-      "https://www.safcodental.com/media/catalog/product/d/r/drcbo.jpg?width=75&height=75&canvas=75,75&optimize=medium&fit=bounds"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:28:54.126604"
-  },
-  {
-    "url_hash": "e07e8c219342109819598c784b73e030eadedb54eb1108f65fe325d1972f164c",
-    "url": "https://www.safcodental.com/product/lavender-nitrile",
-    "run_id": "dd582b80",
-    "category": "Dental Exam Gloves",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Dental Exam Gloves",
-      "Nitrile gloves"
-    ],
-    "name": "Lavender Nitrile",
-    "brand": "Halyard",
-    "sku": "DRCAS",
-    "price": "$28.99",
-    "unit_pack_size": null,
-    "availability": "In stock",
-    "description": "Powder-free nitrile exam gloves.",
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/d/r/drcas.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
-      "https://www.safcodental.com/media/catalog/product/d/r/drcas.jpg?width=75&height=75&canvas=75,75&optimize=medium&fit=bounds"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:28:52.675418"
-  },
-  {
-    "url_hash": "0bca86add145cd0cc93cb4bfe7ffeaaaedfef0f00cc2e0349ac80fb17324ed78",
-    "url": "https://www.safcodental.com/product/microflex-sup-reg-sup-ultraform-sup-trade-sup",
-    "run_id": "dd582b80",
-    "category": "Dental Exam Gloves",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Dental Exam Gloves",
-      "Nitrile gloves"
-    ],
-    "name": "Microflex Ultraform",
-    "brand": "Ansell",
-    "sku": "DRCBJ",
-    "price": "$24.99",
-    "unit_pack_size": null,
-    "availability": "In stock",
-    "description": "Powder-free nitrile exam gloves.\n \nUltra-soft and form fitting.\n\nTextured fingertip finish\nBeaded cuff\nChlorinated\nAmbidextrous\nCobalt blue color\nThickness: at palm 2.0 mils; at fingertip 3.1 mils\n300 gloves per box (250 for x-large)\nOrder 10 boxes to purchase a case",
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/d/r/drcbj.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
-      "https://www.safcodental.com/media/catalog/product/d/r/drcbj.jpg?width=75&height=75&canvas=75,75&optimize=medium&fit=bounds"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:29:05.029086"
-  },
-  {
-    "url_hash": "ba51b8aa7aa45c1ed6defb6164b95ae7742650241fe3456bff42657136294b95",
-    "url": "https://www.safcodental.com/catalog/product/view/id/44416/s/microflex-ultraform-gloves-medium-large-300-box/",
-    "run_id": "dd582b80",
-    "category": "Dental Exam Gloves",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Dental Exam Gloves",
-      "Nitrile gloves"
-    ],
-    "name": "Microflex Ultraform gloves medium/large 300/box",
-    "brand": "Ansell",
-    "sku": "4751252",
-    "price": "$24.99",
-    "unit_pack_size": null,
-    "availability": "In stock",
-    "description": NaN,
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:28:35.167109"
-  },
-  {
-    "url_hash": "6b96c2096b4c04ff235be2e9c403e9c2848649072cdb826213228e97717404c9",
-    "url": "https://www.safcodental.com/catalog/product/view/id/44413/s/microflex-ultraform-gloves-small-medium-300-box/",
-    "run_id": "dd582b80",
-    "category": "Dental Exam Gloves",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Dental Exam Gloves",
-      "Nitrile gloves"
-    ],
-    "name": "Microflex Ultraform gloves small/medium 300/box",
-    "brand": "Ansell",
-    "sku": "4751247",
-    "price": "$24.99",
-    "unit_pack_size": null,
-    "availability": "In stock",
-    "description": NaN,
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:28:30.333308"
-  },
-  {
-    "url_hash": "021c171562357feeb7854278b4cca713411529ae37451ae53c0e1d1cdc78a1d9",
-    "url": "https://www.safcodental.com/catalog/product/view/id/44410/s/microflex-ultraform-gloves-x-small-small-300-box/",
-    "run_id": "dd582b80",
-    "category": "Dental Exam Gloves",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Dental Exam Gloves",
-      "Nitrile gloves"
-    ],
-    "name": "Microflex Ultraform gloves x-small/small 300/box",
-    "brand": "Ansell",
-    "sku": "4751243",
-    "price": "$24.99",
-    "unit_pack_size": null,
-    "availability": "In stock",
-    "description": NaN,
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:29:22.048558"
-  },
-  {
-    "url_hash": "5b13100d92197ecaa9535623d67abf0bc574a9a5f3419e2a2555d182abfa628e",
-    "url": "https://www.safcodental.com/catalog/product/view/id/81874/s/ossify-cortical-bone-sheet-15x20mm/",
-    "run_id": "dd582b80",
-    "category": "Sutures & Surgical Products",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Sutures & surgical products",
-      "Bone grafting tissue augmentation"
-    ],
-    "name": "Ossify Cortical Bone Sheet 15x20mm",
-    "brand": "Surgical Esthetics",
-    "sku": "6130102",
-    "price": "$149.49",
-    "unit_pack_size": null,
-    "availability": "In stock",
-    "description": NaN,
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:29:01.437969"
-  },
-  {
-    "url_hash": "54c2e8a226d8f1eb954b86badfa74535413d24b3bcbe34181a91bdd4bccad5ea",
-    "url": "https://www.safcodental.com/catalog/product/view/id/81877/s/ossify-cortical-bone-sheet-20x30mm/",
-    "run_id": "dd582b80",
-    "category": "Sutures & Surgical Products",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Sutures & surgical products",
-      "Bone grafting tissue augmentation"
-    ],
-    "name": "Ossify Cortical Bone Sheet 20x30mm",
-    "brand": "Surgical Esthetics",
-    "sku": "6130104",
-    "price": "$260.99",
-    "unit_pack_size": null,
-    "availability": "Special order",
-    "description": NaN,
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:28:29.338491"
-  },
-  {
-    "url_hash": "6950b99fc32efa40439b0b6e1b148807f4dd6fa9b0a70fdb6dcd93514ac53096",
-    "url": "https://www.safcodental.com/catalog/product/view/id/81856/s/ossify-dbm-cortical-fiber-bone-graft-0-5cc-jar/",
-    "run_id": "dd582b80",
-    "category": "Sutures & Surgical Products",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Sutures & surgical products",
-      "Bone grafting tissue augmentation"
-    ],
-    "name": "Ossify DBM Cortical Fiber Bone Graft 0.5cc jar",
-    "brand": "Surgical Esthetics",
-    "sku": "6130089",
-    "price": "$121.49",
-    "unit_pack_size": null,
-    "availability": "In stock",
-    "description": NaN,
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:28:41.971368"
-  },
-  {
-    "url_hash": "1a01a565582b7654dad173408526a2ba0ccb0eeca1af8cd63b82d41a268eda52",
-    "url": "https://www.safcodental.com/catalog/product/view/id/81859/s/ossify-dbm-cortical-fiber-bone-graft-1cc-jar/",
-    "run_id": "dd582b80",
-    "category": "Sutures & Surgical Products",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Sutures & surgical products",
-      "Bone grafting tissue augmentation"
-    ],
-    "name": "Ossify DBM Cortical Fiber Bone Graft 1cc jar",
-    "brand": "Surgical Esthetics",
-    "sku": "6130091",
-    "price": "$182.49",
-    "unit_pack_size": null,
-    "availability": "In stock",
-    "description": NaN,
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:28:18.853727"
-  },
-  {
-    "url_hash": "f8d1afd03ad039bd02d81a0726ff60353aa45a5e6d771803fb38bd2d01d74bfd",
-    "url": "https://www.safcodental.com/catalog/product/view/id/81862/s/ossify-dbm-cortical-fiber-bone-graft-2cc-jar/",
-    "run_id": "dd582b80",
-    "category": "Sutures & Surgical Products",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Sutures & surgical products",
-      "Bone grafting tissue augmentation"
-    ],
-    "name": "Ossify DBM Cortical Fiber Bone Graft 2cc jar",
-    "brand": "Surgical Esthetics",
-    "sku": "6130093",
-    "price": "$279.49",
-    "unit_pack_size": null,
-    "availability": "Special order",
-    "description": NaN,
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:29:28.034016"
-  },
-  {
-    "url_hash": "570a76615b7cbbf1aeab42f23ccd1493b09d2dbe43402e6218e98e4c323b3f58",
-    "url": "https://www.safcodental.com/catalog/product/view/id/81865/s/ossify-dbm-cortical-fiber-bone-graft-with-1-1-5mm-chips-0-5cc-jar/",
-    "run_id": "dd582b80",
-    "category": "Sutures & Surgical Products",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Sutures & surgical products",
-      "Bone grafting tissue augmentation"
-    ],
-    "name": "Ossify DBM Cortical Fiber Bone Graft with 1-1.5mm chips 0.5cc jar",
-    "brand": "Surgical Esthetics",
-    "sku": "6130095",
-    "price": "$130.49",
-    "unit_pack_size": null,
-    "availability": "Special order",
-    "description": NaN,
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:28:40.834801"
-  },
-  {
-    "url_hash": "445538105ddb09d24e7b1f5325bf33810ca5d1f433e4f255d9af8661db704af9",
-    "url": "https://www.safcodental.com/catalog/product/view/id/81868/s/ossify-dbm-cortical-fiber-bone-graft-with-1-1-5mm-chips-1cc-jar/",
-    "run_id": "dd582b80",
-    "category": "Sutures & Surgical Products",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Sutures & surgical products",
-      "Bone grafting tissue augmentation"
-    ],
-    "name": "Ossify DBM Cortical Fiber Bone Graft with 1-1.5mm chips 1cc jar",
-    "brand": "Surgical Esthetics",
-    "sku": "6130097",
-    "price": "$191.99",
-    "unit_pack_size": null,
-    "availability": "Backorder",
-    "description": NaN,
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:29:12.416059"
-  },
-  {
-    "url_hash": "5808bf121749ec803cd0702d235a52b842866fc1735da2afa069f0291e0ecdbe",
-    "url": "https://www.safcodental.com/catalog/product/view/id/81871/s/ossify-dbm-cortical-fiber-bone-graft-with-1-1-5mm-chips-2cc-jar/",
-    "run_id": "dd582b80",
-    "category": "Sutures & Surgical Products",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Sutures & surgical products",
-      "Bone grafting tissue augmentation"
-    ],
-    "name": "Ossify DBM Cortical Fiber Bone Graft with 1-1.5mm chips 2cc jar",
-    "brand": "Surgical Esthetics",
-    "sku": "6130099",
-    "price": "$307.49",
-    "unit_pack_size": null,
-    "availability": "Special order",
-    "description": NaN,
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:29:15.903573"
-  },
-  {
-    "url_hash": "c4b5930d9d5f5769f22bf1ae2406b2389ac9e8a91d1014a074c9075a9d5fe74d",
-    "url": "https://www.safcodental.com/catalog/product/view/id/81457/s/ossify-min-demin-cortical-cancellous-bone-graft-2cc-jar/",
-    "run_id": "dd582b80",
-    "category": "Sutures & Surgical Products",
-    "category_hierarchy": [
-      "Dental Supplies",
-      "Sutures & surgical products",
-      "Bone grafting tissue augmentation"
-    ],
-    "name": "Ossify Min/Demin Cortical Cancellous bone graft 2cc jar",
-    "brand": "Surgical Esthetics",
-    "sku": "5130084",
-    "price": "$158.99",
-    "unit_pack_size": null,
-    "availability": "In stock",
-    "description": NaN,
-    "specifications": {},
-    "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
-      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
-    ],
-    "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
-    ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:28:17.231979"
-  },
-  {
-    "url_hash": "d8a3e5ff124a2fb091130f7959143a695565b4795e5bc4565ced767741b9b900",
-    "url": "https://www.safcodental.com/product/surgifoam-reg",
-    "run_id": "dd582b80",
+    "url_hash": "7cb998a2d54527a7f7254c16a386e3af71057548e2e28ebf0d4532594a59a0c7",
+    "url": "https://www.safcodental.com/product/orasoothe-reg-sockit-gel#5106359",
+    "run_id": "8310ed19",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
       "Sutures & surgical products",
       "Surgical medicaments and packing"
     ],
-    "name": "Surgifoam&reg;",
-    "brand": "Ethicon",
-    "sku": "PFPJK",
-    "price": "$206.49",
-    "unit_pack_size": null,
+    "name": "OraSoothe Hygiene Rinse 3.4 oz bottle",
+    "brand": "Septodont",
+    "sku": "5106359",
+    "price": "$9.99",
+    "unit_pack_size": "3.4 oz bottle",
     "availability": "In stock",
-    "description": "Sterile, water insoluble, malleable porcine gelatin absorbable sponge, intended for hemostatic use by applying to a bleeding surface.",
-    "specifications": {},
+    "description": "Hydrogel dressing treats intraoral wounds and lesions. Provides fast, continuous pain relief without numbing. Protects from chemical and microbial contamination and promotes optimal healing.Contains no drugs, and has no toxicity or contraindications. Safe if swallowed. Individual 10g syringes are ideal for both in-office and take-home use. FDA approved.",
+    "specifications": {
+      "Brand": "Septodont",
+      "SKU": "5106359",
+      "FDA Approved": "Yes",
+      "Toxicity": "No toxicity or contraindications",
+      "Safe if swallowed": "Yes"
+    },
     "image_urls": [
-      "https://www.safcodental.com/media/catalog/product/p/f/pfpjk.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
-      "https://www.safcodental.com/media/catalog/product/p/f/pfpjk.jpg?width=75&height=75&canvas=75,75&optimize=medium&fit=bounds"
+      "https://www.safcodental.com/media/catalog/product/p/f/pfpgh.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:57.901345"
+  },
+  {
+    "url_hash": "d3f74f79a79a9f0eb60165a6b14180256c1dc1fffa6496bb9864587d98d84959",
+    "url": "https://www.safcodental.com/product/orasoothe-reg-sockit-gel#5690106",
+    "run_id": "8310ed19",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical medicaments and packing"
+    ],
+    "name": "OraSoothe Sockit gel 25-pack",
+    "brand": "Septodont",
+    "sku": "5690106",
+    "price": "$309.49",
+    "unit_pack_size": "25-pack",
+    "availability": "Backorder",
+    "description": "Hydrogel dressing treats intraoral wounds and lesions. Provides fast, continuous pain relief without numbing. Protects from chemical and microbial contamination and promotes optimal healing.Contains no drugs, and has no toxicity or contraindications. Safe if swallowed. Individual 10g syringes are ideal for both in-office and take-home use. FDA approved.",
+    "specifications": {
+      "Brand": "Septodont",
+      "SKU": "5690106",
+      "FDA Approved": "Yes",
+      "Contains": "10g syringes"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfpgh.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:56.779295"
+  },
+  {
+    "url_hash": "45735470cec69f6a60c8e8693a21eb92b821b711298aca8f2980cb4c419b091b",
+    "url": "https://www.safcodental.com/product/orasoothe-reg-sockit-gel#5690102",
+    "run_id": "8310ed19",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical medicaments and packing"
+    ],
+    "name": "OraSoothe&reg;  &quot;Sockit&quot;  gel 5-pack",
+    "brand": "Septodont",
+    "sku": "5690102",
+    "price": "$93.99",
+    "unit_pack_size": "5-pack",
+    "availability": "In stock",
+    "description": "Hydrogel dressing treats intraoral wounds and lesions. Provides fast, continuous pain relief without numbing. Protects from chemical and microbial contamination and promotes optimal healing. Contains no drugs, and has no toxicity or contraindications. Safe if swallowed. Individual 10g syringes are ideal for both in-office and take-home use. FDA approved.",
+    "specifications": {
+      "Contains": "5 individually packed 10g syringes with applicator tip."
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfpgh.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:58.027123"
+  },
+  {
+    "url_hash": "4e6858f5e0288fc1c509ec81c9d1e8604c458a0fe73512df08dd63bde5186129",
+    "url": "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257157",
+    "run_id": "8310ed19",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "VeraFuse&trade; demineralized bone matrix putty 0.7cc",
+    "brand": "DentalProX",
+    "sku": "3257157",
+    "price": "$137.99",
+    "unit_pack_size": "0.7cc",
+    "availability": "Special order",
+    "description": "Sterile ground dental powder is available in cortical, cancellous and a cortical/cancellous mix. Validated to a sterility assurance level (SAL) of 10(-6) in accordance with ISO 11137-2 Method 1.",
+    "specifications": {
+      "Product Name": "VeraFuse™ demineralized bone matrix putty",
+      "SKU": "3257157",
+      "Brand": "DentalProX",
+      "Manufacturer Number": "VF25070"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfwvg.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:57.651194"
+  },
+  {
+    "url_hash": "315775cf53c54aaa3e171c0d69608f729f5ce1efafd2e9d0f2fd72355ea5b18d",
+    "url": "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257158",
+    "run_id": "8310ed19",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "VeraFuse&trade; demineralized bone matrix putty 1.0cc",
+    "brand": "DentalProX",
+    "sku": "3257158",
+    "price": "$135.99",
+    "unit_pack_size": "1.0cc",
+    "availability": "In stock",
+    "description": "Safe alternative to an autograft with no need for a second surgical site Osteoconductive Used for volumetric enhancement, space maintenance, and faster remodeling Sterile ground dental powder is available in cortical, cancellous and a cortical/cancellous mix. Validated to a sterility assurance level (SAL) of 10(-6) in accordance with ISO 11137-2 Method 1.",
+    "specifications": {
+      "Mfr #": "VF25100",
+      "Stock Availability": "In stock",
+      "Price": "$137.99"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfwvg.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:57.266075"
+  },
+  {
+    "url_hash": "da6aab3fc5ca8aa70aa3e17b0440e09244a7aa51defe3ec8407ccc85e3c391e6",
+    "url": "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257159",
+    "run_id": "8310ed19",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "VeraFuse&trade; demineralized bone matrix putty 2.5cc",
+    "brand": "DentalProX",
+    "sku": "3257159",
+    "price": "$299.50",
+    "unit_pack_size": "2.5cc",
+    "availability": "Special order",
+    "description": "Safe alternative to an autograft with no need for a second surgical site. Osteoconductive. Used for volumetric enhancement, space maintenance, and faster remodeling. Sterile ground dental powder is available in cortical, cancellous and a cortical/cancellous mix. Validated to a sterility assurance level (SAL) of 10(-6) in accordance with ISO 11137-2 Method 1.",
+    "specifications": {
+      "Osteoconductive": "Yes",
+      "Sterility Assurance Level": "10(-6)",
+      "Available Forms": "Cortical, Cancellous, Cortical/Cancellous mix"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfwvg.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
     ],
     "alternative_products": [
-      "https://www.safcodental.com/product/clearance-item"
+      "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder"
     ],
-    "extraction_method": "algolia+css",
-    "scraped_at": "2026-04-24T04:28:57.342528"
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:58.732002"
+  },
+  {
+    "url_hash": "c9d5a0ac2c4fe834d35e603d64c0813c65af387063d607b3b245b3cb86b6b860",
+    "url": "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257155",
+    "run_id": "8310ed19",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "VeraGraft&trade; mineralized cortical bone .25-1.0mm 0.25cc jar",
+    "brand": "DentalProX",
+    "sku": "3257155",
+    "price": "$28.99",
+    "unit_pack_size": ".25cc jar",
+    "availability": "Backorder",
+    "description": "Safe alternative to an autograft with no need for a second surgical site Osteoconductive Used for volumetric enhancement, space maintenance, and faster remodeling Sterile ground dental powder is available in cortical, cancellous and a cortical/cancellous mix. Validated to a sterility assurance level (SAL) of 10(-6) in accordance with ISO 11137-2 Method 1.",
+    "specifications": {
+      "SKU": "3257155",
+      "Brand": "DentalProX",
+      "Type": "mineralized cortical bone",
+      "Particle Size": ".25-1.0mm"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfwvg.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:58.559277"
+  },
+  {
+    "url_hash": "63b91bddac3a3de20c2d9305139ebb419396c54226558c830e174b1b63844e32",
+    "url": "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257156",
+    "run_id": "8310ed19",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "VeraGraft&trade; mineralized cortical bone .25-1.0mm 0.5cc jar",
+    "brand": "DentalProX",
+    "sku": "3257156",
+    "price": "$49.99",
+    "unit_pack_size": "0.5cc jar",
+    "availability": "Backorder",
+    "description": "Safe alternative to an autograft with no need for a second surgical site. Osteoconductive. Used for volumetric enhancement, space maintenance, and faster remodeling. Sterile ground dental powder is available in cortical, cancellous and a cortical/cancellous mix. Validated to a sterility assurance level (SAL) of 10(-6) in accordance with ISO 11137-2 Method 1.",
+    "specifications": {
+      "SKU": "3257156",
+      "Brand": "DentalProX",
+      "Type": "Mineralized Cortical Bone",
+      "Particle Size": ".25-1.0mm"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfwvg.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:58.275782"
+  },
+  {
+    "url_hash": "152deb0ffd64e45ac04959a04a4166d7765d829a91954d598d1533907ff1184e",
+    "url": "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257153",
+    "run_id": "8310ed19",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "VeraGraft&trade; mineralized cortical bone .25-1.0mm 2.0cc jar",
+    "brand": "DentalProX",
+    "sku": "3257153",
+    "price": "$115.49",
+    "unit_pack_size": "2.0cc jar",
+    "availability": "In stock",
+    "description": "Safe alternative to an autograft with no need for a second surgical site Osteoconductive Used for volumetric enhancement, space maintenance, and faster remodeling Sterile ground dental powder is available in cortical, cancellous and a cortical/cancellous mix. Validated to a sterility assurance level (SAL) of 10(-6) in accordance with ISO 11137-2 Method 1.",
+    "specifications": {
+      "Type": "Mineralized Cortical Bone",
+      "Particle Size": ".25-1.0mm",
+      "SKU": "3257153",
+      "Brand": "DentalProX"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfwvg.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:57.996789"
+  },
+  {
+    "url_hash": "f0cecc3641aef681f4d294a993a1413a6a2a2b1b788935d5f127e9a78a718e42",
+    "url": "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257154",
+    "run_id": "8310ed19",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "VeraGraft&trade; mineralized cortical bone .25-1.0mm 2.5cc jar",
+    "brand": "DentalProX",
+    "sku": "3257154",
+    "price": "$118.99",
+    "unit_pack_size": "2.5cc jar",
+    "availability": "Special order",
+    "description": "Safe alternative to an autograft with no need for a second surgical site Osteoconductive Used for volumetric enhancement, space maintenance, and faster remodeling Sterile ground dental powder is available in cortical, cancellous and a cortical/cancellous mix. Validated to a sterility assurance level (SAL) of 10(-6) in accordance with ISO 11137-2 Method 1.",
+    "specifications": {
+      "skus": "3257154",
+      "brand": "DentalProX",
+      "category": "Sutures & Surgical Products"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfwvg.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257157",
+      "https://www.safcodental.com/product/dentalprox-veragraft-trade-dental-powder#3257158"
+    ],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-04-24T04:33:58.996589"
   }
 ]

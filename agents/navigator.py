@@ -173,8 +173,64 @@ async def _collect_via_algolia(
             break
         page += 1
 
-    urls = [h["url"] for h in all_hits if h.get("url")]
-    return urls, all_hits
+    # Variant-aware deduplication:
+    # - Algolia returns one "grouped" hit (the family page) + N "simple" hits (each variant SKU)
+    # - Simple hits have /catalog/product/view/id/... URLs that 404; use family_url instead
+    # - Grouped hits often have real images; simple hits use placeholder URLs
+    # Strategy:
+    #   1. For any family that has simple hits → emit one row per variant, URL = family_url#sku
+    #   2. For families with only a grouped hit → emit one row with URL = family_url
+    #   3. Inject the grouped hit's image into simple hits (simples have placeholder images)
+
+    grouped_by_family: dict[str, dict] = {}   # family_url → grouped hit
+    simples_by_family: dict[str, list[dict]] = {}  # family_url → [simple hits]
+
+    for hit in all_hits:
+        family_url = hit.get("family_url") or hit.get("url")
+        if not family_url:
+            continue
+        if hit.get("type_id") == "grouped":
+            grouped_by_family[family_url] = hit
+        else:
+            simples_by_family.setdefault(family_url, []).append(hit)
+
+    deduped: list[dict] = []
+
+    # Emit all families — prefer simple variants when available
+    all_families = set(grouped_by_family) | set(simples_by_family)
+    for family_url in all_families:
+        grouped = grouped_by_family.get(family_url)
+        simples = simples_by_family.get(family_url, [])
+
+        if simples:
+            # One row per variant; borrow images from the grouped hit if available
+            grouped_images = []
+            if grouped:
+                img = grouped.get("image_url") or grouped.get("thumbnail_url")
+                if img:
+                    grouped_images = [img]
+            for s in simples:
+                sku = s.get("sku")
+                if isinstance(sku, list):
+                    sku = sku[0] if sku else None
+                variant_url = f"{family_url}#{sku}" if sku else family_url
+                variant_hit = {
+                    **s,
+                    "url": variant_url,
+                    "family_url": family_url,
+                }
+                # Use grouped images when simple has only placeholder images
+                if grouped_images and not (
+                    s.get("image_url") and "placeholder" not in s.get("image_url", "")
+                ):
+                    variant_hit["image_url"] = grouped_images[0]
+                deduped.append(variant_hit)
+        elif grouped:
+            # No simples — use the grouped hit as-is
+            deduped.append({**grouped, "url": family_url})
+
+    urls = [h["url"] for h in deduped]
+    return urls, deduped
 
 
 async def _collect_via_html(

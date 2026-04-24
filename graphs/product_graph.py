@@ -1,11 +1,12 @@
 from __future__ import annotations
+import json
 import structlog
 from langgraph.graph import StateGraph, START, END
 
 from state import ProductState, ProductRecord
 from tools import fetch_page_httpx, render_page_playwright, parse_html
 from agents.classifier import classify_with_llm
-from agents.extractor import css_extract, llm_extract, build_product_record
+from agents.extractor import build_product_record
 from agents.validator import validate_and_score
 
 log = structlog.get_logger()
@@ -13,23 +14,55 @@ log = structlog.get_logger()
 
 async def fetch_product_page(state: ProductState) -> dict:
     """
-    Fetch product detail page via httpx; fall back to Playwright for
-    client-rendered pages (Safco uses a Hyvä/Alpine.js theme).
+    Fetch product detail page content.
+    If batch_fetch_pages already pre-fetched this URL, this is a no-op.
+    Otherwise: try TavilyExtract first, fall back to httpx + Playwright.
     """
-    url = state["product_url"]
+    # Pre-fetched by batch_fetch_pages — skip if content already injected
+    if state.get("raw_html") is not None:
+        return {}
+
+    # Strip #sku fragment — it's our internal variant key, not a real page anchor
+    url = state["product_url"].split("#")[0]
     cfg = state["run_config"]
 
+    # Try TavilyExtract as the primary individual fetch
+    try:
+        from langchain_tavily import TavilyExtract
+        extractor = TavilyExtract(
+            extract_depth=cfg.get("tavily_extract_depth", "advanced"),
+            include_images=True,
+            format="markdown",
+        )
+        result = await extractor.ainvoke({"urls": [url]})
+        hits = result.get("results", [])
+        if hits:
+            log.info("tavily_individual_fetch", url=url)
+            return {
+                "raw_html": hits[0].get("raw_content") or hits[0].get("content", ""),
+                "tavily_images": hits[0].get("images", []),
+            }
+        failed = result.get("failed_results", [])
+        log.warning(
+            "tavily_individual_no_results",
+            url=url,
+            error=failed[0].get("error") if failed else "empty response",
+        )
+    except Exception as e:
+        log.warning("tavily_individual_failed", url=url, error=str(e))
+
+    # Playwright/httpx fallback when Tavily fails
+    log.info("playwright_fallback", url=url)
     try:
         html = await fetch_page_httpx(url, delay_ms=cfg["delay_ms"])
         soup = parse_html(html)
-        # If the rendered HTML lacks product markers, the page is client-rendered
         if not soup.select_one("h1.page-title, [itemprop='name']"):
             html = await render_page_playwright(
                 url,
                 delay_ms=cfg["delay_ms"],
                 max_concurrent=cfg["max_concurrent"],
             )
-        return {"raw_html": html}
+        return {"raw_html": html, "tavily_images": []}
     except Exception as e:
         log.error("fetch_failed", url=url, error=str(e))
         return {"raw_html": None, "extraction_error": str(e)}
@@ -47,24 +80,87 @@ async def classify_product_page(state: ProductState) -> dict:
     if not content:
         return {"page_type": "irrelevant"}
 
-    url = state["product_url"]
+    url = state["product_url"].split("#")[0]
+    # URL-depth heuristic works regardless of content format
     segments = [s for s in url.split("/") if s and s not in ("https:", "http:", "www.safcodental.com")]
     if "/product/" in url or len(segments) >= 5:
         return {"page_type": "product_detail"}
 
+    # Determine if content is Tavily markdown or raw HTML
+    is_markdown = bool(state.get("tavily_images") is not None and not content.strip().startswith("<"))
     result = await classify_with_llm(
-        url, content, model=state["run_config"]["llm_model"], is_markdown=False
+        url, content, model=state["run_config"]["llm_model"], is_markdown=is_markdown
     )
-    log.info("classified", url=url, page_type=result.page_type, confidence=result.confidence)
+    log.info(
+        "classified",
+        url=url,
+        page_type=result.page_type,
+        confidence=result.confidence,
+    )
     return {"page_type": result.page_type}
+
+
+async def _extract_supplementary_llm(
+    content: str,
+    url: str,
+    category: str,
+    model: str,
+    algolia: dict,
+) -> dict:
+    """
+    Extract description/specs/unit_pack_size/alternatives from clean Tavily markdown.
+    When Algolia already has name/sku/price/brand, this focused prompt uses ~700
+    input tokens vs ~1500 for noisy HTML in the old css+llm_fallback path.
+    """
+    from openai import AsyncOpenAI
+
+    client = AsyncOpenAI()
+    # Safco's Tavily markdown is ~100K chars of site chrome before the product section.
+    # Find the last H1 heading (the product title) and slice from there so the LLM
+    # sees description/specs/pricing instead of navigation menus.
+    h1_idx = content.rfind("\n# ")
+    product_section = content[h1_idx:] if h1_idx != -1 else content[-6000:]
+    trimmed = product_section[:6000]
+    if algolia:
+        context = (
+            f"name={algolia.get('name')}, "
+            f"sku={algolia.get('sku')}, "
+            f"brand={algolia.get('brand')}"
+        )
+    else:
+        context = "unknown"
+
+    prompt = f"""Extract supplementary fields for this dental product.
+Product context (from catalog): {context}
+URL: {url} | Category: {category}
+
+Page content (markdown):
+---
+{trimmed}
+---
+
+Return ONLY valid JSON with these fields (null if not found):
+{{"description": "product description paragraph", "unit_pack_size": "e.g. 100/box or 1 each", "specifications": {{"key": "value"}}, "alternative_products": ["url1", "url2"]}}"""
+
+    resp = await client.chat.completions.create(
+        model=model,
+        max_tokens=600,
+        messages=[{"role": "user", "content": prompt}],
+        response_format={"type": "json_object"},
+    )
+    try:
+        fields = json.loads(resp.choices[0].message.content.strip())
+    except Exception:
+        fields = {}
+
+    return fields
 
 
 async def extract_structured(state: ProductState) -> dict:
     """
-    Merge Algolia core fields with CSS-extracted supplementary fields.
-    Algolia wins on all scalar fields it provides (name, SKU, price, brand,
-    availability, images). CSS extraction supplies description, specifications,
-    and alternative product links from the rendered detail page HTML.
+    Merge Algolia core fields with Tavily+LLM supplementary fields.
+    Algolia wins on all scalar fields it provides.
+    LLM extracts description/specs/alternatives from clean Tavily markdown.
     """
     if state.get("page_type") != "product_detail":
         log.info("skipping_non_product", url=state["product_url"])
@@ -73,37 +169,37 @@ async def extract_structured(state: ProductState) -> dict:
     cfg = state["run_config"]
     algolia = state.get("algolia_data") or {}
 
-    css_fields: dict = {}
+    llm_fields: dict = {}
     if state.get("raw_html"):
-        soup = parse_html(state["raw_html"])
-        css_fields = css_extract(
-            soup=soup,
+        llm_fields = await _extract_supplementary_llm(
+            content=state["raw_html"],
             url=state["product_url"],
             category=state["category_name"],
-            category_hierarchy=state["category_hierarchy"],
-            run_id=cfg["run_id"],
+            model=cfg["llm_model"],
+            algolia=algolia,
         )
 
-    # Image priority: Algolia > CSS-extracted
+    # Image priority: Algolia > Tavily-extracted > LLM-extracted
     image_urls = (
         algolia.get("image_urls")
-        or css_fields.get("image_urls", [])
+        or state.get("tavily_images", [])
+        or llm_fields.get("image_urls", [])
     )
 
     merged = {
-        "name":               algolia.get("name") or css_fields.get("name", ""),
-        "brand":              algolia.get("brand") or css_fields.get("brand"),
-        "sku":                algolia.get("sku") or css_fields.get("sku"),
-        "price":              algolia.get("price") or css_fields.get("price"),
-        "availability":       algolia.get("availability") or css_fields.get("availability"),
-        "description":        css_fields.get("description"),
-        "unit_pack_size":     css_fields.get("unit_pack_size"),
-        "specifications":     css_fields.get("specifications", {}),
-        "image_urls":         image_urls,
-        "alternative_products": css_fields.get("alternative_products", []),
+        "name": algolia.get("name") or llm_fields.get("name", ""),
+        "brand": algolia.get("brand") or llm_fields.get("brand"),
+        "sku": algolia.get("sku") or llm_fields.get("sku"),
+        "price": algolia.get("price") or llm_fields.get("price"),
+        "availability": algolia.get("availability") or llm_fields.get("availability"),
+        "description": llm_fields.get("description"),
+        "unit_pack_size": llm_fields.get("unit_pack_size"),
+        "specifications": llm_fields.get("specifications", {}),
+        "image_urls": image_urls,
+        "alternative_products": llm_fields.get("alternative_products", []),
     }
 
-    method = "algolia+css" if algolia else "css"
+    method = "algolia+tavily_llm" if algolia else "tavily_llm"
 
     record = build_product_record(
         fields=merged,
@@ -124,18 +220,27 @@ async def extract_structured(state: ProductState) -> dict:
 
 async def llm_extract_fallback(state: ProductState) -> dict:
     """
-    Last-resort extraction: no Algolia data AND CSS confidence below threshold.
-    Strips noisy tags and passes cleaned HTML to the full LLM extractor.
+    Last-resort extraction: Tavily failed AND Algolia had no data.
+    Passes whatever content is available (HTML or markdown) to the full LLM extractor.
     """
     cfg = state["run_config"]
     log.info("llm_fallback_triggered", url=state["product_url"])
     try:
+        from agents.extractor import llm_extract
+
+        # Detect if content is already clean markdown (from Tavily fallback)
+        content = state["raw_html"]
+        is_markdown = bool(
+            state.get("tavily_images") is not None
+            and content
+            and not content.strip().startswith("<")
+        )
         fields = await llm_extract(
-            html=state["raw_html"],
+            html=content,
             url=state["product_url"],
             category=state["category_name"],
             model=cfg["llm_model"],
-            is_markdown=False,
+            is_markdown=is_markdown,
         )
         record = build_product_record(
             fields=fields,
@@ -167,8 +272,8 @@ def should_use_llm_fallback(state: ProductState) -> str:
     product = state.get("product")
     if product is None:
         return "validate"
-    # LLM fallback only when Algolia has no data AND CSS couldn't extract a description.
-    if not state.get("algolia_data") and not product.description:
+    # Enter the fallback node only if Tavily returned nothing AND Algolia had no data.
+    if state.get("raw_html") is None and not state.get("algolia_data"):
         return "llm_fallback"
     return "validate"
 

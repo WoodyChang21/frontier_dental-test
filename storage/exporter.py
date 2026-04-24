@@ -21,6 +21,7 @@ def export_all(
     out.mkdir(parents=True, exist_ok=True)
 
     df = pd.read_sql("SELECT * FROM products ORDER BY category, name", conn)
+    df = df.drop(columns=["confidence_score"], errors="ignore")
 
     for col in JSON_COLS:
         if col in df.columns:

@@ -50,6 +50,8 @@ class RunConfig(TypedDict):
     db_filename: str
     csv_filename: str
     json_filename: str
+    tavily_extract_depth: str
+    tavily_batch_size: int
 
 
 class MainState(TypedDict):
@@ -65,6 +67,7 @@ class CategoryState(TypedDict):
     run_config: RunConfig
     product_urls: list[str]
     algolia_hits: list[dict]          # rich pre-fetched data from Algolia
+    tavily_content_map: dict          # url → {"content": str|None, "images": list[str]}
     subcategory_urls: list[str]
     current_page: int
     total_pages: int
@@ -78,6 +81,8 @@ class ProductTaskState(TypedDict):
     category_hierarchy: list[str]
     run_config: RunConfig
     algolia_data: dict                # pre-fetched fields from Algolia (may be empty)
+    prefetched_content: Optional[str] # Tavily-extracted markdown (may be None)
+    prefetched_images: list[str]      # Tavily-extracted image URLs
 
 
 class ProductState(TypedDict):
@@ -86,7 +91,8 @@ class ProductState(TypedDict):
     category_hierarchy: list[str]
     run_config: RunConfig
     algolia_data: dict                # pre-fetched from Algolia (may be empty {})
-    raw_html: Optional[str]           # rendered HTML from httpx / Playwright
+    raw_html: Optional[str]           # Tavily markdown or HTML fallback
+    tavily_images: list[str]          # image URLs extracted by Tavily
     page_type: Optional[str]
     product: Optional[ProductRecord]
     extraction_error: Optional[str]

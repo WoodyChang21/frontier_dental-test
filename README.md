@@ -4,6 +4,8 @@ A LangGraph-based multi-agent scraping system that extracts structured product c
 
 Two implementation branches are provided, each with the same high-level graph architecture but a different strategy for extracting product detail page content. See the comparison below to understand the trade-offs.
 
+> **This `main` branch runs the Tavily-based implementation (`algolia-tavily`).** It was chosen as the primary version because it produces more complete records (100% description coverage vs ~50% for CSS) and runs faster in wall-clock time. The CSS-based variant lives in the `algolia-css` branch.
+
 ---
 
 ## Branches

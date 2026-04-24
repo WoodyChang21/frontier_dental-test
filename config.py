@@ -14,6 +14,8 @@ class ScraperConfig:
     max_concurrent_products: int = 3
     request_timeout_seconds: int = 30
     playwright_headless: bool = True
+    tavily_extract_depth: str = "advanced"
+    tavily_batch_size: int = 5
     llm_model: str = "claude-sonnet-4-6"
     max_tokens: int = 2048
     temperature: float = 0.0
@@ -63,4 +65,6 @@ class ScraperConfig:
             "csv_filename": self.csv_filename,
             "json_filename": self.json_filename,
             "fresh_run": self.fresh_run,
+            "tavily_extract_depth": self.tavily_extract_depth,
+            "tavily_batch_size": self.tavily_batch_size,
         }
