@@ -232,11 +232,21 @@ To reproduce or extend the sample, see the [Run](#run) section below.
 ### Install
 
 ```bash
-cd safco_scraper
-pip install openai "langgraph>=0.2.70" langgraph-checkpoint-sqlite \
-  playwright beautifulsoup4 lxml tenacity structlog \
-  "pydantic>=2.7.0" pandas pyyaml rich click python-dotenv httpx
-python -m playwright install chromium
+# 1. Install uv (fast Python package manager)
+pip install uv
+
+# 2. Create and activate a virtual environment
+uv venv
+# Windows:
+.venv\Scripts\activate
+# macOS / Linux:
+source .venv/bin/activate
+
+# 3. Install all pinned dependencies
+uv pip install -r requirements.txt
+
+# 4. Install the Playwright browser
+playwright install chromium
 ```
 
 ### Secrets Management
