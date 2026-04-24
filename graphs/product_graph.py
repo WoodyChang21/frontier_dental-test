@@ -22,7 +22,8 @@ async def fetch_product_page(state: ProductState) -> dict:
     if state.get("raw_html") is not None:
         return {}
 
-    url = state["product_url"]
+    # Strip #sku fragment — it's our internal variant key, not a real page anchor
+    url = state["product_url"].split("#")[0]
     cfg = state["run_config"]
 
     # Try TavilyExtract as the primary individual fetch
@@ -79,7 +80,7 @@ async def classify_product_page(state: ProductState) -> dict:
     if not content:
         return {"page_type": "irrelevant"}
 
-    url = state["product_url"]
+    url = state["product_url"].split("#")[0]
     # URL-depth heuristic works regardless of content format
     segments = [s for s in url.split("/") if s and s not in ("https:", "http:", "www.safcodental.com")]
     if "/product/" in url or len(segments) >= 5:
@@ -114,7 +115,12 @@ async def _extract_supplementary_llm(
     from openai import AsyncOpenAI
 
     client = AsyncOpenAI()
-    trimmed = content[:3000]
+    # Safco's Tavily markdown is ~100K chars of site chrome before the product section.
+    # Find the last H1 heading (the product title) and slice from there so the LLM
+    # sees description/specs/pricing instead of navigation menus.
+    h1_idx = content.rfind("\n# ")
+    product_section = content[h1_idx:] if h1_idx != -1 else content[-6000:]
+    trimmed = product_section[:6000]
     if algolia:
         context = (
             f"name={algolia.get('name')}, "

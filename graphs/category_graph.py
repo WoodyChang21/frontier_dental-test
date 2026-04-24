@@ -75,17 +75,34 @@ async def batch_fetch_pages(state: CategoryState) -> dict:
         extract_depth=extract_depth,
     )
 
-    for i in range(0, len(urls), batch_size):
-        batch = urls[i : i + batch_size]
+    # Variants share a family_url; strip #fragment before fetching so Tavily
+    # only fetches each base page once, then fan the result back to all variants.
+    base_url_map: dict[str, str] = {}  # base_url → first variant url seen (for logging)
+    base_to_variants: dict[str, list[str]] = {}
+    for u in urls:
+        base = u.split("#")[0]
+        base_url_map[base] = u
+        base_to_variants.setdefault(base, []).append(u)
+
+    base_urls = list(base_url_map.keys())
+
+    for i in range(0, len(base_urls), batch_size):
+        batch = base_urls[i : i + batch_size]
         try:
             result = await extractor.ainvoke({"urls": batch})
             for hit in result.get("results", []):
-                content_map[hit["url"]] = {
+                fetched_base = hit["url"].split("#")[0]
+                entry = {
                     "content": hit.get("raw_content") or hit.get("content", ""),
                     "images": hit.get("images", []),
                 }
+                for variant_url in base_to_variants.get(fetched_base, [fetched_base]):
+                    content_map[variant_url] = entry
             for fail in result.get("failed_results", []):
-                content_map[fail["url"]] = {"content": None, "images": []}
+                failed_base = fail["url"].split("#")[0]
+                entry = {"content": None, "images": []}
+                for variant_url in base_to_variants.get(failed_base, [failed_base]):
+                    content_map[variant_url] = entry
                 log.warning(
                     "tavily_batch_url_failed",
                     url=fail["url"],
@@ -93,8 +110,9 @@ async def batch_fetch_pages(state: CategoryState) -> dict:
                 )
         except Exception as e:
             log.error("tavily_batch_error", batch_start=i, error=str(e))
-            for u in batch:
-                content_map[u] = {"content": None, "images": []}
+            for base in batch:
+                for variant_url in base_to_variants.get(base, [base]):
+                    content_map[variant_url] = {"content": None, "images": []}
 
     fetched = sum(1 for v in content_map.values() if v["content"])
     log.info(
