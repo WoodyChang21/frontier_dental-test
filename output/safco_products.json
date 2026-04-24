@@ -1,0 +1,582 @@
+[
+  {
+    "url_hash": "8c792d52b7236650bc5847114f53e7b157b769c1f4fc2f2396189c6cce00e480",
+    "url": "https://www.safcodental.com/product/alasta-sup-reg-sup",
+    "run_id": "db5c0691",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Alasta",
+    "brand": "Dash",
+    "sku": "DRCAN",
+    "price": "$10.49",
+    "unit_pack_size": null,
+    "availability": "In stock",
+    "description": "Soft-Fit™ powder-free nitrile exam gloves.\n\nTextured whole hand finish\nBeaded cuff\nNon-chlorinated\nAmbidextrous\nBlue color\nThickness: at palm 3.1 mils; at fingertip 3.9 mils; ± 1.2\nOrder 10 boxes to purchase a case",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drcan.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/d/r/drcan.jpg?width=75&height=75&canvas=75,75&optimize=medium&fit=bounds"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 1.0,
+    "scraped_at": "2026-04-24T04:09:23.036292"
+  },
+  {
+    "url_hash": "445e7730838c956b79e0790174f4854cd25d1b67e329b67ba4eb4ee135663cbb",
+    "url": "https://www.safcodental.com/catalog/product/view/id/68665/s/alasta-gloves-x-large-200-box/",
+    "run_id": "db5c0691",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Alasta gloves x-large 200/box",
+    "brand": "Dash",
+    "sku": "4681112",
+    "price": "$20.99",
+    "unit_pack_size": null,
+    "availability": "Backorder",
+    "description": NaN,
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 0.55,
+    "scraped_at": "2026-04-24T04:08:57.684711"
+  },
+  {
+    "url_hash": "1a9fa7e849916a467fdfcfa66b66797accffe1dfa0faf9a9e9cdbfa7490e937d",
+    "url": "https://www.safcodental.com/product/aquasoft",
+    "run_id": "db5c0691",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Aquasoft",
+    "brand": "Halyard",
+    "sku": "DRCBT",
+    "price": "$31.49",
+    "unit_pack_size": null,
+    "availability": "In stock",
+    "description": "Powder-free nitrile exam gloves.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drcbt.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/d/r/drcbt.jpg?width=75&height=75&canvas=75,75&optimize=medium&fit=bounds"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 1.0,
+    "scraped_at": "2026-04-24T04:09:12.325256"
+  },
+  {
+    "url_hash": "044a68058ca938eea2bf0c33bc34d5c9cd594e9315182ac1e3effd049ff0e601",
+    "url": "https://www.safcodental.com/catalog/product/view/id/42349/s/aquasoft-gloves-large-300-box/",
+    "run_id": "db5c0691",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Aquasoft gloves large 300/box",
+    "brand": "Halyard",
+    "sku": "3021308",
+    "price": "$31.49",
+    "unit_pack_size": null,
+    "availability": "In stock",
+    "description": NaN,
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 0.55,
+    "scraped_at": "2026-04-24T04:09:06.282646"
+  },
+  {
+    "url_hash": "96d0185a65d2bdc8fafc39162f3bf06c2e05312559e4f661c2a020d605fde9a1",
+    "url": "https://www.safcodental.com/product/beesure-reg-superslim-trade-nitrile",
+    "run_id": "db5c0691",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "BeeSure SuperSlim Nitrile",
+    "brand": "EcoBee",
+    "sku": "DRCBO",
+    "price": "$19.99",
+    "unit_pack_size": null,
+    "availability": "In stock",
+    "description": "Powder-free nitrile exam gloves.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drcbo.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/d/r/drcbo.jpg?width=75&height=75&canvas=75,75&optimize=medium&fit=bounds"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 1.0,
+    "scraped_at": "2026-04-24T04:09:56.807028"
+  },
+  {
+    "url_hash": "e07e8c219342109819598c784b73e030eadedb54eb1108f65fe325d1972f164c",
+    "url": "https://www.safcodental.com/product/lavender-nitrile",
+    "run_id": "db5c0691",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Lavender Nitrile",
+    "brand": "Halyard",
+    "sku": "DRCAS",
+    "price": "$28.99",
+    "unit_pack_size": null,
+    "availability": "In stock",
+    "description": "Powder-free nitrile exam gloves.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drcas.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/d/r/drcas.jpg?width=75&height=75&canvas=75,75&optimize=medium&fit=bounds"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 1.0,
+    "scraped_at": "2026-04-24T04:09:21.612363"
+  },
+  {
+    "url_hash": "0bca86add145cd0cc93cb4bfe7ffeaaaedfef0f00cc2e0349ac80fb17324ed78",
+    "url": "https://www.safcodental.com/product/microflex-sup-reg-sup-ultraform-sup-trade-sup",
+    "run_id": "db5c0691",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Microflex Ultraform",
+    "brand": "Ansell",
+    "sku": "DRCBJ",
+    "price": "$24.99",
+    "unit_pack_size": null,
+    "availability": "In stock",
+    "description": "Powder-free nitrile exam gloves.\n \nUltra-soft and form fitting.\n\nTextured fingertip finish\nBeaded cuff\nChlorinated\nAmbidextrous\nCobalt blue color\nThickness: at palm 2.0 mils; at fingertip 3.1 mils\n300 gloves per box (250 for x-large)\nOrder 10 boxes to purchase a case",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drcbj.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/d/r/drcbj.jpg?width=75&height=75&canvas=75,75&optimize=medium&fit=bounds"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 1.0,
+    "scraped_at": "2026-04-24T04:09:17.256462"
+  },
+  {
+    "url_hash": "ba51b8aa7aa45c1ed6defb6164b95ae7742650241fe3456bff42657136294b95",
+    "url": "https://www.safcodental.com/catalog/product/view/id/44416/s/microflex-ultraform-gloves-medium-large-300-box/",
+    "run_id": "db5c0691",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Microflex Ultraform gloves medium/large 300/box",
+    "brand": "Ansell",
+    "sku": "4751252",
+    "price": "$24.99",
+    "unit_pack_size": null,
+    "availability": "In stock",
+    "description": NaN,
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 0.55,
+    "scraped_at": "2026-04-24T04:09:43.387369"
+  },
+  {
+    "url_hash": "6b96c2096b4c04ff235be2e9c403e9c2848649072cdb826213228e97717404c9",
+    "url": "https://www.safcodental.com/catalog/product/view/id/44413/s/microflex-ultraform-gloves-small-medium-300-box/",
+    "run_id": "db5c0691",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Microflex Ultraform gloves small/medium 300/box",
+    "brand": "Ansell",
+    "sku": "4751247",
+    "price": "$24.99",
+    "unit_pack_size": null,
+    "availability": "In stock",
+    "description": NaN,
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 0.55,
+    "scraped_at": "2026-04-24T04:08:55.852625"
+  },
+  {
+    "url_hash": "021c171562357feeb7854278b4cca713411529ae37451ae53c0e1d1cdc78a1d9",
+    "url": "https://www.safcodental.com/catalog/product/view/id/44410/s/microflex-ultraform-gloves-x-small-small-300-box/",
+    "run_id": "db5c0691",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Microflex Ultraform gloves x-small/small 300/box",
+    "brand": "Ansell",
+    "sku": "4751243",
+    "price": "$24.99",
+    "unit_pack_size": null,
+    "availability": "In stock",
+    "description": NaN,
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 0.55,
+    "scraped_at": "2026-04-24T04:09:10.415486"
+  },
+  {
+    "url_hash": "5b13100d92197ecaa9535623d67abf0bc574a9a5f3419e2a2555d182abfa628e",
+    "url": "https://www.safcodental.com/catalog/product/view/id/81874/s/ossify-cortical-bone-sheet-15x20mm/",
+    "run_id": "db5c0691",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "Ossify Cortical Bone Sheet 15x20mm",
+    "brand": "Surgical Esthetics",
+    "sku": "6130102",
+    "price": "$149.49",
+    "unit_pack_size": null,
+    "availability": "In stock",
+    "description": NaN,
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 0.55,
+    "scraped_at": "2026-04-24T04:09:30.645300"
+  },
+  {
+    "url_hash": "54c2e8a226d8f1eb954b86badfa74535413d24b3bcbe34181a91bdd4bccad5ea",
+    "url": "https://www.safcodental.com/catalog/product/view/id/81877/s/ossify-cortical-bone-sheet-20x30mm/",
+    "run_id": "db5c0691",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "Ossify Cortical Bone Sheet 20x30mm",
+    "brand": "Surgical Esthetics",
+    "sku": "6130104",
+    "price": "$260.99",
+    "unit_pack_size": null,
+    "availability": "Special order",
+    "description": NaN,
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 0.55,
+    "scraped_at": "2026-04-24T04:09:54.810390"
+  },
+  {
+    "url_hash": "6950b99fc32efa40439b0b6e1b148807f4dd6fa9b0a70fdb6dcd93514ac53096",
+    "url": "https://www.safcodental.com/catalog/product/view/id/81856/s/ossify-dbm-cortical-fiber-bone-graft-0-5cc-jar/",
+    "run_id": "db5c0691",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "Ossify DBM Cortical Fiber Bone Graft 0.5cc jar",
+    "brand": "Surgical Esthetics",
+    "sku": "6130089",
+    "price": "$121.49",
+    "unit_pack_size": null,
+    "availability": "In stock",
+    "description": NaN,
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 0.55,
+    "scraped_at": "2026-04-24T04:08:53.775079"
+  },
+  {
+    "url_hash": "1a01a565582b7654dad173408526a2ba0ccb0eeca1af8cd63b82d41a268eda52",
+    "url": "https://www.safcodental.com/catalog/product/view/id/81859/s/ossify-dbm-cortical-fiber-bone-graft-1cc-jar/",
+    "run_id": "db5c0691",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "Ossify DBM Cortical Fiber Bone Graft 1cc jar",
+    "brand": "Surgical Esthetics",
+    "sku": "6130091",
+    "price": "$182.49",
+    "unit_pack_size": null,
+    "availability": "In stock",
+    "description": NaN,
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 0.55,
+    "scraped_at": "2026-04-24T04:10:00.123262"
+  },
+  {
+    "url_hash": "f8d1afd03ad039bd02d81a0726ff60353aa45a5e6d771803fb38bd2d01d74bfd",
+    "url": "https://www.safcodental.com/catalog/product/view/id/81862/s/ossify-dbm-cortical-fiber-bone-graft-2cc-jar/",
+    "run_id": "db5c0691",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "Ossify DBM Cortical Fiber Bone Graft 2cc jar",
+    "brand": "Surgical Esthetics",
+    "sku": "6130093",
+    "price": "$279.49",
+    "unit_pack_size": null,
+    "availability": "Special order",
+    "description": NaN,
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 0.55,
+    "scraped_at": "2026-04-24T04:09:45.146994"
+  },
+  {
+    "url_hash": "570a76615b7cbbf1aeab42f23ccd1493b09d2dbe43402e6218e98e4c323b3f58",
+    "url": "https://www.safcodental.com/catalog/product/view/id/81865/s/ossify-dbm-cortical-fiber-bone-graft-with-1-1-5mm-chips-0-5cc-jar/",
+    "run_id": "db5c0691",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "Ossify DBM Cortical Fiber Bone Graft with 1-1.5mm chips 0.5cc jar",
+    "brand": "Surgical Esthetics",
+    "sku": "6130095",
+    "price": "$130.49",
+    "unit_pack_size": null,
+    "availability": "Special order",
+    "description": NaN,
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 0.55,
+    "scraped_at": "2026-04-24T04:10:02.599786"
+  },
+  {
+    "url_hash": "445538105ddb09d24e7b1f5325bf33810ca5d1f433e4f255d9af8661db704af9",
+    "url": "https://www.safcodental.com/catalog/product/view/id/81868/s/ossify-dbm-cortical-fiber-bone-graft-with-1-1-5mm-chips-1cc-jar/",
+    "run_id": "db5c0691",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "Ossify DBM Cortical Fiber Bone Graft with 1-1.5mm chips 1cc jar",
+    "brand": "Surgical Esthetics",
+    "sku": "6130097",
+    "price": "$191.99",
+    "unit_pack_size": null,
+    "availability": "Backorder",
+    "description": NaN,
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 0.55,
+    "scraped_at": "2026-04-24T04:09:32.517571"
+  },
+  {
+    "url_hash": "5808bf121749ec803cd0702d235a52b842866fc1735da2afa069f0291e0ecdbe",
+    "url": "https://www.safcodental.com/catalog/product/view/id/81871/s/ossify-dbm-cortical-fiber-bone-graft-with-1-1-5mm-chips-2cc-jar/",
+    "run_id": "db5c0691",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "Ossify DBM Cortical Fiber Bone Graft with 1-1.5mm chips 2cc jar",
+    "brand": "Surgical Esthetics",
+    "sku": "6130099",
+    "price": "$307.49",
+    "unit_pack_size": null,
+    "availability": "Special order",
+    "description": NaN,
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 0.55,
+    "scraped_at": "2026-04-24T04:09:50.673081"
+  },
+  {
+    "url_hash": "c4b5930d9d5f5769f22bf1ae2406b2389ac9e8a91d1014a074c9075a9d5fe74d",
+    "url": "https://www.safcodental.com/catalog/product/view/id/81457/s/ossify-min-demin-cortical-cancellous-bone-graft-2cc-jar/",
+    "run_id": "db5c0691",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Bone grafting tissue augmentation"
+    ],
+    "name": "Ossify Min/Demin Cortical Cancellous bone graft 2cc jar",
+    "brand": "Surgical Esthetics",
+    "sku": "5130084",
+    "price": "$158.99",
+    "unit_pack_size": null,
+    "availability": "In stock",
+    "description": NaN,
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_4.jpg?optimize=medium&fit=bounds&height=265&width=265",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 0.55,
+    "scraped_at": "2026-04-24T04:09:26.889791"
+  },
+  {
+    "url_hash": "d8a3e5ff124a2fb091130f7959143a695565b4795e5bc4565ced767741b9b900",
+    "url": "https://www.safcodental.com/product/surgifoam-reg",
+    "run_id": "db5c0691",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical medicaments and packing"
+    ],
+    "name": "Surgifoam&reg;",
+    "brand": "Ethicon",
+    "sku": "PFPJK",
+    "price": "$206.49",
+    "unit_pack_size": null,
+    "availability": "In stock",
+    "description": "Sterile, water insoluble, malleable porcine gelatin absorbable sponge, intended for hemostatic use by applying to a bleeding surface.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfpjk.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/p/f/pfpjk.jpg?width=75&height=75&canvas=75,75&optimize=medium&fit=bounds"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/clearance-item"
+    ],
+    "extraction_method": "algolia+css",
+    "confidence_score": 1.0,
+    "scraped_at": "2026-04-24T04:09:39.436998"
+  }
+]

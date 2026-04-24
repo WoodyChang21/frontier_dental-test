@@ -190,6 +190,24 @@ For a typical run where every URL has an Algolia hit, **LLM is never called**. I
 
 ---
 
+## Sample Output Dataset
+
+A live sample of 20 scraped products (10 per category) is included in the `output/` directory:
+
+| File | Description |
+|---|---|
+| `output/safco_products.json` | Nested JSON — full field structure per product |
+| `output/safco_products.csv` | Flat CSV — all fields, JSON columns serialised as strings |
+| `output/safco_products.db` | SQLite database — queryable with standard SQL tools |
+
+These were generated with `python main.py --max-products 10` against both categories:
+- **Dental Exam Gloves** — 10 products, avg confidence 0.78
+- **Sutures & Surgical Products** — 10 products, avg confidence 0.59
+
+To reproduce or extend the sample, see the [Run](#run) section below.
+
+---
+
 ## Setup & Execution
 
 ### Requirements
