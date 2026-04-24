@@ -49,10 +49,10 @@ The system is composed of three nested graphs. The Main Graph orchestrates two C
 │  (Algolia scalars win: name, SKU, price, brand, images, stock;              │
 │   CSS selectors extract: description, specs, images, alternative links)     │
 │       │                                                                      │
-│       ├─[no Algolia AND css_score < 0.65]──► llm_fallback                   │
+│       ├─[no Algolia AND description empty]──► llm_fallback                  │
 │       │                                      (full HTML → LLM extraction)   │
 │  validate                                                                    │
-│  (dedup by url_hash, reject incomplete records, score confidence)           │
+│  (dedup by url_hash, reject records with missing names)                     │
 │       │                                                                      │
 │      END  (result returned to reduce_category in parent graph)              │
 └──────────────────────────────────────────────────────────────────────────────┘
@@ -70,7 +70,7 @@ The system is composed of three nested graphs. The Main Graph orchestrates two C
 
 ### Step 0 — Startup (`main.py`)
 
-- Reads `config.yaml` (categories, Algolia facet filters, delays, concurrency, `llm.model`, extraction threshold, output paths, checkpoint DB).
+- Reads `config.yaml` (categories, Algolia facet filters, delays, concurrency, `llm.model`, output paths, checkpoint DB).
 - Loads `.env` from the same directory.
 - Builds **`MainState`**, opens **`AsyncSqliteSaver`** (LangGraph checkpoints), compiles **`main_graph`**, and streams node updates via **`graph.astream(..., stream_mode="updates")`**.
 - On shutdown, closes the shared Playwright browser.
@@ -117,20 +117,16 @@ The system is composed of three nested graphs. The Main Graph orchestrates two C
   - `specifications`: all `<table>` rows → `{key: value}` dict
   - `image_urls`: `img[src*='catalog/product']`, placeholders excluded
   - `alternative_products`: `a[href*='/product/']`, capped at 10
-- **CSS confidence score**: `(required_found / 2) × 0.6 + (optional_found / 3) × 0.4` where required = name + price, optional = description + images + specifications.
-- **Final score**: `min(1.0, css_score + 0.3)` when Algolia supplied a name (`algolia+css` path); `css_score` alone otherwise (`css`).
-
 ### Step 8 — `llm_fallback` (conditional)
 
-- Only triggers when **both** conditions are met: no Algolia data for this URL, **and** CSS confidence is below `extraction_fallback_threshold` (default 0.65).
+- Only triggers when **both** conditions are met: no Algolia data for this URL, **and** CSS could not extract a description.
 - Strips noisy tags, sends trimmed HTML (up to 6000 chars) to **OpenAI** (`llm_extract`, JSON mode).
 - With normal Algolia-backed runs, this path **never triggers**.
 
 ### Step 9 — `validate`
 
 - Deduplicates by `url_hash` (in-memory + DB-seeded).
-- Rejects records with missing/short name.
-- Applies confidence penalties for missing SKU, price, brand, description, images.
+- Rejects records with missing or too-short name.
 
 ### Step 10 — Category completion + SQLite flush
 
@@ -161,7 +157,7 @@ The system is composed of three nested graphs. The Main Graph orchestrates two C
 | Step | Model | When |
 |---|---|---|
 | `classify_page` | `llm.model` (config) | Only if no Algolia data and URL heuristic is ambiguous |
-| `llm_fallback` | `llm.model` (config) | Only if no Algolia data AND CSS confidence < 0.65 |
+| `llm_fallback` | `llm.model` (config) | Only if no Algolia data AND CSS returned no description |
 
 For a typical run where every URL has an Algolia hit, **LLM is never called**. It exists purely as a safety net for layout drift or Algolia misses.
 
@@ -174,7 +170,7 @@ For a typical run where every URL has an Algolia hit, **LLM is never called**. I
 | **Navigator** | `agents/navigator.py` | Launches Playwright once per category to intercept the Algolia session key, then queries Algolia via HTTP across all pages to build `product_urls` + `algolia_hits`. Falls back to Playwright HTML scraping if key interception fails. |
 | **Page Classifier** | `agents/classifier.py` | Determines page type using URL-depth heuristics; calls the LLM only for ambiguous pages. Skipped entirely when Algolia data is present. |
 | **Extractor** | `agents/extractor.py` | `css_extract()` parses rendered HTML with Hyvä/Alpine.js CSS selectors for description, specs, images, and related links. `llm_extract()` is the full-page LLM fallback for the rare no-Algolia low-coverage case. `build_product_record()` assembles the final `ProductRecord`. |
-| **Validator** | `agents/validator.py` | Deduplicates by SHA256(url), rejects records with missing/short names, and applies confidence penalties for missing fields. |
+| **Validator** | `agents/validator.py` | Deduplicates by SHA256(url) and rejects records with missing or too-short names. |
 | **Storage** | `storage/db.py` + `storage/exporter.py` | Idempotent SQLite upsert keyed on `url_hash` (`INSERT OR REPLACE`). Reads DB with pandas to export CSV and JSON at run end. |
 
 ---
@@ -202,12 +198,12 @@ A live sample of 20 scraped products (10 per category) is included in the `outpu
 
 These were generated with `python main.py --max-products 10` against both categories:
 
-| Category | Products | Avg Confidence | With Description |
-|---|---|---|---|
-| Dental Exam Gloves | 10 | 0.78 | 5 |
-| Sutures & Surgical Products | 10 | 0.59 | 1 |
+| Category | Products | With Description |
+|---|---|---|
+| Dental Exam Gloves | 10 | 5 |
+| Sutures & Surgical Products | 10 | 1 |
 
-**Run timing** (run `db5c0691`, 2026-04-24):
+**Run timing** (run `dd582b80`, 2026-04-24):
 
 | Phase | Duration |
 |---|---|
@@ -273,7 +269,6 @@ scraper:
 
 llm:
   model: "gpt-4o-mini"
-  extraction_fallback_threshold: 0.65  # CSS score below this triggers llm_fallback
 ```
 
 ### Run
@@ -307,7 +302,7 @@ Output is written to `./output/`:
 
 ```bash
 sqlite3 output/safco_products.db \
-  "SELECT category, COUNT(*), AVG(confidence_score) FROM products GROUP BY category;"
+  "SELECT category, COUNT(*), SUM(CASE WHEN description IS NOT NULL THEN 1 ELSE 0 END) FROM products GROUP BY category;"
 
 sqlite3 output/safco_products.db \
   "SELECT name, sku, price, brand FROM products WHERE category='Dental Exam Gloves' LIMIT 10;"
@@ -335,7 +330,6 @@ sqlite3 output/safco_products.db \
 | `image_urls` | JSON array | Algolia > CSS `img[src*=catalog]` |
 | `alternative_products` | JSON array | CSS `a[href*=/product/]` |
 | `extraction_method` | TEXT | `"algolia+css"` / `"css"` / `"llm_fallback"` |
-| `confidence_score` | REAL | 0.0–1.0 field coverage metric |
 | `scraped_at` | TEXT | UTC ISO timestamp |
 
 ---
@@ -361,7 +355,7 @@ sqlite3 output/safco_products.db \
 | Algolia key not intercepted | Falls back to Playwright HTML scraping for URL collection |
 | httpx fetch fails (429 / 5xx) | `tenacity` exponential backoff (4 attempts, 2–30s wait) |
 | Playwright timeout on detail page | Error logged, product skipped; run continues |
-| CSS extracts nothing useful | Confidence score stays low; if no Algolia data, routes to `llm_fallback` |
+| CSS extracts no description | If no Algolia data either, routes to `llm_fallback` |
 | LLM API error in `llm_fallback` | Error logged; product dropped |
 | Missing required fields | Product rejected by validator (`product_rejected` log event) |
 | Duplicate URL | SHA256 dedup in-memory + `INSERT OR REPLACE` in SQLite |
@@ -395,9 +389,7 @@ sqlite3 output/safco_products.db \
 
 ## Data Quality Monitoring
 
-1. **Confidence score distribution**: Alert if average `confidence_score` drops below 0.7 for a category — signals a CSS selector regression or Algolia schema change.
-
-2. **Field completeness**: Track `COUNT(*) WHERE description IS NULL` per run. A spike means CSS description selectors broke.
+1. **Field completeness**: Track `COUNT(*) WHERE description IS NULL` per run. A spike means CSS description selectors broke.
 
 3. **Run-over-run product count delta**: Compare `nbHits` from Algolia against `COUNT(*)` in the DB. A gap > 5% warrants investigation.
 
