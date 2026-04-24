@@ -57,7 +57,7 @@ The system is composed of three nested graphs. The Main Graph orchestrates two C
 │       ├─[Algolia missing AND no page content]──► llm_fallback               │
 │       │                                                                      │
 │  validate                                                                    │
-│  (dedup by url_hash, reject incomplete records, score confidence)           │
+│  (dedup by url_hash, reject records with missing names)                     │
 │       │                                                                      │
 │      END  (result returned to reduce_category in parent graph)              │
 └──────────────────────────────────────────────────────────────────────────────┘
@@ -89,7 +89,7 @@ The system is composed of three nested graphs. The Main Graph orchestrates two C
 | **Navigator** | `agents/navigator.py` | Launches Playwright once per category to intercept the Algolia session key, then queries Algolia via HTTP with `facetFilters` across all pages to build `product_urls` + `algolia_hits`. Falls back to Playwright HTML scraping if key interception fails. |
 | **Page Classifier** | `agents/classifier.py` | Determines page type with URL-depth heuristics first; calls the LLM only for ambiguous pages. Handles both markdown and raw HTML inputs. Skipped entirely when Algolia data is present. |
 | **Extractor** | `agents/extractor.py` | Merges Algolia scalar fields (name, SKU, price, brand, images, stock) with LLM-extracted supplementary fields (description, unit_pack_size, specifications, alternative_products) from Tavily markdown. Full LLM fallback when neither Algolia nor Tavily content is available. |
-| **Validator** | `agents/validator.py` | Deduplicates by SHA256(url), rejects records with missing/short names, and applies confidence penalties for missing SKU, price, brand, description, or images. |
+| **Validator** | `agents/validator.py` | Deduplicates by SHA256(url) and rejects records with missing or too-short names. |
 | **Storage** | `storage/db.py` + `storage/exporter.py` | Idempotent SQLite upsert keyed on `url_hash` (`INSERT OR REPLACE`). Reads DB with pandas to export CSV and JSON at run end. |
 
 ---
@@ -158,7 +158,6 @@ llm:
   model: "gpt-4o-mini"
   max_tokens: 2048
   temperature: 0.0
-  extraction_fallback_threshold: 0.65
 ```
 
 ### Run
@@ -192,7 +191,7 @@ Output is written to `./output/`:
 
 ```bash
 sqlite3 output/safco_products.db \
-  "SELECT category, COUNT(*), AVG(confidence_score) FROM products GROUP BY category;"
+  "SELECT category, COUNT(*), SUM(CASE WHEN description IS NOT NULL THEN 1 ELSE 0 END) FROM products GROUP BY category;"
 
 sqlite3 output/safco_products.db \
   "SELECT name, sku, price, brand FROM products WHERE category='Dental Exam Gloves' LIMIT 10;"
@@ -210,21 +209,21 @@ A live sample of 20 scraped products (10 per category) is included in the `outpu
 | `output/safco_products.csv` | Flat CSV — all fields, JSON columns serialised as strings |
 | `output/safco_products.db` | SQLite database — queryable with standard SQL tools |
 
-Generated with `python main.py --max-products 10` (run `d3bf5753`, 2026-04-24):
+Generated with `python main.py --max-products 10` (run `8310ed19`, 2026-04-24):
 
-| Category | Products | Avg Confidence | With Description |
-|---|---|---|---|
-| Dental Exam Gloves | 10 | 0.85 | 10 |
-| Sutures & Surgical Products | 10 | 0.85 | 10 |
+| Category | Products | With Description |
+|---|---|---|
+| Dental Exam Gloves | 10 | 10 |
+| Sutures & Surgical Products | 10 | 10 |
 
 **Run timing:**
 
 | Phase | Duration |
 |---|---|
-| Algolia key extraction + URL collection (both categories, parallel) | ~14s |
-| Tavily batch pre-fetch — all 20 URLs in batches of 5 (both categories, parallel) | ~20s |
-| Product extraction — LLM supplementary calls (all 20 URLs, parallel) | ~10s |
-| **Total** | **43.5s** |
+| Algolia key extraction + URL collection (both categories, parallel) | ~13s |
+| Tavily batch pre-fetch — all 20 URLs in batches of 5 (both categories, parallel) | ~13s |
+| Product extraction — LLM supplementary calls (all 20 URLs, parallel) | ~9s |
+| **Total** | **35s** |
 
 The Tavily batch pre-fetch is the dominant cost and scales with `tavily_batch_size` (default 5 URLs per API call). The per-product LLM step is fast because all 20 tasks fan out simultaneously. At this rate, 100 products would take roughly ~3–4 minutes.
 
@@ -252,7 +251,6 @@ To reproduce or extend the sample, see the [Run](#run) section below.
 | `image_urls` | JSON array | Algolia > Tavily images > LLM |
 | `alternative_products` | JSON array | LLM from Tavily markdown |
 | `extraction_method` | TEXT | `"algolia+tavily_llm"` / `"tavily_llm"` / `"llm_fallback"` |
-| `confidence_score` | REAL | 0.0–1.0 field coverage metric |
 | `scraped_at` | TEXT | UTC ISO timestamp |
 
 ---
@@ -288,7 +286,6 @@ Two representative records (one per category) from a live run:
   ],
   "alternative_products": [],
   "extraction_method": "algolia+tavily_llm",
-  "confidence_score": 0.85,
   "scraped_at": "2026-04-24T01:19:08.957328"
 }
 ```
@@ -318,7 +315,6 @@ Two representative records (one per category) from a live run:
   ],
   "alternative_products": ["391 Feather Microsurgical Blade", "390 Feather Microsurgical Blade"],
   "extraction_method": "algolia+tavily_llm",
-  "confidence_score": 0.85,
   "scraped_at": "2026-04-24T01:19:10.123456"
 }
 ```
@@ -386,9 +382,7 @@ Full output files are in `output/` (`safco_products.csv`, `safco_products.json`,
 
 ## Data Quality Monitoring
 
-1. **Confidence score distribution**: Alert if average `confidence_score` drops below 0.7 for a category — signals an Algolia schema change or Tavily content degradation.
-
-2. **Field completeness**: Track `COUNT(*) WHERE description IS NULL` per run. A spike means LLM extraction is regressing.
+1. **Field completeness**: Track `COUNT(*) WHERE description IS NULL` per run. A spike means LLM extraction is regressing.
 
 3. **Run-over-run product count delta**: Compare `nbHits` from Algolia against `COUNT(*)` in the DB. A gap > 5% warrants investigation into Tavily failure rate.
 
@@ -436,7 +430,7 @@ Algolia wins on all scalar fields. LLM extracts description, unit_pack_size, spe
 Triggers only when both Algolia data and page content are absent.
 
 ### Step 10 — `validate`
-Deduplicates, rejects short/missing names, applies confidence penalties.
+Deduplicates by SHA256(url) and rejects records with missing or too-short names.
 
 ### Step 11 — Category SQLite flush
 All products for the category are upserted immediately after `crawl_category` completes.
