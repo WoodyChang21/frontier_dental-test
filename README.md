@@ -43,7 +43,7 @@ This project was completed with AI assistance throughout the implementation. The
 
 A key early discovery, made with AI help, was the presence of the Algolia API powering Safco's product catalog. Rather than scraping the rendered HTML grid, intercepting the Algolia session key and querying the API directly gave structured JSON for every product with no CSS fragility.
 
-The first implementation used CSS-based detail page extraction (`algolia-css`). It works, but based on my prior experience with AI-assisted data scraping, CSS approaches tend to be brittle against dynamic rendering and theme changes. I then directed the AI to implement a Tavily-based variant (`algolia-tavily`), which from experience typically produces more stable and complete results — at the cost of more LLM calls. The Tavily approach confirmed this: 100% description coverage vs ~50% for CSS on the same 20-product sample, and faster wall-clock time despite the additional API calls.
+The first implementation used CSS-based detail page extraction (`algolia-css`). It works, but based on my prior experience with AI agent data scraping, CSS approaches tend to be brittle against dynamic rendering and theme changes. I then implement a Tavily-based variant (`algolia-tavily`), which from experience typically produces more stable and complete results — at the cost of more LLM calls. The Tavily approach confirmed this: 100% description coverage vs ~50% for CSS on the same 20-product sample, and faster wall-clock time despite the additional API calls.
 
 ---
 
