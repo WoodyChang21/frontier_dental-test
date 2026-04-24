@@ -2,7 +2,7 @@
   {
     "url_hash": "8c792d52b7236650bc5847114f53e7b157b769c1f4fc2f2396189c6cce00e480",
     "url": "https://www.safcodental.com/product/alasta-sup-reg-sup",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
@@ -25,13 +25,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 1.0,
-    "scraped_at": "2026-04-24T04:09:23.036292"
+    "scraped_at": "2026-04-24T04:28:46.565523"
   },
   {
     "url_hash": "445e7730838c956b79e0790174f4854cd25d1b67e329b67ba4eb4ee135663cbb",
     "url": "https://www.safcodental.com/catalog/product/view/id/68665/s/alasta-gloves-x-large-200-box/",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
@@ -54,13 +53,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 0.55,
-    "scraped_at": "2026-04-24T04:08:57.684711"
+    "scraped_at": "2026-04-24T04:28:26.181830"
   },
   {
     "url_hash": "1a9fa7e849916a467fdfcfa66b66797accffe1dfa0faf9a9e9cdbfa7490e937d",
     "url": "https://www.safcodental.com/product/aquasoft",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
@@ -83,13 +81,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 1.0,
-    "scraped_at": "2026-04-24T04:09:12.325256"
+    "scraped_at": "2026-04-24T04:29:07.688412"
   },
   {
     "url_hash": "044a68058ca938eea2bf0c33bc34d5c9cd594e9315182ac1e3effd049ff0e601",
     "url": "https://www.safcodental.com/catalog/product/view/id/42349/s/aquasoft-gloves-large-300-box/",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
@@ -112,13 +109,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 0.55,
-    "scraped_at": "2026-04-24T04:09:06.282646"
+    "scraped_at": "2026-04-24T04:28:15.898367"
   },
   {
     "url_hash": "96d0185a65d2bdc8fafc39162f3bf06c2e05312559e4f661c2a020d605fde9a1",
     "url": "https://www.safcodental.com/product/beesure-reg-superslim-trade-nitrile",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
@@ -141,13 +137,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 1.0,
-    "scraped_at": "2026-04-24T04:09:56.807028"
+    "scraped_at": "2026-04-24T04:28:54.126604"
   },
   {
     "url_hash": "e07e8c219342109819598c784b73e030eadedb54eb1108f65fe325d1972f164c",
     "url": "https://www.safcodental.com/product/lavender-nitrile",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
@@ -170,13 +165,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 1.0,
-    "scraped_at": "2026-04-24T04:09:21.612363"
+    "scraped_at": "2026-04-24T04:28:52.675418"
   },
   {
     "url_hash": "0bca86add145cd0cc93cb4bfe7ffeaaaedfef0f00cc2e0349ac80fb17324ed78",
     "url": "https://www.safcodental.com/product/microflex-sup-reg-sup-ultraform-sup-trade-sup",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
@@ -199,13 +193,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 1.0,
-    "scraped_at": "2026-04-24T04:09:17.256462"
+    "scraped_at": "2026-04-24T04:29:05.029086"
   },
   {
     "url_hash": "ba51b8aa7aa45c1ed6defb6164b95ae7742650241fe3456bff42657136294b95",
     "url": "https://www.safcodental.com/catalog/product/view/id/44416/s/microflex-ultraform-gloves-medium-large-300-box/",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
@@ -228,13 +221,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 0.55,
-    "scraped_at": "2026-04-24T04:09:43.387369"
+    "scraped_at": "2026-04-24T04:28:35.167109"
   },
   {
     "url_hash": "6b96c2096b4c04ff235be2e9c403e9c2848649072cdb826213228e97717404c9",
     "url": "https://www.safcodental.com/catalog/product/view/id/44413/s/microflex-ultraform-gloves-small-medium-300-box/",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
@@ -257,13 +249,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 0.55,
-    "scraped_at": "2026-04-24T04:08:55.852625"
+    "scraped_at": "2026-04-24T04:28:30.333308"
   },
   {
     "url_hash": "021c171562357feeb7854278b4cca713411529ae37451ae53c0e1d1cdc78a1d9",
     "url": "https://www.safcodental.com/catalog/product/view/id/44410/s/microflex-ultraform-gloves-x-small-small-300-box/",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Dental Exam Gloves",
     "category_hierarchy": [
       "Dental Supplies",
@@ -286,13 +277,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 0.55,
-    "scraped_at": "2026-04-24T04:09:10.415486"
+    "scraped_at": "2026-04-24T04:29:22.048558"
   },
   {
     "url_hash": "5b13100d92197ecaa9535623d67abf0bc574a9a5f3419e2a2555d182abfa628e",
     "url": "https://www.safcodental.com/catalog/product/view/id/81874/s/ossify-cortical-bone-sheet-15x20mm/",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
@@ -315,13 +305,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 0.55,
-    "scraped_at": "2026-04-24T04:09:30.645300"
+    "scraped_at": "2026-04-24T04:29:01.437969"
   },
   {
     "url_hash": "54c2e8a226d8f1eb954b86badfa74535413d24b3bcbe34181a91bdd4bccad5ea",
     "url": "https://www.safcodental.com/catalog/product/view/id/81877/s/ossify-cortical-bone-sheet-20x30mm/",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
@@ -344,13 +333,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 0.55,
-    "scraped_at": "2026-04-24T04:09:54.810390"
+    "scraped_at": "2026-04-24T04:28:29.338491"
   },
   {
     "url_hash": "6950b99fc32efa40439b0b6e1b148807f4dd6fa9b0a70fdb6dcd93514ac53096",
     "url": "https://www.safcodental.com/catalog/product/view/id/81856/s/ossify-dbm-cortical-fiber-bone-graft-0-5cc-jar/",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
@@ -373,13 +361,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 0.55,
-    "scraped_at": "2026-04-24T04:08:53.775079"
+    "scraped_at": "2026-04-24T04:28:41.971368"
   },
   {
     "url_hash": "1a01a565582b7654dad173408526a2ba0ccb0eeca1af8cd63b82d41a268eda52",
     "url": "https://www.safcodental.com/catalog/product/view/id/81859/s/ossify-dbm-cortical-fiber-bone-graft-1cc-jar/",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
@@ -402,13 +389,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 0.55,
-    "scraped_at": "2026-04-24T04:10:00.123262"
+    "scraped_at": "2026-04-24T04:28:18.853727"
   },
   {
     "url_hash": "f8d1afd03ad039bd02d81a0726ff60353aa45a5e6d771803fb38bd2d01d74bfd",
     "url": "https://www.safcodental.com/catalog/product/view/id/81862/s/ossify-dbm-cortical-fiber-bone-graft-2cc-jar/",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
@@ -431,13 +417,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 0.55,
-    "scraped_at": "2026-04-24T04:09:45.146994"
+    "scraped_at": "2026-04-24T04:29:28.034016"
   },
   {
     "url_hash": "570a76615b7cbbf1aeab42f23ccd1493b09d2dbe43402e6218e98e4c323b3f58",
     "url": "https://www.safcodental.com/catalog/product/view/id/81865/s/ossify-dbm-cortical-fiber-bone-graft-with-1-1-5mm-chips-0-5cc-jar/",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
@@ -460,13 +445,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 0.55,
-    "scraped_at": "2026-04-24T04:10:02.599786"
+    "scraped_at": "2026-04-24T04:28:40.834801"
   },
   {
     "url_hash": "445538105ddb09d24e7b1f5325bf33810ca5d1f433e4f255d9af8661db704af9",
     "url": "https://www.safcodental.com/catalog/product/view/id/81868/s/ossify-dbm-cortical-fiber-bone-graft-with-1-1-5mm-chips-1cc-jar/",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
@@ -489,13 +473,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 0.55,
-    "scraped_at": "2026-04-24T04:09:32.517571"
+    "scraped_at": "2026-04-24T04:29:12.416059"
   },
   {
     "url_hash": "5808bf121749ec803cd0702d235a52b842866fc1735da2afa069f0291e0ecdbe",
     "url": "https://www.safcodental.com/catalog/product/view/id/81871/s/ossify-dbm-cortical-fiber-bone-graft-with-1-1-5mm-chips-2cc-jar/",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
@@ -518,13 +501,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 0.55,
-    "scraped_at": "2026-04-24T04:09:50.673081"
+    "scraped_at": "2026-04-24T04:29:15.903573"
   },
   {
     "url_hash": "c4b5930d9d5f5769f22bf1ae2406b2389ac9e8a91d1014a074c9075a9d5fe74d",
     "url": "https://www.safcodental.com/catalog/product/view/id/81457/s/ossify-min-demin-cortical-cancellous-bone-graft-2cc-jar/",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
@@ -547,13 +529,12 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 0.55,
-    "scraped_at": "2026-04-24T04:09:26.889791"
+    "scraped_at": "2026-04-24T04:28:17.231979"
   },
   {
     "url_hash": "d8a3e5ff124a2fb091130f7959143a695565b4795e5bc4565ced767741b9b900",
     "url": "https://www.safcodental.com/product/surgifoam-reg",
-    "run_id": "db5c0691",
+    "run_id": "dd582b80",
     "category": "Sutures & Surgical Products",
     "category_hierarchy": [
       "Dental Supplies",
@@ -576,7 +557,6 @@
       "https://www.safcodental.com/product/clearance-item"
     ],
     "extraction_method": "algolia+css",
-    "confidence_score": 1.0,
-    "scraped_at": "2026-04-24T04:09:39.436998"
+    "scraped_at": "2026-04-24T04:28:57.342528"
   }
 ]

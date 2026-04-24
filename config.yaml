@@ -17,7 +17,6 @@ scraper:
 llm:
   model: "gpt-4o-mini"
   max_tokens: 2048
-  extraction_fallback_threshold: 0.65
   temperature: 0.0
 
 storage:

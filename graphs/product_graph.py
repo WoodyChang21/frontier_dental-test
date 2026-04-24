@@ -74,10 +74,9 @@ async def extract_structured(state: ProductState) -> dict:
     algolia = state.get("algolia_data") or {}
 
     css_fields: dict = {}
-    css_score = 0.0
     if state.get("raw_html"):
         soup = parse_html(state["raw_html"])
-        css_fields, css_score = css_extract(
+        css_fields = css_extract(
             soup=soup,
             url=state["product_url"],
             category=state["category_name"],
@@ -104,9 +103,6 @@ async def extract_structured(state: ProductState) -> dict:
         "alternative_products": css_fields.get("alternative_products", []),
     }
 
-    # Algolia supplies the primary scalars; CSS adds supplementary coverage
-    algolia_boost = 0.3 if algolia.get("name") else 0.0
-    final_score = min(1.0, css_score + algolia_boost)
     method = "algolia+css" if algolia else "css"
 
     record = build_product_record(
@@ -116,12 +112,10 @@ async def extract_structured(state: ProductState) -> dict:
         category_hierarchy=state["category_hierarchy"],
         run_id=cfg["run_id"],
         extraction_method=method,
-        confidence_score=final_score,
     )
     log.info(
         "extracted",
         url=state["product_url"],
-        score=final_score,
         method=method,
         name=record.name,
     )
@@ -134,12 +128,7 @@ async def llm_extract_fallback(state: ProductState) -> dict:
     Strips noisy tags and passes cleaned HTML to the full LLM extractor.
     """
     cfg = state["run_config"]
-    current = state.get("product")
-    log.info(
-        "llm_fallback_triggered",
-        url=state["product_url"],
-        score=current.confidence_score if current else 0,
-    )
+    log.info("llm_fallback_triggered", url=state["product_url"])
     try:
         fields = await llm_extract(
             html=state["raw_html"],
@@ -155,7 +144,6 @@ async def llm_extract_fallback(state: ProductState) -> dict:
             category_hierarchy=state["category_hierarchy"],
             run_id=cfg["run_id"],
             extraction_method="llm_fallback",
-            confidence_score=0.80,
         )
         log.info("llm_extracted", url=state["product_url"], name=record.name)
         return {"product": record}
@@ -179,12 +167,9 @@ def should_use_llm_fallback(state: ProductState) -> str:
     product = state.get("product")
     if product is None:
         return "validate"
-    # LLM fallback only when Algolia has no data AND CSS score is below threshold.
-    # When Algolia supplies core fields, the record is kept even with low CSS coverage.
-    if not state.get("algolia_data"):
-        threshold = state["run_config"].get("extraction_threshold", 0.65)
-        if product.confidence_score < threshold:
-            return "llm_fallback"
+    # LLM fallback only when Algolia has no data AND CSS couldn't extract a description.
+    if not state.get("algolia_data") and not product.description:
+        return "llm_fallback"
     return "validate"
 
 
