@@ -1,0 +1,33 @@
+categories:
+  - url: "https://www.safcodental.com/catalog/gloves"
+    name: "Dental Exam Gloves"
+    algolia_filter: "Dental Supplies /// Dental Exam Gloves"
+  - url: "https://www.safcodental.com/catalog/sutures-surgical-products"
+    name: "Sutures & Surgical Products"
+    algolia_filter: "Dental Supplies /// Sutures & surgical products"
+
+scraper:
+  max_pages_per_category: 20
+  max_products_per_category: 500
+  delay_between_requests_ms: 1200
+  max_concurrent_products: 3
+  request_timeout_seconds: 30
+  playwright_headless: true
+  tavily_extract_depth: "advanced"
+  tavily_batch_size: 5
+
+llm:
+  model: "gpt-4o-mini"
+  max_tokens: 2048
+  extraction_fallback_threshold: 0.65
+  temperature: 0.0
+
+storage:
+  output_dir: "output"
+  db_filename: "safco_products.db"
+  csv_filename: "safco_products.csv"
+  json_filename: "safco_products.json"
+  checkpoint_db: "checkpoints.db"
+
+logging:
+  level: "INFO"
