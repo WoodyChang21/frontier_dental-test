@@ -27,9 +27,6 @@ The system is composed of three nested graphs. The Main Graph orchestrates two C
 │  (Playwright intercepts Algolia key → HTTP pagination → product URLs        │
 │   + structured hit data: name, SKU, price, brand, images, stock)            │
 │               │                                                              │
-│  batch_fetch_pages                                                           │
-│  (TavilyExtract → clean markdown for ALL URLs, batched before fan-out)      │
-│               │                                                              │
 │               ├─ Send() ──► extract_product [URL 1]  ─┐                     │
 │               ├─ Send() ──► extract_product [URL 2]   │                     │
 │               ├─ Send() ──► extract_product [URL 3]   ├─► reduce_category → END
@@ -42,8 +39,7 @@ The system is composed of three nested graphs. The Main Graph orchestrates two C
 ┌─ PRODUCT SUBGRAPH (one instance per URL, runs inside extract_product) ─────┐
 │                                                                              │
 │  fetch_page                                                                  │
-│  (use pre-fetched Tavily content if available;                               │
-│   else individual TavilyExtract; else httpx → Playwright as last resort)    │
+│  (httpx GET; if product markers absent → Playwright render fallback)        │
 │       │                                                                      │
 │  classify_page                                                               │
 │  (skip if Algolia data present → auto product_detail;                       │
@@ -51,11 +47,10 @@ The system is composed of three nested graphs. The Main Graph orchestrates two C
 │       │                                                                      │
 │  extract_structured                                                          │
 │  (Algolia scalars win: name, SKU, price, brand, images, stock;              │
-│   LLM extracts from Tavily markdown: description, specs,                    │
-│   unit_pack_size, alternative_products — ~700 input tokens)                 │
+│   CSS selectors extract: description, specs, images, alternative links)     │
 │       │                                                                      │
-│       ├─[raw_html absent AND Algolia missing AND score < 0.65]──► llm_fallback
-│       │                                                                      │
+│       ├─[no Algolia AND css_score < 0.65]──► llm_fallback                   │
+│       │                                      (full HTML → LLM extraction)   │
 │  validate                                                                    │
 │  (dedup by url_hash, reject incomplete records, score confidence)           │
 │       │                                                                      │
@@ -67,9 +62,7 @@ The system is composed of three nested graphs. The Main Graph orchestrates two C
 
 1. **Algolia API for product discovery**: Safco's category pages use Alpine.js to hydrate product grids from Algolia. The Navigator intercepts a session API key via Playwright, then queries Algolia directly over pure HTTP — returning rich structured JSON (name, SKU, price, brand, images, availability, categories) for all products across all pages without any CSS parsing.
 
-2. **Tavily batch pre-fetch + LLM supplementary extraction**: All product detail pages are batch-fetched via TavilyExtract before any product task is dispatched. Tavily returns clean **markdown** instead of raw HTML — the LLM extracts description, specs, pack size, and alternative products in ~700 tokens vs ~1500 for noisy HTML. This also eliminates per-product httpx/Playwright calls on the happy path.
-
-> **Note on `extractor.py`**: The module contains a `css_extract()` function with Hyvä/Alpine.js CSS selectors — this was the original supplementary extraction strategy for this branch (httpx + BeautifulSoup instead of Tavily). The live pipeline now uses `_extract_supplementary_llm()` in `product_graph.py` instead; `css_extract()` is retained as a utility but is not called in the main graph. The `llm_extract()` function in `extractor.py` is used by the last-resort `llm_fallback` node.
+2. **Two-layer extraction — Algolia core + CSS supplementary**: Algolia supplies all structured scalar fields; the product detail page is fetched via httpx (Playwright fallback for client-rendered content) and parsed with CSS selectors to extract description, specifications, images, and related links. LLM is used only as a last resort when CSS coverage is too low and no Algolia data is available.
 
 ---
 
@@ -77,7 +70,7 @@ The system is composed of three nested graphs. The Main Graph orchestrates two C
 
 ### Step 0 — Startup (`main.py`)
 
-- Reads `config.yaml` (categories, Algolia facet filters, Tavily batch size/depth, delays, concurrency, `llm.model`, output paths, checkpoint DB).
+- Reads `config.yaml` (categories, Algolia facet filters, delays, concurrency, `llm.model`, extraction threshold, output paths, checkpoint DB).
 - Loads `.env` from the same directory.
 - Builds **`MainState`**, opens **`AsyncSqliteSaver`** (LangGraph checkpoints), compiles **`main_graph`**, and streams node updates via **`graph.astream(..., stream_mode="updates")`**.
 - On shutdown, closes the shared Playwright browser.
@@ -85,7 +78,7 @@ The system is composed of three nested graphs. The Main Graph orchestrates two C
 ### Step 1 — `initialize_run` (main graph)
 
 - Ensures **`output/`** exists.
-- Opens **`output/safco_products.db`**, records run start, and loads **existing `url_hash` values** into the validator's in-memory dedup set. `--fresh` skips the dedup seed so all products are re-scraped.
+- Opens **`output/safco_products.db`**, records run start, and loads **existing `url_hash` values** into the validator's in-memory dedup set. `--fresh` skips this so all products are re-scraped.
 
 ### Step 2 — `dispatch_categories` (parallel)
 
@@ -97,60 +90,57 @@ The system is composed of three nested graphs. The Main Graph orchestrates two C
 1. **Playwright** loads the category URL once and listens for network responses to capture the **Algolia `x-algolia-api-key`**.
 2. That browser session closes; the rest of discovery is **plain HTTP** to Algolia (`facetFilters` from `config.yaml`), paginating until limits or catalog end.
 3. Produces **`product_urls`** and **`algolia_hits`** (name, SKU, price, brand, stock, images, category breadcrumbs).
-4. Algolia does **not** supply: description, specifications, unit pack size, related products — those come from Tavily + LLM in later steps.
-5. If the Algolia key cannot be intercepted, the navigator falls back to Playwright HTML scraping.
+4. Algolia does **not** supply: description, specifications, unit pack size, related products — those come from the CSS extraction of each product detail page.
+5. If the Algolia key cannot be intercepted, the navigator falls back to Playwright HTML scraping for URL collection.
 
-### Step 4 — `batch_fetch_pages` (Tavily batch pre-fetch)
+### Step 4 — `dispatch_product_tasks` (parallel fan-out)
 
-- Before any product task is dispatched, **all product URLs for the category** are submitted to **`TavilyExtract`** in batches (`tavily_batch_size`, default 5).
-- Each batch call returns **clean markdown** + **image URLs** for each page.
-- Results are stored in a `tavily_content_map` keyed by URL and passed directly to each product task — eliminating per-product httpx/Playwright calls on the happy path.
-- Failed URLs in a batch are recorded as `None`; those products fall back to individual Tavily or httpx/Playwright in their product subgraph.
+- One **`Send("extract_product", ...)`** per URL, with **`algolia_data`** injected.
+- All product tasks are scheduled at once; Playwright is capped by a global `asyncio.Semaphore` (`max_concurrent_products`, default 3).
 
-### Step 5 — `dispatch_product_tasks` (parallel fan-out)
+### Step 5 — `fetch_page` (product subgraph)
 
-- One **`Send("extract_product", ...)`** per URL, with **`algolia_data`** and **pre-fetched Tavily content** (`prefetched_content`, `prefetched_images`) injected into the `ProductTaskState`.
-- All product tasks are scheduled at once; Playwright use is capped by a global `asyncio.Semaphore` (`max_concurrent_products`, default 3) only if the Playwright fallback path triggers.
+- **httpx** GET with browser-like headers.
+- Parses the response and checks for product markers (`h1.page-title`, `[itemprop='name']`). If absent, the page is client-rendered — falls back to **Playwright** to obtain the fully rendered DOM.
+- Returns raw HTML for CSS parsing in the next step.
 
-### Step 6 — `fetch_page` (product subgraph)
-
-- If `raw_html` is already present (injected from `batch_fetch_pages`), this node is a **no-op**.
-- Otherwise tries **individual TavilyExtract** for that URL.
-- Last resort: **httpx** GET → checks for product markers (`h1.page-title`, `[itemprop='name']`) → **Playwright** if the page is client-rendered.
-
-### Step 7 — `classify_page`
+### Step 6 — `classify_page`
 
 - If `algolia_data` is present (normal path), classification is **skipped** — page is treated as `product_detail`.
-- If not: URL-depth heuristic first (`/product/` or ≥5 path segments → `product_detail`); if still ambiguous, **`classify_with_llm`** (detects whether content is Tavily markdown or raw HTML and adjusts prompt accordingly).
+- If not: URL-depth heuristic first (`/product/` or ≥5 path segments → `product_detail`); if still ambiguous, **`classify_with_llm`** is called.
 
-### Step 8 — `extract_structured`
+### Step 7 — `extract_structured`
 
 - **Algolia wins** on all scalar fields it provides: name, brand, SKU, price, availability, images.
-- **`_extract_supplementary_llm`** sends the Tavily markdown (trimmed to 3000 chars) to **OpenAI** with a focused prompt to extract: `description`, `unit_pack_size`, `specifications`, `alternative_products`. Uses ~700 input tokens.
-- Image priority: Algolia > Tavily-extracted > LLM-extracted.
-- Confidence: `min(1.0, llm_score + 0.35)` when Algolia provided a name (`algolia+tavily_llm` path); `llm_score` alone otherwise (`tavily_llm`).
+- **`css_extract()`** (from `agents/extractor.py`) parses the rendered HTML with Hyvä/Alpine.js-oriented selectors:
+  - `description`: `div.product-description`, `h2` sibling pattern, `#description`
+  - `specifications`: all `<table>` rows → `{key: value}` dict
+  - `image_urls`: `img[src*='catalog/product']`, placeholders excluded
+  - `alternative_products`: `a[href*='/product/']`, capped at 10
+- **CSS confidence score**: `(required_found / 2) × 0.6 + (optional_found / 3) × 0.4` where required = name + price, optional = description + images + specifications.
+- **Final score**: `min(1.0, css_score + 0.3)` when Algolia supplied a name (`algolia+css` path); `css_score` alone otherwise (`css`).
 
-### Step 9 — `llm_fallback` (conditional)
+### Step 8 — `llm_fallback` (conditional)
 
-- Only triggers when **all three conditions are met**: page content is absent (`raw_html is None`), Algolia data is also absent, AND confidence is below `extraction_fallback_threshold` (default 0.65).
-- Sends whatever content is available to the full `llm_extract` path (from `extractor.py`), which handles both HTML and markdown inputs.
+- Only triggers when **both** conditions are met: no Algolia data for this URL, **and** CSS confidence is below `extraction_fallback_threshold` (default 0.65).
+- Strips noisy tags, sends trimmed HTML (up to 6000 chars) to **OpenAI** (`llm_extract`, JSON mode).
 - With normal Algolia-backed runs, this path **never triggers**.
 
-### Step 10 — `validate`
+### Step 9 — `validate`
 
 - Deduplicates by `url_hash` (in-memory + DB-seeded).
 - Rejects records with missing/short name.
 - Applies confidence penalties for missing SKU, price, brand, description, images.
 
-### Step 11 — Category completion + SQLite flush
+### Step 10 — Category completion + SQLite flush
 
-- When `crawl_category` finishes, all products for that category are **`upsert_batch`'d** to `safco_products.db` immediately (crash safety).
+- When `crawl_category` finishes, all products are **`upsert_batch`'d** to `safco_products.db` immediately.
 
-### Step 12 — `reduce_products`
+### Step 11 — `reduce_products`
 
 - Merges both category branches into `MainState["products"]` and logs total.
 
-### Step 13 — `export_results`
+### Step 12 — `export_results`
 
 - Reads the DB with pandas; writes `output/safco_products.csv` and `output/safco_products.json`.
 
@@ -161,9 +151,8 @@ The system is composed of three nested graphs. The Main Graph orchestrates two C
 | Level | What runs in parallel | Throttle |
 |---|---|---|
 | Categories | One `crawl_category` per category | 2 concurrent (configurable) |
-| Batch fetch | All category URLs submitted to Tavily before fan-out | `tavily_batch_size` per API call |
-| Products | All `extract_product` tasks fan out simultaneously | Global semaphore only if Playwright fallback triggers |
-| Across categories | Both categories' product work overlaps | Same global Playwright semaphore |
+| Products | All `extract_product` tasks fan out simultaneously | Global Playwright semaphore (`max_concurrent_products`, default 3) |
+| Across categories | Both categories' product work overlaps | Same global semaphore |
 
 ---
 
@@ -172,10 +161,9 @@ The system is composed of three nested graphs. The Main Graph orchestrates two C
 | Step | Model | When |
 |---|---|---|
 | `classify_page` | `llm.model` (config) | Only if no Algolia data and URL heuristic is ambiguous |
-| `extract_structured` | `llm.model` (config) | **Every product** — focused prompt for description/specs/pack_size/alternatives from Tavily markdown |
-| `llm_fallback` | `llm.model` (config) | Only if no Algolia data AND no page content AND confidence < 0.65 |
+| `llm_fallback` | `llm.model` (config) | Only if no Algolia data AND CSS confidence < 0.65 |
 
-The LLM is never used for routing decisions or fields that Algolia already supplies. The `extract_structured` call is intentionally narrow — Algolia provides name/SKU/price/brand, so the prompt only asks for the 4 supplementary fields (~700 input tokens per product).
+For a typical run where every URL has an Algolia hit, **LLM is never called**. It exists purely as a safety net for layout drift or Algolia misses.
 
 ---
 
@@ -185,7 +173,7 @@ The LLM is never used for routing decisions or fields that Algolia already suppl
 |---|---|---|
 | **Navigator** | `agents/navigator.py` | Launches Playwright once per category to intercept the Algolia session key, then queries Algolia via HTTP across all pages to build `product_urls` + `algolia_hits`. Falls back to Playwright HTML scraping if key interception fails. |
 | **Page Classifier** | `agents/classifier.py` | Determines page type using URL-depth heuristics; calls the LLM only for ambiguous pages. Skipped entirely when Algolia data is present. |
-| **Extractor** | `agents/extractor.py` | Provides `css_extract()` (CSS-based, not used in the main pipeline), `llm_extract()` (used by `llm_fallback` node), and `build_product_record()`. Supplementary extraction in the main path is handled by `_extract_supplementary_llm()` in `product_graph.py`. |
+| **Extractor** | `agents/extractor.py` | `css_extract()` parses rendered HTML with Hyvä/Alpine.js CSS selectors for description, specs, images, and related links. `llm_extract()` is the full-page LLM fallback for the rare no-Algolia low-coverage case. `build_product_record()` assembles the final `ProductRecord`. |
 | **Validator** | `agents/validator.py` | Deduplicates by SHA256(url), rejects records with missing/short names, and applies confidence penalties for missing fields. |
 | **Storage** | `storage/db.py` + `storage/exporter.py` | Idempotent SQLite upsert keyed on `url_hash` (`INSERT OR REPLACE`). Reads DB with pandas to export CSV and JSON at run end. |
 
@@ -196,9 +184,9 @@ The LLM is never used for routing decisions or fields that Algolia already suppl
 | Decision | Alternative | Reason |
 |---|---|---|
 | Algolia API (via intercepted session key) | CSS scraping the product grid | Algolia gives structured JSON for every product — name, SKU, price, brand, images, stock — without fragile selectors. One Playwright call per category to capture the key; all pagination via plain HTTP. |
-| TavilyExtract batch pre-fetch | httpx + CSS selectors per product | Tavily handles JS-rendered pages, returns clean markdown, and supports batch calls. Pre-fetching all URLs before the fan-out eliminates per-product browser launches on the happy path. CSS selectors (`css_extract()`) were the original design for this purpose but have been superseded. |
-| LLM on clean Tavily markdown | Full HTML passed to LLM | The supplementary extraction prompt receives ≤3000 chars of clean markdown with Algolia context prepended. The LLM only needs to find 4 fields — ~700 input tokens vs ~1500 for noisy HTML. |
-| Deterministic LangGraph graph | ReAct agent loop | The pipeline is fully deterministic: navigate → batch fetch → extract → validate → persist. `Send()` fan-out gives true parallelism without LLM routing overhead. |
+| CSS selectors for supplementary fields | LLM extraction on every product | CSS parsing is deterministic, fast, and has zero API cost. Selectors are centralised in `PRODUCT_SELECTORS` and easy to update when the theme changes. LLM is reserved for genuine ambiguity. |
+| httpx → Playwright (not Tavily) | Tavily batch pre-fetch | Direct HTTP keeps the tool dependency minimal. Playwright handles client-rendered pages when httpx returns incomplete HTML. No external extraction API needed for the detail page fetch. |
+| Deterministic LangGraph graph | ReAct agent loop | The pipeline is fully deterministic: navigate → extract → validate → persist. `Send()` fan-out gives true parallelism without LLM routing overhead. |
 
 ---
 
@@ -207,34 +195,26 @@ The LLM is never used for routing decisions or fields that Algolia already suppl
 ### Requirements
 
 - Python 3.11+
-- **OpenAI** API key — used by `extract_structured` (supplementary LLM call on every product) and optional classifier/fallback
-- **Tavily** API key — used by `batch_fetch_pages` and individual `fetch_page` fallback
-- **LangSmith** API key — optional; enables LangGraph tracing
+- **OpenAI** API key — used only by the LLM classifier and `llm_fallback` node (rare paths); model name set in `config.yaml` (default `gpt-4o-mini`)
+- No Tavily key needed — detail pages are fetched directly via httpx/Playwright
 
 ### Install
 
 ```bash
 cd safco_scraper
 pip install openai "langgraph>=0.2.70" langgraph-checkpoint-sqlite \
-  langchain-tavily playwright beautifulsoup4 lxml tenacity structlog \
+  playwright beautifulsoup4 lxml tenacity structlog \
   "pydantic>=2.7.0" pandas pyyaml rich click python-dotenv httpx
 python -m playwright install chromium
 ```
 
 ### Secrets Management
 
-API keys are loaded from a `.env` file via `python-dotenv`. **Never commit `.env` to source control** (it is in `.gitignore`).
-
 ```bash
 cp .env.example .env
-```
-
-Edit `.env` and set:
-
-```
-OPENAI_API_KEY=sk-...        # required
-TAVILY_API_KEY=tvly-...      # required
-LANGSMITH_API_KEY=ls__...    # optional
+# Edit .env and set:
+#   OPENAI_API_KEY   — required for classifier/llm_fallback paths
+#   LANGSMITH_API_KEY — optional; enables LangGraph tracing
 ```
 
 In production, replace `.env` with a secrets manager (AWS Secrets Manager, GCP Secret Manager, HashiCorp Vault). The application reads keys from environment variables, so any injection mechanism works without code changes.
@@ -247,14 +227,12 @@ All runtime behaviour is controlled by `config.yaml`:
 scraper:
   max_pages_per_category: 20        # Algolia pagination limit
   max_products_per_category: 500    # URL collection cap
-  delay_between_requests_ms: 1200   # Rate limiting
-  max_concurrent_products: 3        # Playwright semaphore (fallback path only)
-  tavily_batch_size: 5              # URLs per Tavily batch API call
-  tavily_extract_depth: "advanced"  # "basic" | "advanced"
+  delay_between_requests_ms: 1200   # Rate limiting between requests
+  max_concurrent_products: 3        # Playwright semaphore
 
 llm:
   model: "gpt-4o-mini"
-  extraction_fallback_threshold: 0.65
+  extraction_fallback_threshold: 0.65  # CSS score below this triggers llm_fallback
 ```
 
 ### Run
@@ -305,17 +283,17 @@ sqlite3 output/safco_products.db \
 | `run_id` | TEXT | Config |
 | `category` | TEXT | Config |
 | `category_hierarchy` | JSON array | Algolia `categories.level1` split by `///` |
-| `name` | TEXT | Algolia `name` |
+| `name` | TEXT | Algolia `name` / CSS `h1` fallback |
 | `brand` | TEXT | Algolia `manufacturer_name` |
 | `sku` | TEXT | Algolia `sku` |
-| `price` | TEXT | Algolia `price.USD.default_formated` |
-| `unit_pack_size` | TEXT | LLM from Tavily markdown |
+| `price` | TEXT | Algolia `price.USD.default_formated` / CSS `.price-box` |
+| `unit_pack_size` | TEXT | CSS description parsing |
 | `availability` | TEXT | Algolia `stock_availability` |
-| `description` | TEXT | LLM from Tavily markdown |
-| `specifications` | JSON object | LLM from Tavily markdown |
-| `image_urls` | JSON array | Algolia > Tavily images > LLM |
-| `alternative_products` | JSON array | LLM from Tavily markdown |
-| `extraction_method` | TEXT | `"algolia+tavily_llm"` / `"tavily_llm"` / `"llm_fallback"` |
+| `description` | TEXT | CSS from product detail page |
+| `specifications` | JSON object | CSS `<table>` parsing |
+| `image_urls` | JSON array | Algolia > CSS `img[src*=catalog]` |
+| `alternative_products` | JSON array | CSS `a[href*=/product/]` |
+| `extraction_method` | TEXT | `"algolia+css"` / `"css"` / `"llm_fallback"` |
 | `confidence_score` | REAL | 0.0–1.0 field coverage metric |
 | `scraped_at` | TEXT | UTC ISO timestamp |
 
@@ -325,17 +303,13 @@ sqlite3 output/safco_products.db \
 
 1. **Algolia key expiry**: The session API key is valid for ~23 hours. It is re-extracted fresh at the start of each run via Playwright.
 
-2. **LLM token cost at scale**: Every product incurs an LLM call in `extract_structured` (~700 input tokens). For a full-catalog run (800+ products), cache Tavily markdown between runs or switch to a cheaper model for the supplementary extraction step.
+2. **CSS selector maintenance**: Selectors target Safco's Hyvä/Alpine.js Magento theme. A theme update may break description or spec extraction. All selectors are centralised in `PRODUCT_SELECTORS` in `extractor.py` — a single file to update. Wire an integration test that asserts field coverage > 0.8 on a known product URL to catch regressions early.
 
-3. **Playwright required for key extraction**: One Playwright browser launch per category (2 total) to intercept the Algolia session key. Adds ~10s startup overhead per category; otherwise the scraper is pure HTTP.
+3. **Playwright required for two reasons**: (a) one launch per category to intercept the Algolia key, (b) fallback for client-rendered product pages where httpx returns incomplete HTML.
 
 4. **No login**: Operates as a guest user. Pricing may be incomplete for non-authenticated sessions.
 
-5. **Specification coverage**: Safco pages often embed specs in description prose rather than structured tables. The LLM extracts structured specs when they exist; unstructured specs remain in the `description` field.
-
-6. **Tavily rate limits**: The default `tavily_batch_size: 5` is conservative. Higher values speed up batch pre-fetch but may trigger rate limiting depending on the Tavily plan.
-
-7. **`css_extract()` not active**: `extractor.py` retains a CSS-based extraction function (Hyvä/Alpine.js selectors for description, specs, images, related links). It is not called in the current pipeline. If Tavily access is unavailable, wiring `css_extract()` as the supplementary extraction path is a viable fallback.
+5. **Specification coverage**: Safco pages often embed specs in description prose rather than structured tables. `css_extract()` captures table-based specs; prose-embedded specs stay in the `description` field.
 
 ---
 
@@ -344,10 +318,10 @@ sqlite3 output/safco_products.db \
 | Failure | Handling |
 |---|---|
 | Algolia key not intercepted | Falls back to Playwright HTML scraping for URL collection |
-| Tavily batch URL failure | Recorded as `None` in `tavily_content_map`; individual Tavily retry in product subgraph |
-| Individual Tavily failure | httpx GET → Playwright render fallback |
-| HTTP 429 / 5xx on product detail | `tenacity` exponential backoff (4 attempts, 2–30s wait) |
-| LLM API error in `extract_structured` | `llm_fields = {}`; product kept with Algolia-only data |
+| httpx fetch fails (429 / 5xx) | `tenacity` exponential backoff (4 attempts, 2–30s wait) |
+| Playwright timeout on detail page | Error logged, product skipped; run continues |
+| CSS extracts nothing useful | Confidence score stays low; if no Algolia data, routes to `llm_fallback` |
+| LLM API error in `llm_fallback` | Error logged; product dropped |
 | Missing required fields | Product rejected by validator (`product_rejected` log event) |
 | Duplicate URL | SHA256 dedup in-memory + `INSERT OR REPLACE` in SQLite |
 | Crash mid-run | `AsyncSqliteSaver` checkpoints at every node boundary; `--resume <run_id>` restarts from last completed node |
@@ -358,19 +332,17 @@ sqlite3 output/safco_products.db \
 
 1. **URL discovery**: Replace per-category Algolia queries with a full index sweep (`query=""`, no facet filter) to discover all categories and products at once.
 
-2. **Tavily parallelism**: Increase `tavily_batch_size` and submit batch requests concurrently across categories. Each batch is an independent API call.
+2. **Playwright pool**: Replace the singleton browser with a remote headless Chrome fleet (`connect_over_cdp()`). The Algolia key extraction and client-rendered page fallback are the only mandatory Playwright steps.
 
-3. **LLM cost reduction**: Cache Tavily markdown content keyed on `url_hash` between runs. For unchanged product pages, skip the supplementary LLM call and reuse the prior extraction.
+3. **Algolia key management**: Store the extracted key in Redis with a TTL matching its `validUntil`. All workers share the cached key rather than each spawning their own Playwright session.
 
-4. **Playwright pool**: Replace the singleton browser with a remote headless Chrome fleet (`connect_over_cdp()`). The Algolia key extraction is the only mandatory Playwright step per category.
+4. **CSS selector versioning**: Track `extraction_method = "algolia+css"` ratio per run. A drop signals selector drift. Maintain a golden-set of test URLs with expected field assertions.
 
-5. **Algolia key management**: Store the extracted key in Redis with a TTL matching its `validUntil`. All workers share the cached key rather than each spawning their own Playwright session.
+5. **Storage**: Replace SQLite with PostgreSQL. Use `langgraph-checkpoint-postgres` for checkpointing. The `upsert_batch` logic is already idempotent.
 
-6. **Storage**: Replace SQLite with PostgreSQL. Use `langgraph-checkpoint-postgres` for checkpointing. The `upsert_batch` logic is already idempotent.
+6. **Orchestration**: Schedule daily runs via Airflow or LangGraph Platform's cron trigger. Run category-level sub-DAGs in parallel.
 
-7. **Orchestration**: Schedule daily runs via Airflow or LangGraph Platform's cron trigger. Run category-level sub-DAGs in parallel.
-
-8. **Deployment path**:
+7. **Deployment path**:
 
    | Stage | Stack |
    |---|---|
@@ -382,14 +354,14 @@ sqlite3 output/safco_products.db \
 
 ## Data Quality Monitoring
 
-1. **Confidence score distribution**: Alert if average `confidence_score` drops below 0.7 for a category — signals an Algolia schema change or Tavily content degradation.
+1. **Confidence score distribution**: Alert if average `confidence_score` drops below 0.7 for a category — signals a CSS selector regression or Algolia schema change.
 
-2. **Field completeness**: Track `COUNT(*) WHERE description IS NULL` per run. A spike means LLM extraction is regressing.
+2. **Field completeness**: Track `COUNT(*) WHERE description IS NULL` per run. A spike means CSS description selectors broke.
 
-3. **Run-over-run product count delta**: Compare `nbHits` from Algolia against `COUNT(*)` in the DB. A gap > 5% warrants investigation into Tavily failure rate.
+3. **Run-over-run product count delta**: Compare `nbHits` from Algolia against `COUNT(*)` in the DB. A gap > 5% warrants investigation.
 
-4. **Tavily failure rate**: Log `failed` count from `batch_fetch_complete`. A rising rate indicates Tavily access issues or site-side blocking.
+4. **LLM fallback rate**: Monitor `COUNT(*) WHERE extraction_method='llm_fallback'`. A rising rate means CSS selectors are failing and the LLM safety net is catching more cases — time to fix the selectors.
 
-5. **Extraction method distribution**: Monitor `COUNT(*) GROUP BY extraction_method`. A shift from `algolia+tavily_llm` toward `llm_fallback` signals an Algolia or Tavily regression.
+5. **Extraction method distribution**: Monitor `COUNT(*) GROUP BY extraction_method`. The expected dominant value is `"algolia+css"`. Any shift toward `"css"` or `"llm_fallback"` signals Algolia or CSS regression respectively.
 
 6. **Price sanity check**: Flag products with price outside `[$0.01, $10,000]` as anomalies for manual review.

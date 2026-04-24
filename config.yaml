@@ -13,8 +13,6 @@ scraper:
   max_concurrent_products: 3
   request_timeout_seconds: 30
   playwright_headless: true
-  tavily_extract_depth: "advanced"
-  tavily_batch_size: 5
 
 llm:
   model: "gpt-4o-mini"
