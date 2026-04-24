@@ -63,6 +63,22 @@ The system is composed of three nested graphs. The Main Graph orchestrates two C
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
 
+### Graph Visualisation
+
+**Main Graph** — `crawl_category` is where the Category Subgraph runs (one instance per category, both in parallel via `Send()`).
+
+![Main Graph](assets/graph_main.png)
+
+**Category Subgraph** (runs inside `crawl_category`) — `extract_product` is where the Product Subgraph runs (one instance per URL, all in parallel via `Send()`).
+
+![Category Subgraph](assets/graph_category.png)
+
+**Product Subgraph** (runs inside `extract_product`) — dashed edge from `extract_structured` to `llm_fallback` is the conditional last-resort path.
+
+![Product Subgraph](assets/graph_product.png)
+
+---
+
 **Two key design discoveries drove the architecture:**
 
 1. **Algolia API for product discovery**: Safco uses the Algolia search API to hydrate its product grids. The Navigator intercepts a session API key via Playwright, then queries Algolia directly over pure HTTP — returning rich structured JSON (name, SKU, price, brand, images, availability, categories) across all pages without any CSS parsing.
