@@ -1,5 +1,305 @@
 [
   {
+    "url_hash": "3ef3b95ed740554065987aa840a9e7433ad143b0d907a1fa730c43a7f16cce74",
+    "url": "https://www.safcodental.com/product/alasta-reg-aloe#4680820",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Alasta&reg; Aloe gloves medium, 100/box",
+    "brand": "Dash",
+    "sku": "4680820",
+    "price": "$12.99",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Soft-Fit™ powder-free nitrile exam gloves.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drcau.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:25.047073"
+  },
+  {
+    "url_hash": "c36f6a715a66628b5f55117956feac013ba5d3985d9e26eee41a425e83063b0b",
+    "url": "https://www.safcodental.com/product/alasta-reg-aloe#4680812",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Alasta&reg; Aloe gloves small, 100/box",
+    "brand": "Dash",
+    "sku": "4680812",
+    "price": "$12.99",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Soft-Fit™ powder-free nitrile exam gloves.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drcau.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/alasta-reg-aloe",
+      "https://www.safcodental.com/product/alasta-reg-aloe"
+    ],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:25.163442"
+  },
+  {
+    "url_hash": "532ebb7c6a544d3272f60fdf47bcf36d063f86484b820d8dbf224473246c88f2",
+    "url": "https://www.safcodental.com/product/alasta-reg-aloe#4680805",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Alasta&reg; Aloe gloves x-small, 100/box",
+    "brand": "Dash",
+    "sku": "4680805",
+    "price": "$12.99",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Soft-Fit™ powder-free nitrile exam gloves.",
+    "specifications": {
+      "brand": "Dash",
+      "sku": "4680805",
+      "size": "X-small"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drcau.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:24.729178"
+  },
+  {
+    "url_hash": "379153d3ee97effe2080b015f0633a8d3c94772df01ac669bf30a4bfc92c5005",
+    "url": "https://www.safcodental.com/product/alasta-reg-aloe#4680827",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Alasta&reg; gloves large, 100/box",
+    "brand": "Dash",
+    "sku": "4680827",
+    "price": "$12.99",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Soft-Fit™ powder-free nitrile exam gloves.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drcau.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:25.308339"
+  },
+  {
+    "url_hash": "9792283f31c7072aa065f63ddef55c582929408e7a38c92439eb1d96d3bc2991",
+    "url": "https://www.safcodental.com/product/aurelia-reg-sonic-reg-100",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Aurelia Sonic 100",
+    "brand": "Supermax",
+    "sku": "DRCCL",
+    "price": "$6.49",
+    "unit_pack_size": "100 gloves per box",
+    "availability": "In stock",
+    "description": "Nitrile powder-free exam gloves. The same high tactility and lightweight comfort of Aurelia Sonic, but in a smaller count box to complement today’s more dynamic PPE environment.",
+    "specifications": {
+      "Textured fingertip finish": "Yes",
+      "Beaded cuff": "Yes",
+      "Chlorinated": "Yes",
+      "Ambidextrous": "Yes",
+      "Color": "Indigo blue",
+      "Thickness at palm": "2.2 mils",
+      "Thickness at fingertips": "3.2 mils"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drccl.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/d/r/drccl.jpg?width=75&height=75&canvas=75,75&optimize=medium&fit=bounds"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/aurelia-reg-sonic-reg-100",
+      "https://www.safcodental.com/product/aurelia-reg-sonic-reg-100"
+    ],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:27.934025"
+  },
+  {
+    "url_hash": "69e351833fc46ae01c96355a529e4ed0086225ba2ab99c167ceeea246c52aeb4",
+    "url": "https://www.safcodental.com/product/carbon-reg-air#4712126",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Cranberry Carbon Air nitrile gloves large 300/box",
+    "brand": "Cranberry",
+    "sku": "4712126",
+    "price": "$23.79",
+    "unit_pack_size": "300/box",
+    "availability": "In stock",
+    "description": "Powder-free nitrile exam gloves.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drccy_2.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:25.253438"
+  },
+  {
+    "url_hash": "23c5704acc962830d67a0625ca65823c3122ad0c549891ee52e5c5a615fc9c10",
+    "url": "https://www.safcodental.com/product/carbon-reg-air#4712124",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Cranberry Carbon Air nitrile gloves medium 300/box",
+    "brand": "Cranberry",
+    "sku": "4712124",
+    "price": "$23.79",
+    "unit_pack_size": "300/box",
+    "availability": "In stock",
+    "description": "Powder-free nitrile exam gloves.",
+    "specifications": {
+      "size": "Medium",
+      "material": "Nitrile",
+      "type": "Powder-free"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drccy_2.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/carbon-reg-air#4712120",
+      "https://www.safcodental.com/product/carbon-reg-air#4712122"
+    ],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:27.676610"
+  },
+  {
+    "url_hash": "63802ebbe6e5d5e335bd34a9a90ba97c108bb510a2b7bb0a5e0b60ace8dcbb18",
+    "url": "https://www.safcodental.com/product/carbon-reg-air#4712122",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Cranberry Carbon Air nitrile gloves small 300/box",
+    "brand": "Cranberry",
+    "sku": "4712122",
+    "price": "$23.79",
+    "unit_pack_size": "300/box",
+    "availability": "In stock",
+    "description": "Powder-free nitrile exam gloves.",
+    "specifications": {
+      "brand": "Cranberry",
+      "sku": "4712122",
+      "manufacturer_number": "CR3266"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drccy_2.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/carbon-reg-air#4712120",
+      "https://www.safcodental.com/product/carbon-reg-air#4712124"
+    ],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:25.501359"
+  },
+  {
+    "url_hash": "190d0224a5b75de0c503d905bc1c353e8ca105149c03d011f97aee2b345fa321",
+    "url": "https://www.safcodental.com/product/carbon-reg-air#4712128",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Cranberry Carbon Air nitrile gloves x-large 250/box",
+    "brand": "Cranberry",
+    "sku": "4712128",
+    "price": "$23.79",
+    "unit_pack_size": "250/box",
+    "availability": "In stock",
+    "description": "Powder-free nitrile exam gloves.",
+    "specifications": {
+      "brand": "Cranberry",
+      "sku": "4712128",
+      "category": "Dental Exam Gloves"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drccy_2.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:25.447174"
+  },
+  {
+    "url_hash": "8513bdeba83b94c17c67d12b4bee7a354aefa1beaa0b2782c49b2cba2a89be28",
+    "url": "https://www.safcodental.com/product/carbon-reg-air#4712120",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "Cranberry Carbon Air nitrile gloves x-small 300/box",
+    "brand": "Cranberry",
+    "sku": "4712120",
+    "price": "$23.79",
+    "unit_pack_size": "300/box",
+    "availability": "In stock",
+    "description": "Powder-free nitrile exam gloves.",
+    "specifications": {
+      "brand": "Cranberry",
+      "sku": "4712120",
+      "size": "X-small"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drccy_2.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:25.586911"
+  },
+  {
     "url_hash": "d8ded666ceae245dd3012d052a882713351329697673c51271802a4a9785011d",
     "url": "https://www.safcodental.com/product/true-comfort-reg-blu#4680073",
     "run_id": "8310ed19",
@@ -157,6 +457,162 @@
     ],
     "extraction_method": "algolia+tavily_llm",
     "scraped_at": "2026-04-24T04:33:54.729257"
+  },
+  {
+    "url_hash": "e0063d43726d188123e0578289b24940a364e9fb4769b820029148710217330d",
+    "url": "https://www.safcodental.com/product/nitriderm-reg-ultra-white#5380133",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "NitriDerm Ultra White nitrile gloves large 100/box",
+    "brand": "Innovative Healthcare",
+    "sku": "5380133",
+    "price": "$8.49",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Powder-free nitrile exam gloves.",
+    "specifications": {
+      "Textured fingertip finish": "true",
+      "Beaded cuff": "true",
+      "Non-chlorinated": "true",
+      "Ambidextrous": "true",
+      "Color": "White",
+      "Thickness at palm": "3.1 mils",
+      "Thickness at fingertip": "3.9 mils"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drcah.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:25.772148"
+  },
+  {
+    "url_hash": "b780424643edfc60d3225fd3b8b185bad112726f5d2286288194759f550ba13d",
+    "url": "https://www.safcodental.com/product/nuvo-trade#4680243",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Vinyl gloves"
+    ],
+    "name": "Nuvo vinyl gloves large 100/box",
+    "brand": "Dash",
+    "sku": "4680243",
+    "price": "$7.49",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Powder-free vinyl examination gloves.",
+    "specifications": {
+      "brand": "Dash",
+      "sku": "4680243",
+      "size": "large"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/druii_lc.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/nuvo-trade#4680227",
+      "https://www.safcodental.com/product/nuvo-trade#4680235"
+    ],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:26.524580"
+  },
+  {
+    "url_hash": "f1c0f3eb57efcdfb50d1a0673eeceb0d1c2625056d84fc8ca1916ab548899838",
+    "url": "https://www.safcodental.com/product/nuvo-trade#4680235",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Vinyl gloves"
+    ],
+    "name": "Nuvo vinyl gloves medium 100/box",
+    "brand": "Dash",
+    "sku": "4680235",
+    "price": "$7.49",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Powder-free vinyl examination gloves.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/druii_lc.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/nuvo-trade#4680227",
+      "https://www.safcodental.com/product/nuvo-trade#4680243"
+    ],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:26.155190"
+  },
+  {
+    "url_hash": "c698a6e9cb33ad67e068531fa89a1a12ccca36332f58157c2b041e32df575e73",
+    "url": "https://www.safcodental.com/product/nuvo-trade#4680227",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Vinyl gloves"
+    ],
+    "name": "Nuvo vinyl gloves small 100/box",
+    "brand": "Dash",
+    "sku": "4680227",
+    "price": "$7.49",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Powder-free vinyl examination gloves.",
+    "specifications": {
+      "Brand": "Dash",
+      "SKU": "4680227",
+      "Size": "Small"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/druii_lc.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:27.118291"
+  },
+  {
+    "url_hash": "edd5c4990252e5bb53bf758cc8d98ea74e35a8cc8c4f372db7f970900468a1c2",
+    "url": "https://www.safcodental.com/product/nuvo-trade#4680251",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Vinyl gloves"
+    ],
+    "name": "Nuvo vinyl gloves x-large 100/box",
+    "brand": "Dash",
+    "sku": "4680251",
+    "price": "$7.49",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Powder-free vinyl examination gloves.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/druii_lc.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/nuvo-trade#4680227",
+      "https://www.safcodental.com/product/nuvo-trade#4680235",
+      "https://www.safcodental.com/product/nuvo-trade#4680243"
+    ],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:25.709390"
   },
   {
     "url_hash": "d6410b9afa5f0c6ad864b74ff3eb1192a1663e55eef5248c1f280e0ff28a4a42",
@@ -323,6 +779,721 @@
     "alternative_products": [],
     "extraction_method": "algolia+tavily_llm",
     "scraped_at": "2026-04-24T04:33:54.048064"
+  },
+  {
+    "url_hash": "0670f1a53528a54244c9b066270c1ebe5547a5afa0f5160f369aadfc21657d71",
+    "url": "https://www.safcodental.com/product/quantum-blue#8210004",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "QUANTUM BLUE NITRILE LARGE, 100/BOX",
+    "brand": "Quantum",
+    "sku": "8210004",
+    "price": "$8.59",
+    "unit_pack_size": "100/BOX",
+    "availability": "In stock",
+    "description": "Powder-free nitrile exam gloves.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drcde.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:26.220888"
+  },
+  {
+    "url_hash": "7f5aaa86ea4b7b37e9c08d6db815b46652c6d7762668d7bbac81c29ec49d0e11",
+    "url": "https://www.safcodental.com/product/quantum-blue#8210003",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "QUANTUM BLUE NITRILE MEDIUM 100/BOX",
+    "brand": "Quantum",
+    "sku": "8210003",
+    "price": "$8.59",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "Powder-free nitrile exam gloves.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drcde.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:24.682159"
+  },
+  {
+    "url_hash": "4b1b4f66d1f32e2a4953300947fba52194dd8186a52ee7735475ccfa6261b4cf",
+    "url": "https://www.safcodental.com/product/quantum-blue#8210002",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "QUANTUM BLUE NITRILE SMALL, 100/BOX",
+    "brand": "Quantum",
+    "sku": "8210002",
+    "price": "$8.59",
+    "unit_pack_size": "100/BOX",
+    "availability": "In stock",
+    "description": "Powder-free nitrile exam gloves.",
+    "specifications": {
+      "size": "Small",
+      "brand": "Quantum"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drcde.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:25.089342"
+  },
+  {
+    "url_hash": "8e28783b510f35c7488e5fd45b2983716e1b9c9fe028502006230e2b23bded4e",
+    "url": "https://www.safcodental.com/product/quantum-blue#8210005",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "QUANTUM BLUE NITRILE X-LARGE, 100/BOX",
+    "brand": "Quantum",
+    "sku": "8210005",
+    "price": "$8.59",
+    "unit_pack_size": "100/BOX",
+    "availability": "In stock",
+    "description": "Powder-free nitrile exam gloves.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drcde.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:24.988599"
+  },
+  {
+    "url_hash": "026688e3b262018097336174aeb422715901bea7e67271796afacaa59a038df5",
+    "url": "https://www.safcodental.com/product/quantum-blue#8210014",
+    "run_id": "fe0e5adc",
+    "category": "Dental Exam Gloves",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Dental Exam Gloves",
+      "Nitrile gloves"
+    ],
+    "name": "QUANTUM BLUE NITRILE XS, 100/BOX",
+    "brand": "Quantum",
+    "sku": "8210014",
+    "price": "$8.59",
+    "unit_pack_size": "100/BOX",
+    "availability": "In stock",
+    "description": "Powder-free nitrile exam gloves.",
+    "specifications": {
+      "brand": "Quantum",
+      "sku": "8210014",
+      "size": "XS"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/d/r/drcde.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:25.488467"
+  },
+  {
+    "url_hash": "de46138125094452841d266f4637ad3ad206be16982e658d396b90dfc72e3f22",
+    "url": "https://www.safcodental.com/product/safety-scalpels#3274478",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical blades and scalpels"
+    ],
+    "name": "#15 Safety Scalpels 10/pkg.",
+    "brand": "Integra Miltex",
+    "sku": "3274478",
+    "price": "$38.49",
+    "unit_pack_size": "10/pkg",
+    "availability": "In stock",
+    "description": "Retractable blade scalpel offers ultimate safety. Sterile Stainless steel, razor-sharp cutting edge. Advance blade with slider in one motion. Blade locks into place with audible confirmation. Retract with one motion to protected position. Metric ruler on each scalpel. Individually packaged.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pflvz.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:29.358402"
+  },
+  {
+    "url_hash": "61aa8f7db4fb06e8f2158c6478bed5069ceb8e9761697fab21ed0db122b13bb7",
+    "url": "https://www.safcodental.com/product/safety-scalpels#3274479",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical blades and scalpels"
+    ],
+    "name": "#15C Safety Scalpels 10/pkg.",
+    "brand": "Integra Miltex",
+    "sku": "3274479",
+    "price": "$38.49",
+    "unit_pack_size": "10/pkg.",
+    "availability": "Backorder",
+    "description": "Retractable blade scalpel offers ultimate safety.",
+    "specifications": {
+      "Material": "Sterile Stainless steel",
+      "Cutting Edge": "Razor-sharp",
+      "Blade Locking Mechanism": "Locks into place with audible confirmation",
+      "Retractable Feature": "Retract with one motion to protected position",
+      "Metric Ruler": "On each scalpel",
+      "Packaging": "Individually packaged"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pflvz.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:30.631100"
+  },
+  {
+    "url_hash": "8b96cdc38c6eb9b4b6cac9f4cfae843a9b25a4aacbe395d9f8d159fe7c450d0c",
+    "url": "https://www.safcodental.com/product/feather-sup-reg-nbsp-sup-microsurgical-blades#3435265",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical blades and scalpels"
+    ],
+    "name": "350 Feather Microsurgical Blade 10/box",
+    "brand": "J. Morita",
+    "sku": "3435265",
+    "price": "$89.99",
+    "unit_pack_size": "10/box",
+    "availability": "In stock",
+    "description": "Advanced instrument system of interchangeable blades and handles.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pflvv.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:27.570095"
+  },
+  {
+    "url_hash": "302507bba5bb1c2d9d8ff2ffdffadb8e31a8dda8fb200b2f499dde07280ee354",
+    "url": "https://www.safcodental.com/product/feather-sup-reg-nbsp-sup-microsurgical-blades#3435263",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical blades and scalpels"
+    ],
+    "name": "390 Feather Microsurgical Blade 10/box",
+    "brand": "J. Morita",
+    "sku": "3435263",
+    "price": "$89.99",
+    "unit_pack_size": "10/box",
+    "availability": "In stock",
+    "description": "Advanced instrument system of interchangeable blades and handles.",
+    "specifications": {
+      "Mfr #": "27-07970007",
+      "SKU": "3435263",
+      "Brand": "J. Morita"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pflvv.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:29.750078"
+  },
+  {
+    "url_hash": "7268b843724411a3b84a1eda3fd5f92012b48abb8a7cd57d5ed8e90e8d9191e7",
+    "url": "https://www.safcodental.com/product/feather-sup-reg-nbsp-sup-microsurgical-blades#3435243",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical blades and scalpels"
+    ],
+    "name": "390C Feather Microsurgical Blade 10/box",
+    "brand": "J. Morita",
+    "sku": "3435243",
+    "price": "$89.99",
+    "unit_pack_size": "10/box",
+    "availability": "Backorder",
+    "description": "Advanced instrument system of interchangeable blades and handles.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pflvv.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:28.550708"
+  },
+  {
+    "url_hash": "2284a5455df94d57d0a5539cdd9b001ef456d0f361be26d3d71b14d6e3238fa9",
+    "url": "https://www.safcodental.com/product/feather-sup-reg-nbsp-sup-microsurgical-blades#3435264",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical blades and scalpels"
+    ],
+    "name": "391 Feather Microsurgical Blade 10/box",
+    "brand": "J. Morita",
+    "sku": "3435264",
+    "price": "$89.99",
+    "unit_pack_size": "10/box",
+    "availability": "Special order",
+    "description": "Advanced instrument system of interchangeable blades and handles.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pflvv.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:28.098494"
+  },
+  {
+    "url_hash": "7eb1677c374322ac0d79c6b0c40339a53579bf890bf710a3a8a6158848994340",
+    "url": "https://www.safcodental.com/product/barricaid-reg#2545052",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Periodontal dressings"
+    ],
+    "name": "Barricaid standard package",
+    "brand": "Dentsply Sirona",
+    "sku": "2545052",
+    "price": "$178.49",
+    "unit_pack_size": "4 x 4g syringes",
+    "availability": "Backorder",
+    "description": "Visible light cured periodontal dressing in a convenient syringe delivery system for direct placement onto the surgical site. Forms a firm, elastic covering. Translucent pink for superior esthetics. Tasteless.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfsgl.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:29.312895"
+  },
+  {
+    "url_hash": "29818fcd349da6dd3bb9a9c5c40942d2dcbcb6895e653612d1203ed8cfe3bb77",
+    "url": "https://www.safcodental.com/product/hemostat-sup-trade-sup#3152001",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical medicaments and packing"
+    ],
+    "name": "HemoStat 20/box",
+    "brand": "Medicom",
+    "sku": "3152001",
+    "price": "$118.49",
+    "unit_pack_size": "20/box",
+    "availability": "In stock",
+    "description": "Topical hemostatic dressing in the form of a sterile fabric prepared by the chemical treatment of regenerated cellulose. Provides safe and effective control of bleeding for extractions and periodontal surgery. When the fabric comes into contact with blood or fluids, it expands and transforms to a clear, viscous gel which fills voids and seals capillary ends to help stop bleeding.",
+    "specifications": {
+      "Mfr #": "4900-STAT",
+      "Stock Availability": "In stock",
+      "Price": "$118.49"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfpft.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:29.430234"
+  },
+  {
+    "url_hash": "ea391d630082a38f12aa2eacd4dddbcc29d0c598cfde0b5dd226c389b3fb65cf",
+    "url": "https://www.safcodental.com/product/surgical-blades-hu-friedy#3920458",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical blades and scalpels"
+    ],
+    "name": "Hu-Friedy scalpel blade #12 sterile 100/box",
+    "brand": "Hu-Friedy",
+    "sku": "3920458",
+    "price": "$157.49",
+    "unit_pack_size": "100/box",
+    "availability": "Backorder",
+    "description": "The Hu-Friedy surgical blades are single use carbon steel blades used for cutting gingival tissue and making surgical incisions. They are crafted from the finest materials for strength and durability. Both microsurgical and standard styles are offered to match clinician and procedural preferences.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pflta.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:28.369196"
+  },
+  {
+    "url_hash": "e6b23969a826aca1c901d33b3767ef829dea675fcee73b9fed135b942113f858",
+    "url": "https://www.safcodental.com/product/surgical-blades-hu-friedy#3928961",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical blades and scalpels"
+    ],
+    "name": "Hu-Friedy scalpel blade #15 sterile 100/box",
+    "brand": "Hu-Friedy",
+    "sku": "3928961",
+    "price": "$157.49",
+    "unit_pack_size": "100/box",
+    "availability": "In stock",
+    "description": "The Hu-Friedy surgical blades are single use carbon steel blades used for cutting gingival tissue and making surgical incisions. They are crafted from the finest materials for strength and durability. Both microsurgical and standard styles are offered to match clinician and procedural preferences.",
+    "specifications": {
+      "Blade Type": "#15",
+      "Sterility": "Sterile"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pflta.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/surgical-blades-hu-friedy#3920328",
+      "https://www.safcodental.com/product/surgical-blades-hu-friedy#3920391"
+    ],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:29.756587"
+  },
+  {
+    "url_hash": "a5ffb8443bc6932bea89229173c34adfd2c84eedf7a4a596fa238822d55753a4",
+    "url": "https://www.safcodental.com/product/surgical-blades-hu-friedy#3930151",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical blades and scalpels"
+    ],
+    "name": "Hu-Friedy scalpel blade micro single end 12/box",
+    "brand": "Hu-Friedy",
+    "sku": "3930151",
+    "price": "$94.99",
+    "unit_pack_size": "12/box",
+    "availability": "In stock",
+    "description": "The Hu-Friedy surgical blades are single use carbon steel blades used for cutting gingival tissue and making surgical incisions. They are crafted from the finest materials for strength and durability. Both microsurgical and standard styles are offered to match clinician and procedural preferences.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pflta.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:28.400367"
+  },
+  {
+    "url_hash": "4b3c39eaee99626863beb83c473b426a6f1b70215b42aeb6b9c9be95068b01ed",
+    "url": "https://www.safcodental.com/product/surgical-blades-hu-friedy#3930133",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical blades and scalpels"
+    ],
+    "name": "Hu-Friedy scalpel blade mini full radius point 12/box",
+    "brand": "Hu-Friedy",
+    "sku": "3930133",
+    "price": "$224.49",
+    "unit_pack_size": "12/box",
+    "availability": "Direct from manufacturer",
+    "description": "The Hu-Friedy surgical blades are single use carbon steel blades used for cutting gingival tissue and making surgical incisions. They are crafted from the finest materials for strength and durability. Both microsurgical and standard styles are offered to match clinician and procedural preferences.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pflta.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/surgical-blades-hu-friedy#3920328",
+      "https://www.safcodental.com/product/surgical-blades-hu-friedy#3920391"
+    ],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:28.865983"
+  },
+  {
+    "url_hash": "2082259b21c70d6dcf0042e1b24f09b2ef7eb0721d4a76d84fcc21eb139f1cc0",
+    "url": "https://www.safcodental.com/product/surgical-blades-hu-friedy#3930043",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical blades and scalpels"
+    ],
+    "name": "Hu-Friedy scalpel blade mini full radius round 12/box",
+    "brand": "Hu-Friedy",
+    "sku": "3930043",
+    "price": "$147.49",
+    "unit_pack_size": "12/box",
+    "availability": "Backorder",
+    "description": "The Hu-Friedy surgical blades are single use carbon steel blades used for cutting gingival tissue and making surgical incisions. They are crafted from the finest materials for strength and durability. Both microsurgical and standard styles are offered to match clinician and procedural preferences.",
+    "specifications": {
+      "Material": "Carbon Steel",
+      "Type": "Surgical Blade",
+      "Brand": "Hu-Friedy"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pflta.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:28.612107"
+  },
+  {
+    "url_hash": "630ba3a5a1a9f6275718f40e48813762ef218d597a6e0d90dd574922523e4b7f",
+    "url": "https://www.safcodental.com/product/surgical-blades-hu-friedy#3920391",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical blades and scalpels"
+    ],
+    "name": "Hu-Friedy scalpel v #15C sterile 100/box",
+    "brand": "Hu-Friedy",
+    "sku": "3920391",
+    "price": "$233.49",
+    "unit_pack_size": "100/box",
+    "availability": "Backorder",
+    "description": "The Hu-Friedy surgical blades are single use carbon steel blades used for cutting gingival tissue and making surgical incisions. They are crafted from the finest materials for strength and durability. Both microsurgical and standard styles are offered to match clinician and procedural preferences.",
+    "specifications": {},
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pflta.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:29.146269"
+  },
+  {
+    "url_hash": "dac9d2732ad944859ae8615cf377325f3a24d001c9edd974314c42ef963c741f",
+    "url": "https://www.safcodental.com/product/surgical-blades-hu-friedy#3920328",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "Surgical blades and scalpels"
+    ],
+    "name": "Hu-Friedy scalpel v mini 67 12/box",
+    "brand": "Hu-Friedy",
+    "sku": "3920328",
+    "price": "$101.99",
+    "unit_pack_size": "12/box",
+    "availability": "Special order",
+    "description": "The Hu-Friedy surgical blades are single use carbon steel blades used for cutting gingival tissue and making surgical incisions. They are crafted from the finest materials for strength and durability. Both microsurgical and standard styles are offered to match clinician and procedural preferences.",
+    "specifications": {
+      "Mfr #": "MB67"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pflta.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/surgical-blades-hu-friedy#3920391"
+    ],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:29.767042"
+  },
+  {
+    "url_hash": "9bbfa22d9d9ca0e2d2311c2c08d4a87e5a597389c2c12d06d782bc114f30f7e7",
+    "url": "https://www.safcodental.com/product/iv-administration-sets#5102208",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "IV fluids and administration sets"
+    ],
+    "name": "IV administration set 10 drops/ml, 88\"L, 50/cs",
+    "brand": "B Braun",
+    "sku": "5102208",
+    "price": "$174.29",
+    "unit_pack_size": "50/cs",
+    "availability": "In stock",
+    "description": "SafeDay IV administration sets are indicated for 24-hour use. Components are not made with DEHP, latex or natural rubber. Sterile packaging permits direct placement of set on sterile field. Cost-effective needle-free access ports are designed to provide an effective barrier against microbial contamination.",
+    "specifications": {
+      "Drops per ml": "10",
+      "Length": "88\""
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfxct.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [
+      "https://www.safcodental.com/product/iv-administration-sets#5102206",
+      "https://www.safcodental.com/product/iv-administration-sets#5102207"
+    ],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:30.336932"
+  },
+  {
+    "url_hash": "0d141fdcd551bec297579c70519f3cda8ab6741b0cde5b407b1a1af5fed83d8b",
+    "url": "https://www.safcodental.com/product/iv-administration-sets#5102207",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "IV fluids and administration sets"
+    ],
+    "name": "IV administration set 15 drops/ml, 101\"L, 50/cs",
+    "brand": "B Braun",
+    "sku": "5102207",
+    "price": "$388.59",
+    "unit_pack_size": "50/cs",
+    "availability": "Special order",
+    "description": "SafeDay IV administration sets are indicated for 24-hour use. Components are not made with DEHP, latex or natural rubber. Sterile packaging permits direct placement of set on sterile field. Cost-effective needle-free access ports are designed to provide an effective barrier against microbial contamination.",
+    "specifications": {
+      "flow_rate": "15 drops/ml",
+      "length": "101\"L",
+      "components": "universal spike, roller clamp, Spin-Lock® connector"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfxct.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:29.552122"
+  },
+  {
+    "url_hash": "361b17672f70f37752958ac061600563baae4cc70451961ea907cb6bf27f2bd5",
+    "url": "https://www.safcodental.com/product/iv-administration-sets#5102206",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "IV fluids and administration sets"
+    ],
+    "name": "IV administration set 15 drops/ml, 86\"L, 50/cs",
+    "brand": "B Braun",
+    "sku": "5102206",
+    "price": "$175.99",
+    "unit_pack_size": "50/cs",
+    "availability": "In stock",
+    "description": "Single access port, 17ml priming volume, 86\"L, 15 drops/ml, 50/cs",
+    "specifications": {
+      "Drop Rate": "15 drops/ml",
+      "Length": "86\"",
+      "Priming Volume": "17ml",
+      "Packaging": "Sterile packaging",
+      "Components": "Not made with DEHP, latex or natural rubber"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfxct.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:29.273098"
+  },
+  {
+    "url_hash": "bee2d876bb38c84631e1acd12351fedea7a3da9107b68828050d36fad7d543a2",
+    "url": "https://www.safcodental.com/product/lactated-ringer-s#5102305",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "IV fluids and administration sets"
+    ],
+    "name": "Lactated Ringer's Injection USP 1,000ml bag, case of 12",
+    "brand": "B Braun",
+    "sku": "5102305",
+    "price": "$70.49",
+    "unit_pack_size": "1,000ml bag, case of 12",
+    "availability": "In stock",
+    "description": "Sterile, nonpyrogenic and contains no bacteriostatic or antimicrobial agents. Indicated for use in adults and pediatric patients as a source of electrolytes and water for hydration. EXCEL® IV bags feature a sturdy port system and are not manufactured with latex, PVC or DEHP.",
+    "specifications": {
+      "Brand": "B Braun",
+      "SKU": "5102305",
+      "Product Type": "Injection",
+      "Packing": "Case of 12"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfxer.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:31.585814"
+  },
+  {
+    "url_hash": "68a6464f222bad6ad45b54a1ad19814718ac6a0d506b20968a5b2d1edc5db910",
+    "url": "https://www.safcodental.com/product/lactated-ringer-s#5102302",
+    "run_id": "fe0e5adc",
+    "category": "Sutures & Surgical Products",
+    "category_hierarchy": [
+      "Dental Supplies",
+      "Sutures & surgical products",
+      "IV fluids and administration sets"
+    ],
+    "name": "Lactated Ringer's Injection USP 500ml bag, case of 24",
+    "brand": "B Braun",
+    "sku": "5102302",
+    "price": "$170.49",
+    "unit_pack_size": "500ml bag, case of 24",
+    "availability": "In stock",
+    "description": "Sterile, nonpyrogenic and contains no bacteriostatic or antimicrobial agents. Indicated for use in adults and pediatric patients as a source of electrolytes and water for hydration. EXCEL® IV bags feature a sturdy port system and are not manufactured with latex, PVC or DEHP.",
+    "specifications": {
+      "brand": "B Braun",
+      "sku": "5102302",
+      "mfr #": "L7501",
+      "category": "Sutures & Surgical Products"
+    },
+    "image_urls": [
+      "https://www.safcodental.com/media/catalog/product/p/f/pfxer.jpg?width=265&height=265&canvas=265,265&optimize=medium&fit=bounds",
+      "https://www.safcodental.com/media/catalog/product/placeholder/default/white-placeholder_6.jpg?optimize=medium&fit=bounds&height=75&width=75"
+    ],
+    "alternative_products": [],
+    "extraction_method": "algolia+tavily_llm",
+    "scraped_at": "2026-05-03T02:45:30.809174"
   },
   {
     "url_hash": "7cb998a2d54527a7f7254c16a386e3af71057548e2e28ebf0d4532594a59a0c7",
